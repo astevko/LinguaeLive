@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	>
+
+	<ui:style src="../../../style.css" />
+		
+	<g:DialogBox ui:field="dialogBox" animationEnabled="true"
+		modal="false" glassEnabled="true">
+		<g:caption><ui:msg description="Do you want to send an invitation to pair up with this Student?">Do you want to send an invitation to pair up with this Student?</ui:msg></g:caption>
+		<g:HTMLPanel>
+			<div>
+				<span class="{style.formPrompt}"><ui:msg description="Student:">Student:</ui:msg></span>
+				<g:InlineLabel ui:field="invitee_fname" />&nbsp;<g:InlineLabel ui:field="invitee_lname" />
+			</div>
+			<div>
+				<span class="{style.formPrompt}"><ui:msg description="School:">School:</ui:msg></span>
+				<g:InlineLabel ui:field="invitee_school" />
+			</div>
+			<div>
+				<span class="{style.formPrompt}"><ui:msg description="Personal Message:">Personal Message:</ui:msg></span>
+			</div>			
+				<g:TextArea ui:field="personalMessage"  characterWidth="40" />
+			<br />
+			<g:Button ui:field="sendSessionInviteButton" styleName="{style.button}"
+				addStyleNames="{style.hotbutton}"><ui:msg description="Send Partner Invite">Send Partner Invite</ui:msg></g:Button>
+			&nbsp;
+			<g:Button ui:field="cancelButton" styleName="{style.button}"
+				addStyleNames="{style.coldbutton}"><ui:msg description="Cancel">Cancel</ui:msg></g:Button>
+
+		</g:HTMLPanel>
+	</g:DialogBox>
+
+</ui:UiBinder> 

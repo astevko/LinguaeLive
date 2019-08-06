@@ -1,0 +1,52 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style src="../../style.css" />
+
+	<g:ScrollPanel>		
+		<g:HTMLPanel styleName="{style.panel}" width="700px">
+			<div class="{style.sectionHeader}"><ui:msg meaning="FAQ" description="FAQ">FAQ</ui:msg></div>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			   <g:header><ui:msg meaning="FAQ" description="How did LinguaeLive get started?">How did LinguaeLive get started?</ui:msg> </g:header>
+			   <g:Label styleName="{style.disclosurePanelLabel}" ><ui:msg meaning="FAQ" description="Two instructors started a peer-to-peer exchange between their Anglophone students of German in Queen’s University, Ontario and their Germanophone students of English at Martin-Luther-Universität, Halle-Wittenberg, Saxony-Anhalt. This pilot project was so effective and popular that they wanted to involve the world.">Two instructors started a peer-to-peer exchange between their Anglophone students of German in Queen’s University, Ontario and their Germanophone students of English at Martin-Luther-Universität, Halle-Wittenberg, Saxony-Anhalt. This pilot project was so effective and popular that they wanted to involve the world.</ui:msg> </g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			   <g:header><ui:msg meaning="FAQ" description="What does LinguaeLive cost?">What does LinguaeLive cost?</ui:msg> </g:header>
+			   <g:Label><ui:msg meaning="FAQ" description="LinguaeLive is an educational endeavour that we aim to keep no cost. Queen’s University provided seed money. The Social Sciences and Humanities Research Council of Canada followed up with a grant. First round signups continue without charge. Later signups may be asked for a sliding-scale lab fee to keep LinguaeLive going and growing.">LinguaeLive is an educational endeavour that we aim to keep no cost. Queen’s University provided seed money. The Social Sciences and Humanities Research Council of Canada followed up with a grant. First round signups continue without charge. Later signups may be asked for a sliding-scale lab fee to keep LinguaeLive going and growing.</ui:msg></g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			   <g:header><ui:msg meaning="FAQ" description="How do I know that my students actually spoke with their partners?">How do I know that my students actually spoke with their partners?</ui:msg></g:header>
+			   <g:Label><ui:msg meaning="FAQ" description="LinguaeLive offers oversight. Instructors can track the language exchange sessions. If their students wish, instructors can even participate in the conversations; otherwise, only the time units (minutes) are tracked.">LinguaeLive offers oversight. Instructors can track the language exchange sessions. If their students wish, instructors can even participate in the conversations; otherwise, only the time units (minutes) are tracked.</ui:msg></g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			   <g:header><ui:msg meaning="FAQ" description="Why don’t students get more information about their potential partners?">Why don’t students get more information about their potential partners?</ui:msg></g:header>
+			   <g:Label><ui:msg meaning="FAQ" description="Regular communication works best. Therefore, compatible schedules are the most important criteria for matching. Similar interests both enrich and limit. Knowing less about a partner is a great incentive to talk more.">Regular communication works best. Therefore, compatible schedules are the most important criteria for matching. Similar interests both enrich and limit. Knowing less about a partner is a great incentive to talk more.</ui:msg></g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			 <g:header><ui:msg meaning="FAQ" description="Does it matter if partners have different proficiency levels?">Does it matter if partners have different proficiency levels?</ui:msg></g:header>
+			   <g:Label><ui:msg meaning="FAQ" description="Not really, because partners trade unit of time in one language for unit of time in another language. Whoever is speaking their target language will generally set the parameters such as topic, speed and level.  And each partner takes a turn at being expert!">Not really, because partners trade unit of time in one language for unit of time in another language. Whoever is speaking their target language will generally set the parameters such as topic, speed and level.  And each partner takes a turn at being expert!</ui:msg></g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			 <g:header><ui:msg meaning="FAQ" description="Are the conversations recorded?">Are the conversations recorded?</ui:msg></g:header>
+			   <g:Label><ui:msg meaning="FAQ" description="We decided not to develop this capacity for LinguaeLive. We believe that more privacy furthers communication and better respects learners. There are recording programs available on the web if needed.">We decided not to develop this capacity for LinguaeLive. We believe that more privacy furthers communication and better respects learners. There are recording programs available on the web if needed.</ui:msg></g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			 <g:header><ui:msg meaning="FAQ" description="How should the students prepare for their sessions?">How should the students prepare for their sessions?</ui:msg></g:header>
+			   <g:Label><ui:msg meaning="FAQ" description="That depends on the aims of your course. Generally, structured preparation is helpful for beginners. They might develop questions to ask and look up vocabulary. More advanced students might read a text that they can discuss. Registered instructors can see our Tips section for more ideas.">That depends on the aims of your course. Generally, structured preparation is helpful for beginners. They might develop questions to ask and look up vocabulary. More advanced students might read a text that they can discuss. Registered instructors can see our Tips section for more ideas.</ui:msg></g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			 <g:header><ui:msg meaning="FAQ" description="How much overlap do schedules need to be matched by LinguaeLive?">How much overlap do schedules need to be matched by LinguaeLive?</ui:msg></g:header>
+			   <g:Label><ui:msg meaning="FAQ" description="For a course, one day. For student availability, one time slot. The instructor or the student can then decide with their potential partners whether they want to link.">For a course, one day. For student availability, one time slot. The instructor or the student can then decide with their potential partners whether they want to link.</ui:msg></g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			   <g:header><ui:msg meaning="FAQ" description="What do you do with my information?">What do you do with my information?</ui:msg></g:header>
+			   <g:Label><ui:msg meaning="FAQ" description="The information that you share with us will not be shared except to further the educational exchange that you desire.">The information that you share with us will not be shared except to further the educational exchange that you desire.</ui:msg></g:Label>
+			 </g:DisclosurePanel>
+			 <g:DisclosurePanel styleName="{style.disclosurePanel}" >
+			   <g:header><ui:msg meaning="FAQ" description="Can learners use LinguaeLive to find peers directly?">Can learners use LinguaeLive to find peers directly?</ui:msg></g:header>
+			   <g:HTML><ui:msg meaning="FAQ" description="Currently, instructors initiate student collaborations in LinguaeLive.">Currently, instructors initiate student collaborations in LinguaeLive. There projects in which learners find each other directly, such as the <a href="http://www.uni-leipzig.de/sprachenzentrum/hi.site,postext,tandem-buero.html" target="_blank">Tandem-Büro</a> at the Universität Leipzig's <a href="http://www.uni-leipzig.de/sprachenzentrum"  target="_blank">Sprachenzentrum</a> and <a href="http://www.cisi.unito.it/tandem/etandem/etindex-en.html"  target="_blank">eTandem Europa</a> at the Ruhr-Universität Bochum.</ui:msg></g:HTML>
+			 </g:DisclosurePanel>
+		</g:HTMLPanel>
+	</g:ScrollPanel>
+</ui:UiBinder> 

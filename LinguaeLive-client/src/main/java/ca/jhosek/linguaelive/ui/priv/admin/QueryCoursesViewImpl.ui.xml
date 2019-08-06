@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:h="urn:import:ca.jhosek.main.client.ui.priv.admin"
+	 xmlns:w='urn:import:ca.jhosek.main.client.widgets'
+	>
+
+  <ui:style src="../../../style.css" />
+
+	<g:HTMLPanel styleName="{style.widePanel}"  >
+		<div class="{style.sectionHeader}" ><ui:msg description="View Courses">View Courses</ui:msg></div>
+		<g:DockLayoutPanel unit="EM" width="120%" height="150em">
+			<g:north size="5">
+				<g:HTMLPanel  styleName="{style.buttonPanel}"  >
+					<span class="{style.formPrompt}"><ui:msg description="Course filters:">Course filters:</ui:msg></span>					 
+					<g:ListBox styleName="{style.formPrompt}" ui:field="languageTargetFilter" />
+					<g:ListBox styleName="{style.formPrompt}" ui:field="languageExpertFilter" />
+					<g:ListBox styleName="{style.formPrompt}" ui:field="linkFilter">
+						  <g:item value=''>
+						    <ui:msg description="select link filter">select link filter</ui:msg>
+						  </g:item>
+						  <g:item value='has'>
+						    <ui:msg description="has course links">has course links</ui:msg>
+						  </g:item>
+						  <g:item value='not'>
+						    <ui:msg description="no course links">no course links</ui:msg>
+						  </g:item>
+					</g:ListBox>
+					<g:ListBox styleName="{style.formPrompt}" ui:field="dateFilter">
+						  <g:item value=''>
+						    <ui:msg description="select date filter">select date filter</ui:msg>
+						  </g:item>
+						  <g:item value='current'>
+						    <ui:msg description="current/future courses">current/future courses</ui:msg>
+						  </g:item>
+						  <g:item value='past'>
+						   <ui:msg description=" past courses"> past courses</ui:msg>
+						  </g:item>
+					</g:ListBox>
+					<g:Button styleName="{style.button}" ui:field="executeQueryButton" text="Query Courses">
+				<ui:attribute name='text' />
+				  <ui:msg description='Query Courses'>Query Courses</ui:msg>
+					</g:Button>
+				</g:HTMLPanel>
+			</g:north>
+			<g:center>
+				<g:FlowPanel styleName="{style.formPrompt}"  ui:field="courseListPanel">
+					<g:HTML wordWrap="true"><ui:msg description="Execute a course query above.">Execute a course query above.</ui:msg></g:HTML>
+				</g:FlowPanel>
+			</g:center>
+		</g:DockLayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

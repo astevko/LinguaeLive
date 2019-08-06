@@ -1,0 +1,93 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:x='urn:import:ca.jhosek.main.client.ui'
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'>
+	
+	<ui:style src="../../style.css" />
+	<ui:with field="constants" type="ca.jhosek.main.client.LLConstants" />
+		
+	<g:HTMLPanel  styleName="{style.panel}" >
+	<g:DockLayoutPanel unit="EM" height="35EM">
+		<g:west size="25">
+			<g:HTMLPanel  width="25em">
+				<div class="{style.sectionHeader}"><ui:msg description="Your Profile">Your Profile</ui:msg></div>
+				<div class="{style.sectionDesc}"><ui:msg description="* Click to edit">* Click to edit</ui:msg></div>
+				<g:HTMLPanel >
+
+					<!-- editor panel for UserProxy -->
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="First Name*:">First Name*:</ui:msg></span>
+						<x:LabelEditor ui:field="firstName" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Last Name*:">Last Name*:</ui:msg></span>
+						<x:LabelEditor ui:field="lastName" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="School*:">School*:</ui:msg></span>
+						<x:LabelEditor ui:field="school" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Location*:">Location*:</ui:msg></span>
+						<x:LabelEditor ui:field="location" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Password Hint*:">Password Hint*:</ui:msg></span>
+						<x:LabelEditor ui:field="hint" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></span>
+						<g:Label ui:field="emailAddress" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Time Zone Offset (UTC
+							minutes):">Time Zone Offset (UTC
+							minutes):</ui:msg></span>
+						<g:NumberLabel styleName="{style.formPromptData}"
+							ui:field="timezoneOffset" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Current User Time:">Current User Time:</ui:msg></span>
+						<g:Label styleName="{style.formPromptData}"
+							ui:field="currentUserTime"  />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Signed Up Date:">Signed Up Date:</ui:msg></span>
+						<g:DateLabel styleName="{style.formPromptData}"
+							ui:field="createDate" 
+							customFormat="{constants.mdyDateFormatterPattern}" />
+					</div>
+
+					<g:FlowPanel styleName="{style.buttonPanelLeft}" >
+						<g:Button ui:field="saveUserButton" styleName="{style.button}" addStyleNames="{style.hotbutton}"  ><ui:msg description="Save Changes">Save Changes</ui:msg></g:Button>
+						<g:Button ui:field="cancelEditsButton" styleName="{style.button}" addStyleNames="{style.coldbutton}"><ui:msg description="Reset Form">Reset Form</ui:msg></g:Button>
+					</g:FlowPanel>
+
+					<g:FlowPanel styleName="{style.buttonPanelLeft}" >
+						<g:Button ui:field="changePasswordButton" styleName="{style.button}" addStyleNames="{style.coldbutton}"  ><ui:msg description="Change Password">Change Password</ui:msg></g:Button>
+					</g:FlowPanel>
+				</g:HTMLPanel>
+			</g:HTMLPanel>
+		</g:west>
+		<g:west size="25">
+			<g:HTMLPanel width="25em">
+				<div class="{style.sectionHeader}"><ui:msg description="Your Contact Info">Your Contact Info</ui:msg></div>
+				<div class="{style.sectionDesc}"> <ui:msg description="This information is shared with peers with whom you link.">This information is shared with peers with whom you link.</ui:msg></div>
+				<g:HTMLPanel ui:field="contactInfoPanel" > <g:Label styleName="{style.sectionItalic}"><ui:msg description="Loading from the server...">Loading from the server...</ui:msg></g:Label></g:HTMLPanel>
+				<g:FlowPanel styleName="{style.buttonPanelLeft}" >
+					<g:Button ui:field="addContactInfoButton" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Add More Contact Info">Add More Contact Info</ui:msg></g:Button>
+				</g:FlowPanel>
+				<div><ui:msg description="Once you have filled out your contact info, you can">Once you have filled out your contact info, you can</ui:msg> <g:Anchor ui:field="linkToQuickStart"><ui:msg description="Locate and Contact a Partner">Locate and Contact a Partner</ui:msg></g:Anchor>.</div>
+			</g:HTMLPanel>
+		</g:west>
+	</g:DockLayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

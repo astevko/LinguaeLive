@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:e='urn:import:com.google.gwt.editor.ui.client'>
+
+	<ui:style src="../../style.css" />
+		
+	<g:DialogBox ui:field="dialogBox" animationEnabled="true"
+		modal="false" glassEnabled="true">
+		<g:caption><ui:msg description="Please login">Please login</ui:msg></g:caption>
+		<g:HTMLPanel styleName="{style.leftAlign}" >
+			<div>
+				<div><span class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></span></div>
+				<g:TextBox styleName="{style.editField}" ui:field="emailAddress" />
+				<div><span class="{style.formPrompt}"><ui:msg description="Password:">Password:</ui:msg></span></div>
+				<g:PasswordTextBox ui:field="pswd1TextBox"	styleName="{style.editField}" />
+				<div>
+				<g:CheckBox styleName="{style.editField}" ui:field="rememberMe" ><ui:msg description="Remember me on this computer">Remember me on this computer</ui:msg></g:CheckBox> 
+				</div>
+				
+				<g:FlowPanel  styleName="{style.buttonPanel}"  >				
+					<g:Button styleName="{style.button}" addStyleNames="{style.hotbutton}"
+						ui:field="loginButton"><ui:msg description="Login">Login</ui:msg></g:Button>
+					<g:Button styleName="{style.button}" addStyleNames="{style.coldbutton}"
+						ui:field="cancelButton"><ui:msg description="Cancel">Cancel</ui:msg></g:Button>
+				</g:FlowPanel>
+				<br />
+				<g:InlineHyperlink text="forgot password?"
+					styleName="{style.link}" targetHistoryToken="newHistoryToken"
+					ui:field="forgotPasswordAnchor" >
+				<ui:attribute name='text' />
+				  <ui:msg description='forgot password?'>forgot password?</ui:msg>
+				</g:InlineHyperlink>					
+				<br />
+			</div>
+			<g:HTML ui:field="loginFacebookField"><ui:msg description="Login using Facebook">Login using Facebook</ui:msg></g:HTML>
+		</g:HTMLPanel>
+	</g:DialogBox>
+</ui:UiBinder> 

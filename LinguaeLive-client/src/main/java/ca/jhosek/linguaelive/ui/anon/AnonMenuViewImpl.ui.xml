@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style src="../../style.css" />
+
+	<g:HTMLPanel>
+		<g:MenuBar addStyleNames="{style.menuBar}" >		
+			<g:MenuItem  styleName="{style.menuItem}"  text="Home" ui:field="home">
+				<ui:attribute name='text' />
+				  <ui:msg description='Home'>Home</ui:msg>
+  			</g:MenuItem>
+			<g:MenuItem  styleName="{style.menuItem}"  text="What is...?" ui:field="whatIs">
+				<ui:attribute name='text' />
+				  <ui:msg description='What is...?'>What is...?</ui:msg>
+  			</g:MenuItem>
+
+			<g:MenuItem  styleName="{style.menuItem}"  text="For Instructors" ui:field="instructorInfo">
+				<ui:attribute name='text' />
+				  <ui:msg description='For Instructors'>For Instructors</ui:msg>
+  			</g:MenuItem>
+
+			<g:MenuItem  styleName="{style.menuItem}"  text="For Students" ui:field="studentInfo">
+				<ui:attribute name='text' />
+				  <ui:msg description='For Students'>For Students</ui:msg>
+  			</g:MenuItem>
+
+			<g:MenuItem  styleName="{style.menuItem}"  text="FAQ" ui:field="faq">
+				<ui:attribute name='text' />
+				  <ui:msg description='FAQ'>FAQ</ui:msg>
+  			</g:MenuItem>
+
+			<g:MenuItem  styleName="{style.menuItem}"  text="Who is...?" ui:field="whoIs">
+				<ui:attribute name='text' />
+				  <ui:msg description='Who is...?'>Who is...?</ui:msg>
+  			</g:MenuItem>
+
+		</g:MenuBar>
+	</g:HTMLPanel>
+</ui:UiBinder> 

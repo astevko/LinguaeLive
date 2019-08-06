@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style src="../../style.css" />
+		
+	<g:DialogBox ui:field="dialogBox" animationEnabled="true"
+		modal="false" glassEnabled="true">
+		<g:caption>Please wait...</g:caption>
+		<g:HTMLPanel>
+			<div>
+				<span class="{style.sectionHeader}">Auto login in progress. Please wait...</span>
+			</div>
+			<br />
+		</g:HTMLPanel>
+	</g:DialogBox>
+
+</ui:UiBinder> 

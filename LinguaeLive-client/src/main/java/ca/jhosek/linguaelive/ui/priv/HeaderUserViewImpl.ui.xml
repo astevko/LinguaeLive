@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../style.css" />
+
+	<g:HTMLPanel>
+		<g:InlineLabel styleName="{style.userName}" ui:field="userNameLabel"/>,&nbsp;<g:InlineLabel styleName="{style.userName}" ui:field="userSchoolLabel"/>&nbsp;  
+		<g:Button ui:field="logoutButton" styleName="{style.button}" addStyleNames="{style.coldbutton}" >Logout</g:Button>
+	</g:HTMLPanel>
+</ui:UiBinder> 

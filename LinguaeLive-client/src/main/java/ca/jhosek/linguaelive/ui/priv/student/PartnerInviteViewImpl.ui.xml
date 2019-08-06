@@ -1,0 +1,99 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client" xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.ui' xmlns:x2='urn:import:ca.jhosek.main.client.widgets'>
+	
+	<ui:style src="../../../style.css" />
+	<ui:with field="constants" type="ca.jhosek.main.client.LLConstants" />
+		
+	<!--
+	editor panel for PartnerInviteProxy
+	-->
+	<g:HTMLPanel styleName="{style.panel}" >
+		<g:Label styleName="{style.sectionHeader}" ui:field="partnerInviteMsg"><ui:msg description="Partner Invite" >Partner Invite</ui:msg></g:Label>
+		<div class="{style.sectionDesc}"> <g:Button ui:field="startSession" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Start Session">Start Session</ui:msg></g:Button> <g:Button ui:field="startOtherSession" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Start  Session">Start Session</ui:msg></g:Button>
+		</div>
+		<g:DockLayoutPanel unit="EM" width="50em" height="25em">
+			<g:west size="15"> <!-- the course that is the focus -->
+				<g:HTMLPanel width="10em" >
+					<div><x2:OnlineOfflineIndicator ui:field="member1_user_isonline"></x2:OnlineOfflineIndicator></div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Student:">Student:</ui:msg></span>
+						<g:InlineLabel ui:field="member1_user_fname" />&nbsp;<g:InlineLabel ui:field="member1_user_lname" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="School:">School:</ui:msg></span>
+						<g:Label ui:field="member1_user_school" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Course:">Course:</ui:msg></span>
+						<g:Label ui:field="member1_course_name" styleName="{style.drillablePromptData}"/>
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Location:">Location:</ui:msg></span>
+						<g:Label ui:field="member1_user_location" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></span>
+						<g:Label ui:field="member1_user_email" />
+					</div>			
+				</g:HTMLPanel>
+			</g:west>
+			<g:west size="15"> <!-- the other course -->
+
+				<g:HTMLPanel width="10em"	>
+					<div><x2:OnlineOfflineIndicator ui:field="member2_user_isonline"></x2:OnlineOfflineIndicator></div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Student:">Student:</ui:msg></span>
+						<g:InlineLabel ui:field="member2_user_fname" />&nbsp;<g:InlineLabel ui:field="member2_user_lname" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="School:">School:</ui:msg></span>
+						<g:Label ui:field="member2_user_school" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Course:">Course:</ui:msg></span>
+						<g:Label ui:field="member2_course_name" styleName="{style.drillablePromptData}"/>
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Location:">Location:</ui:msg></span>
+						<g:Label ui:field="member2_user_location" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></span>
+						<g:Label ui:field="member2_user_email" />
+					</div>			
+					<g:Button ui:field="unlinkCourses" styleName="{style.button}" addStyleNames="{style.coldbutton}"  ><ui:msg description="Remove Invite and Unlink with Partner">Remove Invite and Unlink with Partner</ui:msg></g:Button>
+				</g:HTMLPanel>
+			</g:west>
+			<g:center>
+				<g:HTMLPanel	>
+					<div><g:Button ui:field="refreshLink"><ui:msg description="(check for pending sessions)">(check for pending sessions)</ui:msg></g:Button></div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Invite Initiated on:">Invite Initiated on:</ui:msg></span>
+					</div>
+						<g:DateLabel ui:field="createDate" 
+						customFormat="{constants.mdyhmzDateFormatterPattern}" />
+					<div>
+						<br />
+						<span class="{style.formPrompt}"><ui:msg description="Invite Status:">Invite Status:</ui:msg></span>
+					</div>
+					<g:FlowPanel >
+					
+						<g:Label  ui:field="pendingBlurb" styleName="{style.sectionItalic}" ><ui:msg description="Invitation pending response">Invitation pending response</ui:msg></g:Label>
+						<g:Label  ui:field="declinedBlurb"  styleName="{style.sectionItalic}" ><ui:msg description="Invitation Declined">Invitation Declined</ui:msg></g:Label>
+						<g:Label  ui:field="acceptedBlurb"  styleName="{style.sectionItalic}" ><ui:msg description="Invitation Accepted">Invitation Accepted</ui:msg></g:Label>
+						
+						<g:Button ui:field="confirmLink" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Accept Invite Request">Accept Invite Request</ui:msg></g:Button>
+						<g:Button ui:field="declineLink" styleName="{style.button}" addStyleNames="{style.coldbutton}" ><ui:msg description="Decline Invite Request">Decline Invite Request</ui:msg></g:Button>
+						
+						<!--  g:Button ui:field="startNewSessionButton" styleName="{style.button}" addStyleNames="{style.hotbutton}"  >Start a New Session</g:Button -->
+						
+					</g:FlowPanel>
+				</g:HTMLPanel>
+				
+			</g:center>		
+		</g:DockLayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

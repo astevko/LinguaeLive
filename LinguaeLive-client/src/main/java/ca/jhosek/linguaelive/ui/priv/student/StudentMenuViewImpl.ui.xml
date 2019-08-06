@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style src="../../../style.css" />
+
+	<g:HTMLPanel>
+		<g:MenuBar addStyleNames="{style.menuBar}" >
+			<g:MenuItem styleName="{style.menuItem}"  text="Student Home" ui:field="studentHome">				
+				<ui:attribute name='text' />
+				  <ui:msg description='Student Home'>Student Home</ui:msg>
+			</g:MenuItem>
+			<g:MenuItem styleName="{style.menuItem}"  text="Quick Start" ui:field="studentStart">
+				<ui:attribute name='text' />
+				  <ui:msg description='Quick Start'>Quick Start</ui:msg>
+			</g:MenuItem>
+			<g:MenuItem styleName="{style.menuItem}"  text="Your Profile" ui:field="myProfile">
+				<ui:attribute name='text' />
+				  <ui:msg description='Your Profile'>Your Profile</ui:msg>
+			</g:MenuItem>
+			<g:MenuItem styleName="{style.menuItem}"  text="Your Courses" ui:field="yourCourses">
+				<ui:attribute name='text' />
+				  <ui:msg description='Your Courses'>Your Courses</ui:msg>
+			</g:MenuItem>
+		</g:MenuBar>
+	</g:HTMLPanel>
+</ui:UiBinder> 

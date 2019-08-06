@@ -1,0 +1,148 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client" 
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.ui' 
+	xmlns:x2='urn:import:ca.jhosek.main.client.widgets' 
+	xmlns:d="urn:import:com.google.appengine.api.datastore">
+	
+	<ui:style src="../../../style.css" />
+	<ui:with field="constants" type="ca.jhosek.main.client.LLConstants" />
+		
+	<!--
+	editor panel for SessionProxy
+	-->
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}"><ui:msg description="Session Control Panel">Session Control Panel</ui:msg></div>
+		<div class="{style.sectionDesc}">
+<ui:msg description="This is where you start and stop timing your sessions. A sesssion is a timeperiod of communication in a single language. In order for the duration of a session to be documented accurately, the linked partners must take turns starting and stopping the timing of each session. That is, if one student presses the Start button, their partner must press the Stop or Switch button.
+		
+This is where you start and stop sessions. A session is composed of a time focused on conversing in a single language. In order for each student to receive credit for a session, students must take turns starting and stopping each session. That is, if one student presses the start session button, the other student must be the one to press the stop session or the switch to button.">This is where you start and stop timing your sessions. A sesssion is a timeperiod of communication in a single language. <br />
+In order for the duration of a session to be documented accurately, the linked partners must take turns starting and stopping the timing of each session. That is, if one student presses the Start button, their partner must press the Stop or Switch button.
+		
+This is where you start and stop sessions. A session is composed of a time focused on conversing in a single language. <br />
+In order for each student to receive credit for a session, students must take turns starting and stopping each session. That is, if one student presses the start session button, the other student must be the one to press the "stop session" or the "switch to" button.</ui:msg> 
+		<br /><br /></div>
+		<g:DockLayoutPanel unit="EM" width="50em" height="35em">
+			<g:south size="14">
+				<g:HTMLPanel >
+					<div>					
+						<span class="{style.formPrompt}"><ui:msg description="Chat Board:">Chat Board:</ui:msg></span>
+					</div>
+					<p1:SimplePager  ui:field="notesPager"></p1:SimplePager>
+					<p1:CellList ui:field="notes" />
+					<g:TextArea ui:field="postThisNote" width="40em" visibleLines="2"></g:TextArea>
+				</g:HTMLPanel>
+			</g:south>
+			<g:west size="15"> <!-- the course that is the focus -->
+				<g:HTMLPanel >
+					<div><x2:OnlineOfflineIndicator ui:field="member1_user_isonline"></x2:OnlineOfflineIndicator></div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Student:">Student:</ui:msg></span>
+						<g:InlineLabel ui:field="member1_user_fname" />&nbsp;<g:InlineLabel ui:field="member1_user_lname" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="School:">School:</ui:msg></span>
+						<g:Label ui:field="member1_user_school" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Current Time at :">Current Time at :</ui:msg></span>
+						<g:Label ui:field="member1_user_location" />
+					</div>
+						<g:Label ui:field="member1_user_time" />
+						
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></span>
+						<g:Label ui:field="member1_user_email"/>
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Contact Info:">Contact Info:</ui:msg></span>						
+					</div>			
+					<p1:CellList ui:field="member1_contactinfo" />
+				</g:HTMLPanel>
+			</g:west>
+			<g:west size="1"><g:HTMLPanel><div></div></g:HTMLPanel></g:west>
+			<g:west size="15"> <!-- the other course -->
+				<g:HTMLPanel >
+					<div><x2:OnlineOfflineIndicator ui:field="member2_user_isonline"></x2:OnlineOfflineIndicator></div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Student:">Student:</ui:msg></span>
+						<g:InlineLabel ui:field="member2_user_fname" />&nbsp;<g:InlineLabel ui:field="member2_user_lname" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="School:">School:</ui:msg></span>
+						<g:Label ui:field="member2_user_school" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Current Time at :">Current Time at :</ui:msg></span>
+						<g:Label ui:field="member2_user_location" />
+					</div>
+						<g:Label ui:field="member2_user_time" />
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></span>
+						<g:Label ui:field="member2_user_email"/>
+					</div>			
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Contact Info:">Contact Info:</ui:msg></span>						
+					</div>			
+					<p1:CellList ui:field="member2_contactinfo" />
+				</g:HTMLPanel>
+			</g:west>
+			<g:west size="1"><g:HTMLPanel><div></div></g:HTMLPanel></g:west>
+			<g:center>
+				<g:HTMLPanel >
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Session Status:">Session Status:</ui:msg></span> <g:InlineLabel styleName="{style.formPromptData}"
+						ui:field="status" />						
+					</div>
+					<div><g:Button ui:field="refreshLink"><ui:msg description="(refresh status from server)">(refresh status from server)</ui:msg></g:Button></div>
+
+					
+						
+					<g:HTMLPanel ui:field="start">
+						<div >
+							<span class="{style.formPrompt}"><ui:msg description="Session Started At:">Session Started At:</ui:msg></span>
+						</div>
+							<g:DateLabel ui:field="startTime" 
+							customFormat="{constants.mdyhmzDateFormatterPattern}" />
+						<div>
+							<span class="{style.formPrompt}"><ui:msg description="Session Language:">Session Language:</ui:msg></span>
+						</div>
+						<x2:EnumLabel styleName="{style.formPromptData}" ui:field="sessionLanguage" />
+					</g:HTMLPanel>
+										
+					<g:HTMLPanel ui:field="stop">
+						<div>					
+							<span class="{style.formPrompt}"><ui:msg description="Session Finished At:">Session Finished At:</ui:msg></span>
+						</div>						
+							<g:DateLabel ui:field="stopTime" 
+							customFormat="{constants.mdyhmzDateFormatterPattern}" />
+						<div>					
+							<span class="{style.formPrompt}"><ui:msg description="Session Duration (minutes):">Session Duration (minutes):</ui:msg></span>
+						</div>
+							<g:NumberLabel ui:field="durationMinutes" />
+					</g:HTMLPanel>
+					
+					<br />
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Session Timer:">Session Timer:</ui:msg></span>
+					</div>
+					<g:FlowPanel >
+					
+						<!--  start -->
+						<!--  g:Button ui:field="startSession" styleName="{style.button}" addStyleNames="{style.hotbutton}" >Start Session</g:Button -->
+						<!--  g:Button ui:field="startOtherSession" styleName="{style.button}" addStyleNames="{style.hotbutton}" >Start  Session</g:Button -->
+						<!--  stop -->
+						<g:Button ui:field="stopSession" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Stop Timing Session">Stop Timing Session</ui:msg></g:Button>
+						<g:Button ui:field="switchSession" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Switch Languages">Switch Languages</ui:msg></g:Button>
+						<g:HTML ui:field="inprogressSession" ><ui:msg description="Other student needs to stop this session for credit."><i>Other student needs to stop this session for credit.</i></ui:msg></g:HTML>
+						<g:Button ui:field="cancelSession" styleName="{style.button}" ><ui:msg description="Cancel Session">Cancel Session</ui:msg></g:Button>
+					</g:FlowPanel>
+				</g:HTMLPanel>
+				
+			</g:center>
+		</g:DockLayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

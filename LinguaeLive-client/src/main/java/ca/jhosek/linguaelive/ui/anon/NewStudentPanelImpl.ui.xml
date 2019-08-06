@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' 
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'>
+
+  <ui:style src="../../style.css" />
+
+	<g:HTMLPanel styleName="{style.panel}"  >
+		<div class="{style.sectionHeader}" ><ui:msg description="Student Sign Up">Student Sign Up</ui:msg></div>
+		<div class="{style.sectionDesc}"><ui:msg description="You are signing up in an educational site developed by teachers.">You are signing up in an educational site developed by teachers. LinguaeLive is an electronic network that supports language learning through person-to-person communication. Your information will be used solely to help you find peers whose skills and needs complement yours. Enter the Code provided by your instructor and press Submit.</ui:msg></div>
+		<br />
+		<g:HTMLPanel styleName="{style.leftAlign}" ui:field="courseForm" >
+			<div>
+				<span class="{style.formPrompt}" ><ui:msg description="Course Invite Code:">Course Invite Code:</ui:msg></span>
+				<g:TextBox styleName="{style.editField}"  ui:field="courseInviteCode"/>
+			</div>
+			<g:FlowPanel  styleName="{style.buttonPanel}"  >
+				<g:Button styleName="{style.button}" addStyleNames="{style.hotbutton}" ui:field="checkInviteCode"><ui:msg description="Submit Course Invite Code">Submit Course Invite Code</ui:msg></g:Button>
+			</g:FlowPanel>
+		</g:HTMLPanel>
+		<g:HTMLPanel styleName="{style.leftAlign}" ui:field="userForm" width="30em" >
+			<div>
+				<div>
+					<span class="{style.formPromptHelp}" ><ui:msg description="* All fields are required.">* All fields are required.</ui:msg></span>
+				</div>
+				<div>
+					<span class="{style.formPrompt}" ><ui:msg description="First Name:">First Name:</ui:msg></span>
+					<e:ValueBoxEditorDecorator ui:field="firstName">
+						<e:valuebox>
+							<g:TextBox styleName="{style.editField}" />
+						</e:valuebox>
+					</e:ValueBoxEditorDecorator>
+				</div>
+				<div>
+					<span class="{style.formPrompt}" ><ui:msg description="Last Name:">Last Name:</ui:msg></span><!-- form prompt  -->
+					<e:ValueBoxEditorDecorator ui:field="lastName">
+						<e:valuebox>
+							<g:TextBox styleName="{style.editField}" />
+						</e:valuebox>
+					</e:ValueBoxEditorDecorator>
+				</div>
+				<div>
+					<span class="{style.formPrompt}" ><ui:msg description="Email Address:">Email Address:</ui:msg></span><!-- form prompt  -->
+					<e:ValueBoxEditorDecorator ui:field="emailAddress">
+						<e:valuebox>
+							<g:TextBox styleName="{style.editField}" />
+						</e:valuebox>
+					</e:ValueBoxEditorDecorator>
+				</div>
+				<div>
+					<span class="{style.formPrompt}" ><ui:msg description="Password:">Password:</ui:msg></span><!-- form prompt  -->
+					<e:ValueBoxEditorDecorator ui:field="password">
+						<e:valuebox>
+							<g:PasswordTextBox ui:field="pswd1TextBox"
+								styleName="{style.editField}"  />
+						</e:valuebox>
+					</e:ValueBoxEditorDecorator>
+				</div>
+				<div>
+					<span class="{style.formPrompt}" ><ui:msg description="Password Confirm:">Password Confirm:</ui:msg></span><!-- form prompt  -->
+				</div>
+					<g:PasswordTextBox ui:field="pswd2TextBox"
+						styleName="{style.editField}"  />
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Password Hint:">Password Hint:</ui:msg></span><!-- form prompt -->
+					<e:ValueBoxEditorDecorator ui:field="hint">
+						<e:valuebox>
+							<g:TextBox styleName="{style.editField}" />
+						</e:valuebox>
+					</e:ValueBoxEditorDecorator>
+				</div>
+		
+						<!--  not a ValueBoxBase yet -->
+				<g:CheckBox text="I accept the terms of service"
+					ui:field="acceptsTerms" styleName="{style.formPrompt}" >
+				<ui:attribute name='text' />
+				  <ui:msg description='I accept the terms of service'>I accept the terms of service</ui:msg>
+				</g:CheckBox>					
+
+				<g:FlowPanel  styleName="{style.buttonPanelLeft}"  >
+					<g:Button styleName="{style.button}" addStyleNames="{style.hotbutton}" ui:field="signUpButton"><ui:msg description="Sign Up">Sign Up</ui:msg></g:Button>
+					<g:Button styleName="{style.button}" addStyleNames="{style.coldbutton}" ui:field="cancelButton"><ui:msg description="Cancel">Cancel</ui:msg></g:Button>
+				</g:FlowPanel>
+				<div class="{style.sectionItalic}"><ui:msg description="Please add our our domain @linguaelive.ca">Please add our our domain    @linguaelive.ca    to your email safe senders list so that all messages get to your inbox. For help: <a href="http://www.youtube.com/watch?v=TpABBoQwvkQ">YouTube - Understanding Outlook 2010 Spam Filter Lists</a></ui:msg></div>
+				<div class="{style.sectionItalic}" ><br /><ui:msg description="We respect your privacy; we will not sell">We respect your privacy; we will not sell or give this information to third parties who are not involved in the LinguaeLive project.</ui:msg>
+				</div>
+			</div>
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

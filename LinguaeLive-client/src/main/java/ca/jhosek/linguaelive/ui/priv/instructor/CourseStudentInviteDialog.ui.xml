@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style src="../../../style.css" />
+		
+	<g:DialogBox ui:field="dialogBox" animationEnabled="true"
+		modal="false" glassEnabled="true">
+		<g:caption><ui:msg description="Copy and paste this into an email to your students">Copy and paste this into an email to your students</ui:msg></g:caption>
+		<g:HTMLPanel>
+			<div class="{style.sectionHeader}"><ui:msg description="You are invited to join LinguaLive to find language partners.">You are invited to join LinguaLive to find language partners.</ui:msg></div>
+			<div class="{style.sectionDesc}">
+				<ui:msg description="To join the course">To join the course</ui:msg> <g:InlineLabel ui:field="name" /><ui:msg description=" at "> at </ui:msg><g:InlineLabel ui:field="school" />:<br />				
+				<ul>
+				<li><ui:msg description="Sign up with the following link">Sign up with the following link</ui:msg> 				<br />				
+				http://www.LinguaeLive.ca/index.html?#signupstudent:<g:InlineLabel ui:field="inviteUrl" /> 
+				</li>
+				<li><ui:msg description="or if you already have a LinguaeLive account,">or if you already have a LinguaeLive account,</ui:msg> <br />
+				<ui:msg description="add the course using the following invite code:">add the course using the following invite code:</ui:msg> <g:InlineLabel ui:field="inviteCode" /><br />
+				</li>				
+				</ul> 
+			</div>
+			<div class="{style.sectionDesc}"><ui:msg description="If you would like to know more about LinguaLive and finding complementary language students, please visit http://www.LinguaeLive.ca/#studentinfo:">If you would like to know more about LinguaLive and finding complementary language students, <br />please visit http://www.LinguaeLive.ca/#studentinfo:</ui:msg></div> 
+			<br/>
+		<g:FlowPanel  styleName="{style.buttonPanel}"  >
+			<g:Button ui:field="button" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Close">Close</ui:msg></g:Button>
+		</g:FlowPanel>
+		</g:HTMLPanel>
+	</g:DialogBox>
+
+</ui:UiBinder> 

@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../style.css" />
+
+	<g:HTMLPanel styleName="{style.panel}"  >
+		<div> <span class="{style.sectionHeader}" ><ui:msg description='Your Courses'>Your Courses </ui:msg></span> </div>
+		<div class="{style.sectionDesc}"><ui:msg description='This is a list of your courses.'>This is a list of your courses.</ui:msg></div>
+		<div class="{style.sectionDesc}"><ui:msg description='Select one to view or click'>Select one to view or click </ui:msg><g:Button styleName="{style.button}" ui:field="addCourseButton" text="Add a Course">
+				<ui:attribute name='text' />
+				  <ui:msg description='Add a Course'>Add a Course</ui:msg>
+		</g:Button></div>
+		<br />		
+		<g:FlowPanel styleName="{style.formPromptData}"  ui:field="courseListPanel">			
+			<g:Label styleName="{style.sectionItalic}" ><ui:msg description='Retrieving your courses...'>Retrieving your courses...</ui:msg></g:Label>
+		</g:FlowPanel>
+		<div class="{style.sectionDesc}"><ui:msg description='To find a Complementary Course/Student or to work on an existing Course, click View Course'>To find a Complementary Course/Student or to work on an existing Course, click View Course</ui:msg></div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

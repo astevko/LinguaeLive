@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client' xmlns:x='urn:import:ca.jhosek.main.client.ui'
+	xmlns:x2='urn:import:ca.jhosek.main.client.widgets'>
+	<ui:style src="../../../style.css" />
+		
+		<!--
+		-->
+	<g:HTMLPanel styleName="{style.panel}">
+		<div class="{style.sectionHeader}">
+			<ui:msg description="Course:">Course:</ui:msg>	<g:InlineLabel ui:field="name" />
+		</div>
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Description:">Description:</ui:msg></span>
+			<g:InlineLabel ui:field="description" />
+		</div>
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Start Date:">Start Date:</ui:msg></span>
+		<g:DateLabel styleName="{style.formPromptData}" ui:field="startDate" />
+		</div>
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="End Date:">End Date:</ui:msg></span>
+		<g:DateLabel styleName="{style.formPromptData}" ui:field="endDate" />
+		</div>
+		<br />
+		<g:FlowPanel ui:field="linkedMembersPanel">
+			<g:Label styleName="{style.sectionItalic}"><ui:msg description="Loading...">Loading...</ui:msg></g:Label>
+		</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

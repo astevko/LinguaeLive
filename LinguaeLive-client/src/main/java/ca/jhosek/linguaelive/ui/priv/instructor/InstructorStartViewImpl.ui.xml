@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../../style.css" />
+
+	<g:HTMLPanel styleName="{style.panel}"  >
+		<div class="{style.sectionHeader}" ><ui:msg description="Instructor Quick Start">Instructor Quick Start</ui:msg></div>
+		<g:HTMLPanel styleName="{style.leftAlign}"  >
+		<dl>
+		<dt><a href="#addeditcourse:" ><ui:msg description="Register Your Course">Register Your Course</ui:msg></a></dt>
+		<dd><ui:msg description="Use this registration to request a Complementary Class by registering on the LinguaeLive site well ahead of the start of your course. Your syllabus and other details need not be ready before you post; you need only your sessional dates. We recommend that you post requests several months before your instructional period starts.">Use this registration to request a Complementary Class by registering on the LinguaeLive site well ahead of the start of your course. Your syllabus and other details need not be ready before you post; you need only your sessional dates. We recommend that you post requests several months before your instructional period starts.</ui:msg></dd>
+		<dt><ui:msg description="Request A Complementary Course">Request A Complementary Course</ui:msg></dt>
+		<dd><ui:msg description="Once you have found a potential complementary class, contact the instructor directly. Together you will decide how best to use LinguaeLive communication in each of your classes.">Once you have found a potential complementary class, contact the instructor directly. Together you will decide how best to use LinguaeLive communication in each of your classes. (see <a href="#instructortips:">Using LinguaeLive in Your Teaching -- Tips on Structure and Topics</a> )</ui:msg></dd>
+		<dt><ui:msg description="Invite your Students to join your LinguaeLive class">Invite your Students to Join your LinguaeLive Class</ui:msg></dt>
+		<dd><ui:msg description="Once your complementary class is confirmed and your instructional period is beginning">
+		Once your complementary class is confirmed and your instructional period is beginning, send an invitation through LinguaeLive to your own students. This invitation asks each student to sign up for your LinguaeLive class. Upon signup, students will be prompted to find a partner in the complementary class.
+		Remind your students that they must attend to the target time zone when they list their availability. They must be available during mutually convenient times.</ui:msg></dd>
+		</dl>	
+		
+		
+		<ui:msg description="Consider using these functionalities of LinguaeLive during the course:">Consider using these functionalities of LinguaeLive during the course:</ui:msg><br />
+		<ul>
+		<li><ui:msg description="Students can use reminders to set and keep appointments.">Students can use reminders to set and keep appointments.</ui:msg></li>
+		<li><ui:msg description="Instructors can track student sessions (in units of time).">Instructors can track student sessions (in units of time).</ui:msg></li>
+		<li><ui:msg description="Instructors can join student sessions if students wish.">Instructors can join student sessions if students wish.</ui:msg></li>
+		</ul>
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

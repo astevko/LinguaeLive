@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:e='urn:import:com.google.gwt.editor.ui.client'>
+
+	<ui:style src="../../style.css" />
+		
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}"><ui:msg description="Please login">Please login</ui:msg></div>
+		<br />
+		<g:HTMLPanel styleName="{style.leftAlign}" >
+			<div>
+				<div class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></div>
+				<g:TextBox styleName="{style.editField}" ui:field="emailAddress" />
+				<br />
+				<div><span class="{style.formPrompt}"><ui:msg description="Password:">Password:</ui:msg></span></div>
+				<g:PasswordTextBox ui:field="pswd1TextBox"	styleName="{style.editField}" />
+				<br />
+				<div>
+				<g:CheckBox styleName="{style.editField}" ui:field="rememberMe" ><ui:msg description="Remember me on this computer">Remember me on this computer</ui:msg></g:CheckBox> 
+				</div>
+				
+				<g:FlowPanel  styleName="{style.buttonPanel}"  >				
+					<g:Button styleName="{style.button}" addStyleNames="{style.hotbutton}"
+						ui:field="loginButton"><ui:msg description="Login">Login</ui:msg></g:Button>
+					<g:Button styleName="{style.button}" addStyleNames="{style.coldbutton}"
+						ui:field="cancelButton"><ui:msg description="Cancel">Cancel</ui:msg></g:Button>
+				</g:FlowPanel>
+				<br />
+				<g:InlineHyperlink text="forgot password?"
+					styleName="{style.link}" targetHistoryToken="lost:"
+					>
+				<ui:attribute name='text' />
+				  <ui:msg description='forgot password?'>forgot password?</ui:msg>
+				</g:InlineHyperlink>					
+				<br />
+			</div>
+			<!--  g:HTML ui:field="loginFacebookField">Login using Facebook</g:HTML -->
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

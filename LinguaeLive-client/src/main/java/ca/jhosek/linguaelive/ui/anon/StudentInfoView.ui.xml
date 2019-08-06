@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../style.css" />
+
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}"><ui:msg description="Introduction for Students">Introduction for Students</ui:msg></div>		
+		<div class="{style.sectionDesc}"><ui:msg description="LinguaeLive is like having a modern-day pen pal, an expert coach, and student tutor in one.">LinguaeLive is like having a modern-day pen pal, an expert coach, and student tutor in one.</ui:msg></div> 
+		<div class="{style.sectionDesc}"><ui:msg description="You will exchange one time unit of communication in the language that you are learning (your 'target language') for an equal unit in the language in which you are expert (your 'expert language').">You will exchange one time unit of communication in the language that you are learning (your 'target language') for an equal unit in the language in which you are expert (your 'expert language').</ui:msg></div> 
+		<div class="{style.sectionDesc}"><ui:msg description="Your instructor will guide you on the topics to discuss. Your instructor will tell you whether you need to document the time that you communicated using the timing buttons on the Session Control Panel.">Your instructor will guide you on the topics to discuss. Your instructor will tell you whether you need to document the time that you communicated using the timing buttons on the Session Control Panel.</ui:msg></div> 
+		<div class="{style.sectionDesc}"><ui:msg description="If your instructor agrees, you may choose the topic when you are speaking in your target language. In exchange, your LinguaeLive partner(s) decides the topic when you are speaking in your expert language.">If your instructor agrees, you may choose the topic when you are speaking in your target language. In exchange, your LinguaeLive partner(s) decides the topic when you are speaking in your expert language.</ui:msg></div>
+		<div class="{style.sectionDesc}"><ui:msg description="If you are deciding the topics, consider asking about mutual interests or current events.">If you are deciding the topics, consider asking about mutual interests or current events.</ui:msg></div>		
+		<g:FlowPanel styleName="{style.buttonPanelLeft}" >
+			<g:Button styleName="{style.button}"  addStyleNames="{style.signupButton}"  ui:field="newStudentButton"><ui:msg description="Student Sign Up">Student Sign Up</ui:msg></g:Button>
+		</g:FlowPanel>
+	    <div class="{style.sectionHeader}"> <ui:msg description="Introductory Tutorial">Introductory Tutorial</ui:msg> </div>
+		<div class="{style.sectionDesc}"> <a href="http://www.youtube.com/watch?v=PJC8lN1780Q" ><ui:msg description="watch in youtube">watch in youtube</ui:msg></a></div> 
+		<iframe width="640" height="480" src="http://www.youtube.com/embed/PJC8lN1780Q" frameborder="0"></iframe>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,127 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client" xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.ui' xmlns:x2='urn:import:ca.jhosek.main.client.widgets'>
+	<ui:style src="../../../style.css" />
+	<ui:with field="constants" type="ca.jhosek.main.client.LLConstants" />
+		
+	<!--
+	editor panel for CourseLinkProxy
+	Plus showing the linked courses
+	-->
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}"><ui:msg description="Linked Courses">Linked Courses</ui:msg></div>
+		<div class="{style.sectionDesc}"> </div>
+		<g:DockLayoutPanel unit="EM" width="50em" height="30em">
+			<g:west size="15"> <!-- the course that is the focus -->
+				<g:HTMLPanel >
+					<div><ui:msg description="Requested by">Requested by</ui:msg></div>
+					<br />
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Course Name:">Course Name:</ui:msg></span>
+						<g:Label ui:field="courseA_name" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Description:">Description:</ui:msg></span>
+						<g:TextArea ui:field="courseA_description" readOnly='true' />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Instructor:">Instructor:</ui:msg></span>
+						<g:InlineLabel ui:field="courseA_instructor_fname" />&nbsp;<g:InlineLabel ui:field="courseA_instructor_lname" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="School:">School:</ui:msg></span>
+						<g:Label ui:field="courseA_instructor_school" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Location:">Location:</ui:msg></span>
+						<g:Label ui:field="courseA_instructor_location" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Time Zone:">Time Zone:</ui:msg></span>
+						<g:Label ui:field="courseA_instructor_timezone" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></span>
+						<g:Label ui:field="courseA_instructor_email" />
+					</div>
+					
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Estimated Size:">Estimated Size:</ui:msg></span>
+					</div>
+					<g:NumberLabel ui:field="courseA_estimatedMemberSize" />
+
+				</g:HTMLPanel>
+			</g:west>
+			<g:west size="15"> <!-- the other course -->
+
+				<g:HTMLPanel >
+					<div><ui:msg description="Requested to">Requested to</ui:msg></div>				
+					<br />
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Course Name:">Course Name:</ui:msg></span>
+						<g:Label ui:field="courseB_name" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Description:">Description:</ui:msg></span>
+						<g:TextArea ui:field="courseB_description" readOnly='true' />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Instructor:">Instructor:</ui:msg></span>
+						<g:InlineLabel ui:field="courseB_instructor_fname" />&nbsp;<g:InlineLabel ui:field="courseB_instructor_lname" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="School:">School:</ui:msg></span>
+						<g:Label ui:field="courseB_instructor_school" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Location:">Location:</ui:msg></span>
+						<g:Label ui:field="courseB_instructor_location" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Time Zone:">Time Zone:</ui:msg></span>
+						<g:Label ui:field="courseB_instructor_timezone" />
+					</div>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Email Address:">Email Address:</ui:msg></span>
+						<g:Label ui:field="courseB_instructor_email" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Estimated Size:">Estimated Size:</ui:msg></span>
+					</div>
+					<g:NumberLabel ui:field="courseB_estimatedMemberSize" />
+				</g:HTMLPanel>
+			</g:west>
+			<g:center>
+				<g:HTMLPanel	>
+					<div>
+						<span class="{style.formPrompt}"><ui:msg description="Link Initiated on:">Link Initiated on:</ui:msg></span>
+					</div>
+						<g:DateLabel ui:field="createDate" 
+							customFormat="{constants.mdyhmzDateFormatterPattern}" />
+					<div>
+						<br />
+						<span class="{style.formPrompt}"><ui:msg description="Link Status:">Link Status:</ui:msg></span>
+					</div>
+					<g:FlowPanel >
+					
+						<g:Label  ui:field="acceptedBlurb" styleName="{style.sectionItalic}" ><ui:msg description="Invitation ACCEPTED, courses are linked!">Invitation ACCEPTED, courses are linked!</ui:msg></g:Label>
+						<g:Label  ui:field="pendingBlurb" styleName="{style.sectionItalic}" ><ui:msg description="Invitation Pending Response">Invitation Pending Response</ui:msg></g:Label>
+						<g:Label  ui:field="declinedBlurb"  styleName="{style.sectionItalic}" ><ui:msg description="Invitation DECLINED, courses are NOT linked">Invitation DECLINED, courses are NOT linked</ui:msg></g:Label>
+						
+						<g:Button ui:field="confirmLink" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Accept Link Request">Accept Link Request</ui:msg></g:Button>
+						<g:Button ui:field="declineLink" styleName="{style.button}" addStyleNames="{style.coldbutton}" ><ui:msg description="Decline Link Request">Decline Link Request</ui:msg></g:Button>
+						
+						<g:Button ui:field="unlinkCourses" styleName="{style.button}" addStyleNames="{style.coldbutton}"  ><ui:msg description="Unlink Courses">Unlink Courses</ui:msg></g:Button>
+						
+					</g:FlowPanel>
+				</g:HTMLPanel>
+				
+			</g:center>		
+		</g:DockLayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

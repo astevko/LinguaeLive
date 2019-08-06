@@ -1,0 +1,117 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.ui' 
+	xmlns:x2='urn:import:ca.jhosek.main.client.widgets' 
+	>
+	<ui:style src="../../../style.css" />
+		
+		<!--
+			editor panel for CourseProxy
+			Plus showing the linked courses and students within the course 	 
+		-->
+	<g:HTMLPanel styleName="{style.panel}" >		
+	<g:DockLayoutPanel unit="EM" height="40em" >
+		<g:west size="20"> <!-- the course that is the focus -->	
+			<g:HTMLPanel height="30em" >
+				<div class="{style.sectionHeader}" ><ui:msg description="Course:">Course:</ui:msg> <g:InlineLabel ui:field="name" /></div>
+				<div class="{style.sectionDesc}" > </div>
+				<br />
+				
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Description:">Description:</ui:msg></span>
+				</div>
+				<g:TextArea ui:field="description" characterWidth="30" visibleLines="3" readOnly='true' />
+		
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Estimated Size:">Estimated Size:</ui:msg></span>
+				</div>
+					<g:NumberLabel  ui:field="estimatedMemberSize" />
+				
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Invite Code:">Invite Code:</ui:msg></span>
+				</div>
+					<g:Label  ui:field="inviteCode" />
+				
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Target Language:">Target Language:</ui:msg></span>
+				</div>
+					<x2:EnumLabel styleName="{style.formPromptData}"
+						ui:field="targetLanguage" />
+			
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Expert Language:">Expert Language:</ui:msg></span>
+				</div>
+					<x2:EnumLabel styleName="{style.formPromptData}"
+						ui:field="expertLanguage" />
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Start Date:">Start Date:</ui:msg></span>
+				</div>
+					<g:DateLabel styleName="{style.formPromptData}"  ui:field="startDate"/>
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="End Date:">End Date:</ui:msg></span>
+				</div>
+					<g:DateLabel styleName="{style.formPromptData}"  ui:field="endDate"/>
+		
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Solely one partner:">Solely one partner:</ui:msg></span>
+				</div>
+					<g:CheckBox styleName="{style.formPromptData}"  ui:field="singlePartnerPreferred" enabled="false"/>
+		
+
+				<g:FlowPanel styleName="{style.buttonPanel}">
+					<g:Button ui:field="studentReportButton" styleName="{style.button}" ><ui:msg description="Student Report">Student Report</ui:msg></g:Button>
+					<g:Button ui:field="sessionReportButton" styleName="{style.button}" ><ui:msg description="Session Report">Session Report</ui:msg></g:Button>
+				</g:FlowPanel>
+				<g:FlowPanel styleName="{style.buttonPanel}">
+					<g:Button ui:field="editCourseButton" styleName="{style.button}" ><ui:msg description="Edit Course Details">Edit Course Details</ui:msg></g:Button>
+				</g:FlowPanel>
+				<g:FlowPanel styleName="{style.buttonPanel}">
+					<g:Button ui:field="deleteCourse" styleName="{style.button}" ><ui:msg description="** Delete Course **">** Delete Course **</ui:msg></g:Button>
+				</g:FlowPanel>
+				
+			</g:HTMLPanel>
+		</g:west>
+		<g:west size="30" >		
+			<g:StackLayoutPanel ui:field="stacklayoutpanel"  unit='EM' addStyleNames="{style.stackLayoutPanel}" > 
+				<g:stack >
+					<g:header size='2'><div class="{style.stackLayoutPanelHeader}" ><ui:msg description="Potential Complementary Courses">Potential Complementary Courses</ui:msg></div></g:header>
+					<g:HTMLPanel>
+						<g:Label ui:field="unlinkedCoursesBlurb" styleName="{style.sectionDesc}"/>
+						<g:FlowPanel  ui:field="unlinkedCoursesPanel" >
+							<g:Label styleName="{style.sectionItalic}"><ui:msg description="Loading...">Loading...</ui:msg></g:Label>
+						</g:FlowPanel>
+						<g:FlowPanel styleName="{style.buttonPanel}">
+							<g:Button ui:field="togglePastCoursesButton" styleName="{style.button}" ><ui:msg description="Show Past Courses">Show Past Courses</ui:msg></g:Button>
+						</g:FlowPanel>
+					</g:HTMLPanel>				
+				</g:stack>
+				<g:stack>
+					<g:header size='2'> <div class="{style.stackLayoutPanelHeader}" ><ui:msg description="Linked Courses">Linked Courses</ui:msg></div></g:header>
+					<g:HTMLPanel>
+						<div class="{style.sectionDesc}"><ui:msg description="Courses that are linked to yours.">Courses that are linked to yours.</ui:msg> </div>
+						<g:FlowPanel ui:field="linkedCoursesPanel" >
+							<g:Label styleName="{style.sectionItalic}"><ui:msg description="Loading...">Loading...</ui:msg></g:Label>
+						</g:FlowPanel>
+					</g:HTMLPanel>				
+				</g:stack>
+				<g:stack>
+					<g:header size='2'><div class="{style.stackLayoutPanelHeader}" ><ui:msg description="Students">Students</ui:msg></div></g:header>
+					<g:HTMLPanel>
+						<div class="{style.sectionDesc}"> <ui:msg description="Students that are members of this course.">Students that are members of this course.</ui:msg></div>
+						<g:FlowPanel ui:field="linkedMembersPanel" >
+							<g:Label styleName="{style.sectionItalic}"><ui:msg description="Loading...">Loading...</ui:msg></g:Label>
+						</g:FlowPanel>
+						<g:FlowPanel  styleName="{style.buttonPanel}"  >
+							<g:Button ui:field="sendStudentInviteEmail" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Invite students to this course">Invite students to this course</ui:msg></g:Button>
+						</g:FlowPanel>
+					</g:HTMLPanel>				
+				</g:stack>
+			</g:StackLayoutPanel>
+		</g:west>
+	</g:DockLayoutPanel>
+	</g:HTMLPanel> 
+</ui:UiBinder> 

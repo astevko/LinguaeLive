@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.widgets' 
+	>
+
+	<ui:style src="../../../style.css" />
+		
+		<!--
+			editor panel for MemberProxy 	 
+		-->
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}" >Add yourself to a Course</div>
+		<div class="{style.sectionHeader2}">Thanks for signing up for another LinguaeLive course.</div>
+		<div class="{style.sectionDesc}">Please enter the course invite code given to you by your Instructor.</div>
+		
+		<g:HTMLPanel styleName="{style.leftAlign}" ui:field="courseForm" >
+			<div>
+				<span class="{style.formPrompt}" >Course Invite Code:</span>
+				<g:TextBox styleName="{style.editField}"  ui:field="courseInviteCode"/>
+			</div>
+			<g:FlowPanel  styleName="{style.buttonPanel}"  >
+				<g:Button styleName="{style.button}" addStyleNames="{style.hotbutton}" ui:field="addCourseMemberButton"> Submit Code </g:Button>
+			</g:FlowPanel>
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

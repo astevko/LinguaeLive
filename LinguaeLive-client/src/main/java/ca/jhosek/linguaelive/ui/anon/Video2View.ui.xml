@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../style.css" />
+	<g:HTMLPanel styleName="{style.panel}" width="700px" >
+		<div class="{style.sectionHeader}"> <ui:msg description="Instructional Video">Instructional Video</ui:msg>` </div>
+		<div class="{style.sectionDesc}"> <a href=" http://www.youtube.com/watch?v=gRpkvuxLwwQ" ><ui:msg description="watch in YouTube">watch in YouTube</ui:msg></a> </div>
+		<iframe width="640" height="360" src="http://www.youtube.com/embed/gRpkvuxLwwQ" frameborder="0"></iframe>
+	</g:HTMLPanel>
+</ui:UiBinder> 
+

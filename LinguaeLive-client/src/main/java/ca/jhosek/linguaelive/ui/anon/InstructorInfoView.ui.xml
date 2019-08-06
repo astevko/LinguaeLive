@@ -1,0 +1,32 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../style.css" />
+
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}"><ui:msg description="Introduction for Instructors">Introduction for Instructors</ui:msg></div>
+		<div class="{style.sectionDesc}"><ui:msg description="LinguaeLive strengthens all four language skills plus motivation.">LinguaeLive strengthens all four language skills <i>plus</i> motivation.</ui:msg></div>
+ 		<div class="{style.sectionDesc}"><ui:msg description="Versatile and user friendly, this tool enriches institutional learning environments.">Versatile and user friendly, this tool enriches institutional learning environments.</ui:msg></div>
+ 		<div class="{style.sectionDesc}"><ui:msg description="You can find complementary classes to tandem with your language classes on LinguaeLive.">You can find complementary classes to tandem with your language classes on LinguaeLive.</ui:msg></div>
+ 		<div class="{style.sectionDesc}"><ui:msg description="Your students can communicate with their peers using the te chnology you prefer, for instance, by Voice (and Video) over Internet Protocol (VOIP, e.g., Skype, Google Talk), Chat, e-mail, even by writing letters!">Your students can communicate with their peers using the te chnology you prefer, for instance, by Voice (and Video) over Internet Protocol (VOIP, e.g., Skype, Google Talk), Chat, e-mail, even by writing letters!</ui:msg></div>
+ 		<div class="{style.sectionDesc}"><ui:msg description="If they collaborate using VOIP, your students can use LinguaeLive’s timing function to document how long they spoke. You can call up that documented record instantaneously.">If they collaborate using VOIP, your students can use LinguaeLive’s timing function to document how long they spoke. You can call up that documented record instantaneously.</ui:msg></div>
+		<div class="{style.sectionItalic}"><ui:msg description="If you are using VOIP or Chat, your students need:">If you are using VOIP or Chat, your students need:</ui:msg></div>
+		<ul>
+		<li><span class="{style.sectionItalic}"><ui:msg description="Access:">Access:</ui:msg></span><ui:msg description="to a computer with broadband internet.">to a computer with broadband internet.</ui:msg></li>
+		<li><span class="{style.sectionItalic}"><ui:msg description="Hardware:">Hardware:</ui:msg></span><ui:msg description="for VOIP, a headset or built-in microphone/speaker equipment for voice communication and external or built-in camera for visual communication.">for VOIP, a headset or built-in microphone/speaker equipment for voice communication and external or built-in camera for visual communication.</ui:msg></li>
+		<li><span class="{style.sectionItalic}"><ui:msg description="Software:">Software:</ui:msg></span><ui:msg description="to  communicate orally your students need a separate VOIP program, which can be downloaded for free. To communicate using Chat, your students can use the LinguaeLive Chat Board on the Session Control Panel, or a separate Chat program, which can be downloaded for free.">to  communicate orally your students need a separate VOIP program, which can be downloaded for free. To communicate using Chat, your students can use the LinguaeLive Chat Board on the Session Control Panel, or a separate Chat program, which can be downloaded for free.</ui:msg></li>
+		</ul>  
+		<div class="{style.sectionItalic}"><ui:msg description="Instructor's work:">Instructor's work:</ui:msg></div>
+		<ul>
+		<li><span class="{style.sectionItalic}"><ui:msg description="Prior to the course:">Prior to the course:</ui:msg></span><ui:msg description="Sign up, then send messages to instructors of potential complementary courses. Communicate with the instructor with whom you have linked courses to organize the details.">Sign up, then send messages to instructors of potential complementary courses. Communicate with the instructor with whom you have linked courses to organize the details.</ui:msg></li>
+		<li><span class="{style.sectionItalic}"><ui:msg description="During the course:">During the course:</ui:msg></span><ui:msg description="LinguaeLive facilitates oversight. You can monitor the number and duration of student sessions with Session Reports.">LinguaeLive facilitates oversight. You can monitor the number and duration of student sessions with Session Reports.</ui:msg></li>
+		</ul>
+	
+		<g:FlowPanel styleName="{style.buttonPanelLeft}" >
+			<g:Button styleName="{style.button}"  addStyleNames="{style.signupButton}" ui:field="newInstructorButton"><ui:msg description="Instructor Sign Up">Instructor Sign Up</ui:msg></g:Button>
+			<g:InlineLabel>&nbsp;&nbsp;&nbsp;</g:InlineLabel>
+			<g:Button styleName="{style.button}"  addStyleNames="{style.signupButton}" ui:field="browseCoursesButton"><ui:msg description="Browse Registered Courses">Browse Registered Courses</ui:msg>"</g:Button>
+		</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

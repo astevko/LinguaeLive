@@ -1,0 +1,43 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'>
+
+
+	<ui:style src="../../style.css" />
+		
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}"><ui:msg description="Please tell us what is on your mind.">Please tell us what is on your mind.</ui:msg> </div>
+		<div class="{style.sectionItalic}"><ui:msg description="Note all fields are required.">Note all fields are required.</ui:msg> </div>
+		<g:HTMLPanel styleName="{style.leftAlign}">
+			<div>
+				<br />
+				<span class="{style.formPrompt}"><ui:msg description="Your email address:">Your email address:</ui:msg></span><!-- form prompt -->
+				<br />
+				<g:TextBox styleName="{style.editField}" ui:field="emailAddress" />
+				<br />
+				<br />
+				<span class="{style.formPrompt}"><ui:msg description="Your name:">Your name:</ui:msg></span><!-- form prompt -->
+				<br />
+				<g:TextBox styleName="{style.editField}" ui:field="name" />
+				<br />
+				<br />
+				<span class="{style.formPrompt}"><ui:msg description="Reason for contact:">Reason for contact:</ui:msg></span><!-- form prompt -->
+				<br />
+				<g:ValueListBox styleName="{style.editField}" ui:field="topic" />
+				<br />
+				<br />
+				<span class="{style.formPrompt}"><ui:msg description="Details:">Details:</ui:msg></span><!-- form prompt -->
+				<br />
+				<g:TextArea styleName="{style.editField}" visibleLines="10" ui:field="messageBody" characterWidth="50" />
+				<br />
+				<g:FlowPanel styleName="{style.buttonPanel}">
+					<g:Button styleName="{style.button}" addStyleNames="{style.hotbutton}"
+						ui:field="submitButton"><ui:msg description="Submit">Submit</ui:msg> </g:Button>
+					<g:Button styleName="{style.button}" addStyleNames="{style.coldbutton}"
+						ui:field="cancelButton"><ui:msg description="Cancel">Cancel</ui:msg>"</g:Button>
+				</g:FlowPanel>
+			</div>
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

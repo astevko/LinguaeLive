@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../../style.css" />
+
+	<g:HTMLPanel styleName="{style.panel}"  >
+		<div class="{style.sectionHeader}" ><ui:msg description="Using LinguaeLive in Your Teaching">Using LinguaeLive in Your Teaching</ui:msg></div>
+		<div class="{style.sectionHeader2}" ><ui:msg description="Tips on Structure and Topics">Tips on Structure and Topics</ui:msg></div>
+		
+		<div><ui:msg description="Each instructor will use LinguaeLive differently, yet these pointers may help.">Each instructor will use LinguaeLive differently, yet these pointers may help.</ui:msg></div>
+		
+		<div class="{style.sectionHeader2}" ><ui:msg description="The Main Concept:">The Main Concept:</ui:msg></div>
+		<div><ui:msg description="It is challenging and unnecessary for complementary instructors to work out a joint curriculum.">It is challenging and unnecessary for complementary instructors to work out a joint curriculum.</ui:msg></div>
+		<div><ui:msg description="We find it elegant and workable to have students exchange units of discussion in their expert language for units of discussion in their target language. The student speaking in the target language determines the parameters of the communication such as topic, pace, repetition, and style.">We find it elegant and workable to have students exchange units of discussion in their expert language for units of discussion in their target language. The student speaking in the target language determines the parameters of the communication such as topic, pace, repetition, and style.</ui:msg></div>
+		
+		<div class="{style.sectionHeader2}" ><ui:msg description="Consider:">Consider:</ui:msg></div>
+		<div class="{style.sectionDescIndent}" ><ui:msg description="Having students learn about their paired institution and locale in advance.">Having students learn about their paired institution and locale in advance.</ui:msg></div> 
+		<div class="{style.sectionDescIndent}" ><ui:msg description="Role playing meeting people in the target language.">Role playing meeting people in the target language.</ui:msg></div> 
+		<div class="{style.sectionDescIndent}" ><ui:msg description="Tailoring the communication sessions to your pedagogical aims.">Tailoring the communication sessions to your pedagogical aims.</ui:msg></div>
+		<div class="{style.sectionDescIndent}" ><ui:msg description="Making the communication mandatory. The power of the grade can be useful.">Making the communication mandatory. The power of the grade can be useful.</ui:msg></div> 
+		
+		<div class="{style.sectionHeader2}" ><ui:msg description="Ways in which LinguaeLive is being used:">Ways in which LinguaeLive is being used:</ui:msg></div>
+		
+		<div class="{style.sectionHeader}" ><ui:msg description="During or after discussions">During or after discussions</ui:msg> </div>
+		<div class="{style.sectionHeader2}" ><ui:msg description="Students">Students</ui:msg></div>
+		<ul>
+		<li>	<ui:msg description="Submit short reports for evaluation. Variations can achieve certain aims: for instance, one Canadian student composed each report in a different tense. Essays might take the form of interviews, analysis, description, joint writing, fiction, news reporting, and editorials.">Submit short reports for evaluation. <br /> Variations can achieve certain aims: for instance, one Canadian student composed each report in a different tense. Essays might take the form of interviews, analysis, description, joint writing, fiction, news reporting, and editorials.</ui:msg></li>  
+		<li>	<ui:msg description="Investigate pre-determined topics and present the results in class.">Investigate pre-determined topics and present the results in class.</ui:msg></li>
+		<li>	<ui:msg description="Think through a particular theme of interest and develop the ideas in a formal essay.">Think through a particular theme of interest and develop the ideas in a formal essay.</ui:msg></li> 
+		<li>	<ui:msg description="Talk about news or historical events.">Talk about news or historical events.</ui:msg></li>
+		<li> 	<ui:msg description="Create plays, poems, essays or other texts together.">Create plays, poems, essays or other texts together.</ui:msg></li> 
+		<li>	<ui:msg description="Share topics that treated in class. Because their peers are expert both in the target language and culture, they generally can speak to the issues without any particular preparation.">Share topics that treated in class. Because their peers are expert both in the target language and culture, they generally can speak to the issues without any particular preparation.</ui:msg></li>
+		<li>	<ui:msg description="Work through grammar, style, and pronunciation challenges together.">Work through grammar, style, and pronunciation challenges together.</ui:msg></li>
+		</ul>
+		<div class="{style.sectionHeader2}" ><ui:msg description="Instructors">Instructors</ui:msg></div>
+		<ul>
+		<li>	<ui:msg description="Explicitly bring the discussions into the classroom. For instance, ask students to volunteer ideas, report back, discuss challenges.">Explicitly bring the discussions into the classroom. For instance, ask students to volunteer ideas, report back, discuss challenges.</ui:msg></li>
+		<li> 	<ui:msg description="Assign discussion topics or activities.">Assign discussion topics or activities.</ui:msg></li>
+		<li> 	<ui:msg description="Comment on, rather than grade the early written assignments. This allows the students to explore in the written modality as they are exploring in the oral-laural modalities.">Comment on, rather than grade the early written assignments. This allows the students to explore in the written modality as they are exploring in the oral-laural modalities.</ui:msg></li>
+		</ul>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

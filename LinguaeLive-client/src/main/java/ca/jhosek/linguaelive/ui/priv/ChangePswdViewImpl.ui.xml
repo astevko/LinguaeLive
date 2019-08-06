@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:x='urn:import:ca.jhosek.main.client.ui'
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'>
+	<ui:style src="../../style.css" />
+		
+	<g:HTMLPanel  styleName="{style.panel}" >
+	<g:DockLayoutPanel unit="EM" height="29EM">
+		<g:west size="25">
+			<g:HTMLPanel  width="25em">
+				<div class="{style.sectionHeader}">Change Password</div>
+				<div class="{style.sectionDesc}"> </div>
+				<g:HTMLPanel >
+
+					<!-- editor panel for UserProxy -->
+					<div>
+						<g:InlineLabel ui:field="firstName" /> <g:InlineLabel ui:field="lastName" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}">New Password:</span>
+						<g:PasswordTextBox ui:field="password" />
+					</div>
+
+					<div>
+						<span class="{style.formPrompt}">Password Hint:</span>
+						<g:TextBox ui:field="hint" />
+					</div>
+
+					<g:FlowPanel styleName="{style.buttonPanelLeft}" >
+						<g:Button ui:field="saveUserButton" styleName="{style.button}" addStyleNames="{style.hotbutton}"  >Change Password</g:Button>
+						<g:Button ui:field="cancelButton" styleName="{style.button}" addStyleNames="{style.coldbutton}">Cancel</g:Button>
+					</g:FlowPanel>
+
+				</g:HTMLPanel>
+			</g:HTMLPanel>
+		</g:west>
+	</g:DockLayoutPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

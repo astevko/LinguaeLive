@@ -1,0 +1,41 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.widgets' 
+	>
+
+	<ui:style src="../../style.css" />
+		
+		<!--
+			editor panel for ContactInfoProxy 	 
+		-->
+	<g:HTMLPanel styleName="{style.panel}"   >
+		<div class="{style.sectionHeader}" >Add/Edit Your Contact Info</div>
+		<div class="{style.sectionDesc}">Specify your contact info here.</div>
+		<br />
+		<div>
+			<span class="{style.formPrompt}">Type:</span>
+		</div>
+			<g:ValueListBox styleName="{style.formPromptEdit}"
+				ui:field="type" />
+		
+		<div>
+			<span class="{style.formPrompt}">Number/Id:</span>
+			<e:ValueBoxEditorDecorator ui:field="info">
+				<e:valuebox>
+					<g:TextBox styleName="{style.formPromptEdit}" />
+				</e:valuebox>
+			</e:ValueBoxEditorDecorator>
+		</div>
+		
+
+		<g:FlowPanel  styleName="{style.buttonPanel}"  >
+			<g:Button ui:field="saveButton" styleName="{style.button}" addStyleNames="{style.hotbutton}" >Save</g:Button>
+			<!--  g:Button ui:field="saveMoreButton" styleName="{style.button}" addStyleNames="{style.hotbutton}" >Save &amp; Add More</g:Button -->
+			<g:Button ui:field="cancelButton" styleName="{style.button}" addStyleNames="{style.coldbutton}" >Cancel</g:Button>
+		</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

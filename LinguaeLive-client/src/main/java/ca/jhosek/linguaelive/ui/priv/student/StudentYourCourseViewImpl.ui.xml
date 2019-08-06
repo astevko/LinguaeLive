@@ -1,0 +1,142 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.ui' 
+	xmlns:x2='urn:import:ca.jhosek.main.client.widgets' 
+	>
+	<ui:style src="../../../style.css" />
+		<!--
+			editor panel for CourseProxy
+			Plus showing the linked courses and students within the course 	 
+		-->
+	<g:HTMLPanel styleName="{style.panel}" >		
+	<g:DockLayoutPanel unit="EM" height="35em" >
+		<g:west size="20"> <!-- the course that is the focus -->	
+			<g:HTMLPanel >
+				<div class="{style.sectionHeader}" ><ui:msg description="Course:">Course:</ui:msg> <g:InlineLabel ui:field="name" /></div>
+				<div class="{style.sectionDesc}" > </div>
+				<br />
+				
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Description:">Description:</ui:msg></span>
+					<g:Label ui:field="description" />
+				</div>
+		
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Target Language:">Target Language:</ui:msg></span>
+				</div>
+					<x2:EnumLabel styleName="{style.formPromptData}"
+						ui:field="targetLanguage" />
+			
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Expert Language:">Expert Language:</ui:msg></span>
+				</div>
+					<x2:EnumLabel styleName="{style.formPromptData}"
+						ui:field="expertLanguage" />
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Start Date:">Start Date:</ui:msg></span>
+				</div>
+					<g:DateLabel styleName="{style.formPromptData}"  ui:field="startDate"/>
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="End Date:">End Date:</ui:msg></span>
+				</div>
+					<g:DateLabel styleName="{style.formPromptData}"  ui:field="endDate"/>
+		
+				
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Available Hours Selected:">Available Hours Selected:</ui:msg></span>
+				</div>
+					<g:NumberLabel  ui:field="scheduleSize" />
+				
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Total Sessions:">Total Sessions:</ui:msg></span>
+					<g:NumberLabel  ui:field="totalSessions" />
+				</div>
+				
+				<div>
+					<span class="{style.formPrompt}"><ui:msg description="Total Session Minutes:">Total Session Minutes:</ui:msg></span>
+					<g:NumberLabel  ui:field="totalSessionMinutes" />
+				</div>
+				
+				<div>
+				<span class="{style.formPrompt}">
+					<x2:EnumInlineLabel ui:field="targetLanguagePrompt" /> <ui:msg description="Sessions:">Sessions:</ui:msg> </span>
+					<g:NumberLabel  ui:field="targetSessions" />
+				</div>
+				
+				<div>
+				<span class="{style.formPrompt}">
+					<x2:EnumInlineLabel ui:field="targetSessionMinutesPrompt" />  <ui:msg description="Session Minutes:">Session Minutes:</ui:msg></span>
+					<g:NumberLabel  ui:field="targetSessionMinutes" />
+				</div>
+				
+				
+				<div>
+				<span class="{style.formPrompt}">
+					<x2:EnumInlineLabel ui:field="expertSessionsPrompt" /> <ui:msg description="Sessions:">Sessions:</ui:msg></span>
+					<g:NumberLabel  ui:field="expertSessions" />
+				</div>
+				
+				<div>
+				<span class="{style.formPrompt}">
+					<x2:EnumInlineLabel ui:field="expertSessionMinutesPrompt" /> <ui:msg description="Session Minutes:">Session Minutes:</ui:msg></span>
+					<g:NumberLabel  ui:field="expertSessionMinutes" />
+				</div>
+
+				<g:FlowPanel styleName="{style.buttonPanel}">
+					<g:Button ui:field="sessionReportButton" styleName="{style.button}" ><ui:msg description="Session Report">Session Report</ui:msg></g:Button>
+				</g:FlowPanel>
+				
+				<g:FlowPanel styleName="{style.buttonPanel}">
+					<g:Button ui:field="deleteMember" styleName="{style.button}" ><ui:msg description="** Withdraw from Course **">** Withdraw from Course **</ui:msg></g:Button>
+				</g:FlowPanel>
+			</g:HTMLPanel>
+		</g:west>
+		<g:west size="30" >		
+			<g:StackLayoutPanel ui:field="stacklayoutpanel" unit='EM' addStyleNames="{style.stackLayoutPanel}" > 
+				<g:stack >
+					<g:header size='2'><div class="{style.stackLayoutPanelHeader}" ><ui:msg description="Your Availability for Sessions">Your Availability for Sessions</ui:msg></div></g:header>
+					<g:HTMLPanel>
+						<div class="{style.sectionDesc"> <g:CheckBox ui:field="available"> <ui:msg description="You are available for new partner invites when checked.">You are available for new partner invites when checked.</ui:msg></g:CheckBox></div>
+						<div class="{style.sectionDesc}"><ui:msg description="Specify the hours you prefer for new sessions. Selecting none will match all.">Specify the hours you prefer for new sessions. Selecting none will match all.</ui:msg> </div>
+						<g:FlowPanel  ui:field="schedulePanel" >
+							<g:Label styleName="{style.sectionItalic}"><ui:msg description="Loading availability...">Loading availability...</ui:msg></g:Label>
+						</g:FlowPanel>
+						<div class="{style.sectionDesc}"><ui:msg description=" Hours are offset for time zone:"> Hours are offset for time zone:</ui:msg> <g:InlineLabel ui:field="userTimeZone" /> </div>
+					</g:HTMLPanel>				
+				</g:stack>
+				<g:stack >
+					<g:header size='2'><div class="{style.stackLayoutPanelHeader}" ><ui:msg description="Potential Complementary Students">Potential Complementary Students</ui:msg></div></g:header>
+					<g:HTMLPanel>
+						<div class="{style.sectionDesc}"><ui:msg description="Invite students to pair up.">Invite students to pair up.</ui:msg> <g:Button ui:field="refreshAvailableStudentsPanel"><ui:msg description="Refresh">Refresh</ui:msg></g:Button> </div>
+						<g:FlowPanel  ui:field="availableStudentsPanel" >
+							<g:Label styleName="{style.sectionItalic}"><ui:msg description="Loading...">Loading...</ui:msg></g:Label>
+						</g:FlowPanel>
+					</g:HTMLPanel>				
+				</g:stack>
+				<g:stack>
+					<g:header size='2'> <div class="{style.stackLayoutPanelHeader}" ><ui:msg description="Your Partners">Your Partners</ui:msg></div></g:header>
+					<g:HTMLPanel>
+						<div class="{style.sectionDesc}"><ui:msg description="These are the students with whom you are linked. Select one to start a new session.">These are the students with whom you are linked. Select one to start a new session.</ui:msg></div>
+						<g:FlowPanel ui:field="sessionInvitesPanel" >
+							<g:Label styleName="{style.sectionItalic}"><ui:msg description="Loading...">Loading...</ui:msg></g:Label>
+						</g:FlowPanel>
+					</g:HTMLPanel>				
+				</g:stack>
+				<!--  g:stack>
+					<g:header size='2'><div class="{style.stackLayoutPanelHeader}" >Sessions</div></g:header>
+					<g:HTMLPanel>
+						<div class="{style.sectionDesc}">Your sessions for this course. Select to open the session control panel.</div>
+						<g:FlowPanel ui:field="sessionsPanel" >
+							<g:Label styleName="{style.sectionItalic}">Loading...</g:Label>
+						</g:FlowPanel>
+					</g:HTMLPanel>				
+				</g:stack -->
+			</g:StackLayoutPanel>
+		</g:west>
+	</g:DockLayoutPanel>
+	</g:HTMLPanel> 
+</ui:UiBinder> 

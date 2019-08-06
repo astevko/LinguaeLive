@@ -1,0 +1,23 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../../style.css" />
+
+	<g:HTMLPanel>
+		<div class="{style.sectionHeader}" ><ui:msg description="Student Quick Start">Student Quick Start</ui:msg></div>
+		<g:HTMLPanel styleName="{style.leftAlign}"  >
+			<dl>
+			<dt><a href="#myprofile:" ><ui:msg description="Fill out your contact info">Fill out your contact info</ui:msg></a></dt>
+			<dd><ui:msg description="Enter your contact info (phone, skype, etc)">Enter your contact info (phone, skype, etc)</ui:msg></dd>
+			<dt><a href="#yourcourses:" ><ui:msg description="Locate &amp; Contact a Complementary Partner">Locate &amp; Contact a Complementary Partner</ui:msg></a></dt>
+			<dd><ui:msg description="Once you have entered your contact information, ">Once you have entered your contact information, select your availability in your time zone. Try to select availability that will be convenient for peers in the times zones of your target language. Once you have potential complementary partner(s), contact them from your Potential Complementary Student list by clicking their name to request pairing. Then, with input from your instructor, decide together on topics, session times, and means of communication. LinguaeLive is free-standing so that you can use the communication technology (e.g., VOIP, chat, phone) that works best for your tandems.<br/> Use the <dt><a href="#sessioncontrolplace:">Session Control Panel</a></dt> to Document your Sessions.<br/> Document when you begin and end sessions in each language if this functionality is useful to you or your instructor.</ui:msg></dd>
+			</dl>
+
+		    <div class="{style.sectionHeader}"> <ui:msg description="Introductory Tutorial">Introductory Tutorial</ui:msg> </div>
+			<div class="{style.sectionDesc}"> <a href="http://www.youtube.com/watch?v=PJC8lN1780Q" ><ui:msg description="watch in youtube">watch in youtube</ui:msg></a></div> 
+			<iframe width="640" height="480" src="http://www.youtube.com/embed/PJC8lN1780Q" frameborder="0"></iframe>
+
+		</g:HTMLPanel>	
+	</g:HTMLPanel>
+</ui:UiBinder> 

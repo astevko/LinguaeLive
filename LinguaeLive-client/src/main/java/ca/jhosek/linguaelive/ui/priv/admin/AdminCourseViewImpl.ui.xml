@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.ui' 
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+
+	<ui:style src="../../../style.css" />
+	<ui:with field="constants" type="ca.jhosek.main.client.LLConstants" />
+		<!--
+			editor panel for CourseProxy 	 
+		-->
+		
+	<g:HTMLPanel height="50EM" width="100EM" >
+		<div class="{style.rightAlign}"> <ui:msg description="*Click to edit">*Click to edit</ui:msg></div>
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="*Name:">*Name:</ui:msg></span>
+			<x:LabelEditor ui:field="name" />
+		</div>
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="*Description:">*Description:</ui:msg></span>
+			<x:LabelEditor ui:field="description" />
+		</div>
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="*Estimated Size:">*Estimated Size:</ui:msg></span>
+			<g:NumberLabel customFormat="####" ui:field="estimatedMemberSize" />
+		</div>
+
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Start Date:">Start Date:</ui:msg></span>
+			<g:DateLabel styleName="{style.formPromptData}" ui:field="startDate"
+				customFormat="{constants.mdyDateFormatterPattern}" >
+			</g:DateLabel>				
+		</div>
+
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="End Date:">End Date:</ui:msg></span>
+			<g:DateLabel styleName="{style.formPromptData}" ui:field="endDate"
+				customFormat="{constants.mdyDateFormatterPattern}" >
+				</g:DateLabel>
+		</div>
+
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Course Id:">Course Id:</ui:msg></span>
+			<g:NumberLabel ui:field="id" />
+		</div>
+
+		<g:FlowPanel>
+			<g:Button ui:field="saveCourseButton"><ui:msg description="Save Changes">Save Changes</ui:msg></g:Button>
+			<g:Button ui:field="cancelEditsButton"><ui:msg description="Reset">Reset</ui:msg></g:Button>
+		</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

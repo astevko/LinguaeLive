@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:o="urn:import:com.sun.org.apache.xpath.internal.operations">
+
+	<ui:style src="../../style.css" />
+		
+	<g:HTMLPanel styleName="{style.panel}" addStyleNames="{style.buttonPanel}" height="420px" >
+			<br />
+			<div class="{style.sectionHeader2}"><ui:msg description="Developed by teachers.">Developed by teachers.</ui:msg></div>
+			<div class="{style.sectionHeader2}"><ui:msg description="LinguaeLive connects students who want to learn each other's languages.">LinguaeLive connects students who want to learn each other's languages.</ui:msg></div>
+			<div class="{style.sectionHeader2}"><ui:msg description="We can work with peers in complementary language classes.">We can work with peers in complementary language classes.</ui:msg></div>
+			<div class="{style.sectionHeader2}"><ui:msg description="No matter how far away.">No matter how far away.</ui:msg></div>
+		<g:FlowPanel styleName="{style.buttonPanel}">
+			<g:Button styleName="{style.button}" addStyleNames="{style.signupButton}" ui:field="newInstructorButton"><ui:msg description="Instructor Sign Up">Instructor Sign Up</ui:msg></g:Button>
+			<g:InlineLabel>&nbsp;&nbsp;&nbsp;</g:InlineLabel>
+			<g:Button styleName="{style.button}" addStyleNames="{style.signupButton}" ui:field="newStudentButton"><ui:msg description="Student Sign Up">Student Sign Up</ui:msg></g:Button>
+		</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

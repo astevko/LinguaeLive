@@ -1,0 +1,77 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:e='urn:import:com.google.gwt.editor.ui.client'
+	xmlns:x='urn:import:ca.jhosek.main.client.widgets' 
+	>
+
+	<ui:style src="../../../style.css" />
+		
+		<!--
+			editor panel for CourseProxy 	 
+		-->
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}" ><ui:msg description="Add/Edit Your Course">Add/Edit Your Course</ui:msg></div>
+		<div class="{style.sectionDesc}"><ui:msg description="By registering your course, you allow complementary instructors to search and propose linking theirs to yours. We will not release your contact information until you accept or propose link requests.">By registering your course, you allow complementary instructors to search and propose linking theirs to yours. We will not release your contact information until you accept or propose link requests.</ui:msg></div>
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Course Name:">Course Name:</ui:msg></span>
+				<e:ValueBoxEditorDecorator ui:field="name">
+					<e:valuebox>
+						<g:TextBox styleName="{style.formPromptEdit}" />
+					</e:valuebox>
+				</e:ValueBoxEditorDecorator>
+		</div>
+		
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Description:">Description:</ui:msg></span>
+				<e:ValueBoxEditorDecorator ui:field="description">
+					<e:valuebox>
+						<g:TextArea styleName="{style.formPromptEdit}" characterWidth="35" />
+					</e:valuebox>
+				</e:ValueBoxEditorDecorator>
+		</div>
+
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Est. Size (number):">Est. Size (number):</ui:msg></span>
+				<e:ValueBoxEditorDecorator ui:field="estimatedMemberSize">
+					<e:valuebox>
+						<g:LongBox styleName="{style.formPromptEdit}" />
+					</e:valuebox>
+				</e:ValueBoxEditorDecorator>
+		</div>
+		
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Target Language:">Target Language:</ui:msg></span>
+		</div>
+			<g:ValueListBox styleName="{style.formPromptEdit}"
+				ui:field="targetLanguage" />
+	
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Expert Language:">Expert Language:</ui:msg></span>
+		</div>
+			<g:ValueListBox styleName="{style.formPromptEdit}"
+				ui:field="expertLanguage" />
+
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Start Date:">Start Date:</ui:msg></span>
+		</div>
+			<g2:DateBox styleName="{style.formPromptDatePicker}"  ui:field="startDate"/>
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="End Date:">End Date:</ui:msg></span>
+		</div>
+			<g2:DateBox styleName="{style.formPromptDatePicker}"  ui:field="endDate"/>
+
+		<div>
+			<span class="{style.formPrompt}"><ui:msg description="Check this box if you want each of your students to link with solely one partner:">Check this box if you want each of your students to link with solely one partner:</ui:msg></span>
+		</div>
+			<g:CheckBox styleName="{style.formPromptData}"  ui:field="singlePartnerPreferred"/>
+
+
+		<g:FlowPanel  styleName="{style.buttonPanel}"  >
+			<g:Button ui:field="saveCourseButton" styleName="{style.button}" addStyleNames="{style.hotbutton}" ><ui:msg description="Save Course">Save Course</ui:msg></g:Button>
+			<g:Button ui:field="cancelButton" styleName="{style.button}" addStyleNames="{style.coldbutton}" ><ui:msg description="Cancel">Cancel</ui:msg></g:Button>
+		</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

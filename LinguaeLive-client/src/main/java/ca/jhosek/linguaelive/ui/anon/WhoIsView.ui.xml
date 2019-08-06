@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder 
+	xmlns:ui='urn:ui:com.google.gwt.uibinder' 
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' 
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" 
+	ui:generateLocales="default"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="../../style.css" />
+
+	<g:HTMLPanel styleName="{style.panel}" >
+		<div class="{style.sectionHeader}"><ui:msg description="Who is LinguaeLive?">Who is LinguaeLive?</ui:msg></div>
+		<div class="{style.sectionDesc}"><a href="http://www.queensu.ca/german/department/facultyandstaff/hosek.html" target="_new" ><img class="{style.whoIsPicture}" src="/images/JennHosek2005_queens.jpg" height="165" width="140" /></a></div> 
+		<div class="{style.sectionHeader2b}"><ui:msg description="Founder:">Founder:</ui:msg></div> 
+		<div class="{style.sectionDesc}"> <ui:msg description="Jennifer Ruth Hosek">Jennifer Ruth Hosek <a href="http://www.queensu.ca/german/department/facultyandstaff/hosek.html" target="_new" >(homepage)</a> is an Associate Professor in the Department of Languages, Literatures and Cultures at Queens's University, Canada. Mostly I work on 20th and 21st century transnational German culture, but needed to start LinguaeLive because I believe that it's a great opportunity for learners everywhere.</ui:msg></div>		
+		<div class="{style.sectionHeader2}"><ui:msg description="Primary Contributors:">Primary Contributors:</ui:msg></div>
+		<div class="{style.sectionDesc}"> <ui:msg description="Mayu Takasaki, Marjorie Willey, Hannah Cowell, Elisabeth Scholz, Wayne Cowell, Xuelin Bai, Michael Pickles, Patrice Fuchsa, Robynn Glockling, Lisa Quinn ">Mayu Takasaki, Marjorie Willey, Hannah Cowell, Elisabeth Scholz, Wayne Cowell, Xuelin Bai, Michael Pickles, Patrice Fuchsa, Robynn Glockling, Lisa Quinn </ui:msg></div>
+		<div class="{style.sectionHeader2}"><ui:msg description="Technical Guru:">Technical Guru:</ui:msg></div>
+		<div class="{style.sectionDesc}"><ui:msg description="Andrew Strevko - see my profiles on">Andrew Stevko - See my profiles on <a href="http://www.linkedin.com/in/stevko" target="_blank">LinkedIn.com</a> and <a href="http://stackexchange.com/users/59334/stevko"  target="_blank">StackOverflow.com</a>">>Andrew Stevko - See my profiles on <a href="http://www.linkedin.com/in/stevko" target="_blank">LinkedIn.com</a> and <a href="http://stackexchange.com/users/59334/stevko"  target="_blank">StackOverflow.com</a></ui:msg></div>
+		<div class="{style.sectionHeader2}" ><ui:msg description="We gratefully acknowledge support from Queen's University and the Social Sciences and Humanities Research Council of Canada, as well our student peer learners around the world.">We gratefully acknowledge support from Queen's University and the Social Sciences and Humanities Research Council of Canada, as well our student peer learners around the world.</ui:msg></div>
+		<div class="{style.sectionHeader}"> <ui:msg description="Testimonials in French and English">Testimonials in French and English</ui:msg></div>
+		<iframe width="400" height="225" src="http://www.youtube.com/embed/_dy-Ncqbkwc" frameborder="0" ></iframe>
+		<iframe width="400" height="225" src="http://www.youtube.com/embed/deEYQEQZKjQ" frameborder="0" ></iframe>	
+	</g:HTMLPanel>
+</ui:UiBinder> 

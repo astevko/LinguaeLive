@@ -1,0 +1,475 @@
+/*********************************
+ LinguaeLive Application 
+ Master Style Sheet
+ Copyright (c) 2011 Andrew Stevko
+***********************************/
+@CHARSET "UTF-8";
+
+body {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	direction: ltr;
+	font-family: "Futura Medium","Futura Medium Italic",Arial,Helvetica,sans-serif;
+	color: #000000;
+	font-size: 1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	word-spacing: normal;	
+	background-color: #CCCCCC;
+}
+
+/**************
+Main Region Panels 
+***************/
+/* singleton panels */
+.verytop { 
+	overflow: auto;
+	background-color: white;
+ 	margin-left: auto;
+    margin-right: auto;
+    width:905px;
+}
+
+.logoPanel { 
+	float: left;
+	/** content: "logoPanel"; **/
+	display:inline;
+}
+ 
+.userPanel { 
+	/** content: "userPanel"; **/
+	margin-right: 3em;
+	float: right;	
+	text-align: right;
+	padding-top: 10px;
+}
+
+.menuPanel { 
+	/** content: "menuPanel"; **/
+	float: left;
+	width: 880px;
+	height: 2em;	
+}
+
+.footerPanel { 
+	/** content: "footerPanel"; **/
+	text-align: center;
+	font-size: 1EM;
+	padding-top: 2em;
+	vertical-align: bottom;
+	width: 880px;
+	height: 5em;
+}
+
+ .centerPanel {
+ 	/** content: "centerPanel"; **/
+ 	display:block;
+	overflow: auto;
+	padding-top: 5px;
+	padding-left: 30px;
+	padding-bottom: 1em;
+	width:850px;	
+}
+/* generic panel */
+.panel { 
+	/** content: "panel"; **/
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 820px;
+}
+/* generic panel */
+.widePanel { 
+	content: "widePanel";
+	padding-top: 10px;
+	padding-left: 10px;
+	overflow: visible;
+}
+/* panel with button(s) on it */
+.buttonPanel { 
+	/** content: "buttonPanel"; **/
+	padding-top: 10px;
+	text-align: center;
+}
+.buttonPanelLeft { 
+	/** content: "buttonPanel"; **/
+	padding-top: 10px;
+	text-align: left;
+}
+/***************
+ field types 
+****************/
+.link { 
+	/** content: "link"; **/
+	font-style: italic;
+}
+
+.button { 
+	/** content: "button"; **/
+	cursor: pointer;
+	padding: 0.25em;	
+}
+
+.button:HOVER { 
+	/** content: "button"; **/
+	cursor: pointer;	
+	color: #D35D46;
+}
+
+
+.hotbutton { 
+	/** content: "hotbutton"; /** aka OK **/
+	font-weight: bold;
+}
+
+.coldbutton { 
+	/** content: "coldbutton"; /** aka cancel **/
+	font-weight: lighter;
+}
+
+.signupButton {
+	padding: 0.5em;
+	font-size: 1.5em;
+}
+
+@def fieldWidth 30em;
+.editField { 
+	/** content: "editField"; **/
+	display: inline;
+	width: fieldWidth;
+}
+
+.passwordEditField { 
+	/** content: "passwordEditField"; **/
+	display: inline;
+	width: fieldWidth;
+}
+/** directions **/
+.rightAlign { 
+	/** content: "rightAlign"; **/
+	text-align: right;
+}
+
+.centerAlign { 
+	/** content: "centerAlign"; **/
+	text-align: center;
+}
+
+.leftAlign { 
+	/** content: "leftAlign"; **/
+	text-align: left;
+}
+
+.rightFloat { 
+	/** content: "rightFloat"; **/
+	float: right;
+}
+
+.leftFloat { 
+	/** content: "leftFloat"; **/
+	float: left;
+}
+/** label types **/
+.sectionHeader { 
+	/** content: "sectionHeader"; **/
+	font-variant: small-caps;
+	font-weight: 600;
+	padding-top: 1.5em;
+}
+
+.sectionHeader2 { 
+	/** content: "sectionHeader2"; **/
+	font-weight: 600;
+	padding-top: 1.5em;
+}
+.sectionHeader2b { 
+	/** content: "sectionHeader2b"; **/
+	font-weight: 600;
+}
+
+
+
+.sectionDesc { 
+	/** content: "sectionDesc"; **/
+	line-height: 1.5;
+	padding-top: 0.5em;
+}
+
+.sectionDescIndent { 
+	/** content: "sectionDesc"; **/
+	line-height: 1.5;
+	padding-top: 0.5em;
+	padding-left: 3em;
+}
+ 
+.sectionItalic { 
+	/** content: "sectionDesc"; **/
+	font-style: italic;
+	color: blue;
+	line-height: 1.5;
+	padding-top: 0.5em;
+}
+
+.underConstruction { 
+	/** content: "underConstruction"; **/
+	font-style: oblique;
+	color: red;
+}
+
+.formPrompt { 
+	/** content: "formPrompt"; **/
+	font-weight: bold;
+}
+
+.formPromptData { 
+	/** content: "formPromptData"; **/
+	font-style: italic;
+}
+
+.formPromptEdit { 
+	/** content: "formPromptEdit"; **/
+	font-size: large;
+	width: fieldWidth;
+}
+
+ .formPromptDatePicker { 
+	/** content: "formPromptEdit"; **/
+	font-size: large;
+ }
+.formPromptHelp { 
+	/** content: "formPromptHelp"; **/
+	float: right;
+	padding-right: 10px;
+}
+
+.listPrompt { 
+	content: "listPrompt";
+	font-weight: bold;
+	font-size: medium;
+	cursor: pointer;
+	/** color: #d35e46; */
+	text-decoration: underline;
+	color: #D35D46;
+
+}
+.listPrompt:hover {
+	
+	content: "listPrompt:hover";
+	/**color: #ed7d66;*/
+	text-decoration: underline;
+	color: #D35D46;
+	background-color: yellow;
+	
+}
+	
+.gwt-StackLayoutPanelContent {
+	color: #d35e46;
+}	
+/***************
+Specific unique fields
+****************/
+.userName { 
+	/** content: "userName"; **/
+	font-weight: bold;
+}
+
+.drillablePromptData { 
+	/** content: "drillablePromptData"; **/
+	color: #d35e46; /* #999999;*/
+	cursor: default;
+	/* 	*text-decoration: underline; */
+}
+
+.drillablePromptData:hover { 
+	/** content: "drillablePromptData:hover"; **/
+	text-decoration: none;
+}
+/* 
+ * Text inputs 
+ */
+.gwt-TextArea { 
+	/** content: "gwt-TextArea"; **/
+	padding: 2px;
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #A8A8A8;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/*width: 200px;*/ /*height: 20px;*/
+}
+
+/** anchors **/
+a {
+	size: 14px;
+	color: #d35e46;
+	padding-left: 2px;
+	padding-right: 2px;
+	cursor: pointer;
+}
+
+a:link {
+	color: #d35d46;
+	/*		color: #666666; */
+	text-decoration: none;
+	cursor: hand;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #d35d46;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #ed7d66;
+}
+
+a:active {
+	text-decoration: none;
+	color: #f15d43;
+}
+
+/** remove border from linked images **/
+a img {
+	border: none; 
+}
+ 
+/** separator used for link menus **/
+.separator { 
+	/** content: "separator"; **/
+	color: #d35d46;
+}
+
+/** fake gwt anchors **/
+.a {
+	size: 14px;
+	color: #d35e46;
+	padding-left: 2px;
+	padding-right: 2px;
+	cursor: pointer;
+}
+
+.a:link {
+	color: #d35d46;
+	/*		color: #666666; */
+	text-decoration: none;
+	cursor: hand;
+}
+
+.a:visited {
+	text-decoration: none;
+	color: #d35d46;
+}
+
+.a:hover {
+	text-decoration: none;
+	color: #ed7d66;
+}
+
+.a:active {
+	text-decoration: none;
+	color: #f15d43;
+}
+
+/***********************************
+GWT Widget CSS Style Rules
+	********************************/
+.menuBar { 
+	/** content: "menuBar"; **/
+	color: #0000FF;	
+	 border: 0px;
+     background: url("hborder.png") repeat-x scroll 0 -2003px #E3E8F3;
+	padding-left: 30px;
+}
+
+.menuItem { 
+	/** content: "menuItem"; **/
+	color: #333333;
+	font-weight: 600;
+	font-size: 1EM;
+	padding: 10px 10px 10px 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.menuItem:hover { 
+	/** content: "menuItem:hover"; **/
+	color: #D35D46;
+}
+  
+/*************
+	FAQ
+*************/
+.disclosurePanel {	
+	padding-bottom: 10px;
+}
+header {
+	/** content: "gwt-DisclosurePanel .header"; **/
+	font-style: italic;
+	line-height: 1.5;
+	padding-top: 1em;
+}
+.disclosurePanelLabel {
+	/** content: "gwt-DisclosurePanel .Label"; **/
+	line-height: 1.5;
+	padding-top: 1em;	
+	padding-bottom: 20px;
+    border-left: 3px solid #E8EEF7;
+    margin-left: 6px;
+    padding: 4px 0 4px 8px;
+}
+ 
+ /******************
+  stack layout panel
+ ********************/
+ .stackLayoutPanel {
+ 	/** content: "stackLayoutPanel"; **/
+ }
+ 
+.stackLayoutPanelHeader { 
+	/** content: "stackLayoutPanelHeader"; **/
+	font-weight: bold;
+}
+ 
+ .whoIsPicture {
+ 	float: left;
+ 	padding: 4px 4px 4px 4px; 	
+ }
+ 
+ .whatIsPicture {
+ 	float: left;
+ 	padding: 4px 4px 4px 4px;
+ 	width:400px;
+ 	height:500px; 	
+ }
+ /** hidden style */
+ .hidden {
+ 	visibility: hidden;
+ }
+ /**********************
+    partner invite  and SESSION control
+ **********************/
+ .offline {
+	background-color: red; 
+ }
+ .online {
+ 	background-color: green;
+ }
+ /**
+  * Course Base Button Decorator Panel Style
+  */
+.courseBaseButton {
+	margin: 4px;	/* 4px margin around the button */
+	
+}
+.courseBaseButton:HOVER { 
+	/** content: "button"; **/
+	cursor: pointer;	
+	color: #D35D46;
+}
+.courseBaseButton .middleCenterInner{
+	background: #63CFD8;	/* blue */
+	color: black;
+}  
