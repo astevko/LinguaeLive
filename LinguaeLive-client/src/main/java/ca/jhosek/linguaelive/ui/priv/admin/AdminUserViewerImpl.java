@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.admin;
+package ca.jhosek.linguaelive.ui.priv.admin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,14 +34,14 @@ import com.google.gwt.view.client.ListDataProvider;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.QueryUsersActivity;
-import ca.jhosek.main.client.ui.LabelEditor;
-import ca.jhosek.main.client.ui.NumberEditor;
-import ca.jhosek.main.client.ui.UserTypeEditor;
-import ca.jhosek.main.shared.ContactInfoType;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.ContactInfoRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.activity.mainregion.QueryUsersActivity;
+import ca.jhosek.linguaelive.ui.LabelEditor;
+import ca.jhosek.linguaelive.ui.NumberEditor;
+import ca.jhosek.linguaelive.ui.UserTypeEditor;
+import ca.jhosek.linguaelive.ContactInfoType;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.ContactInfoRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * admin display of user information
@@ -235,7 +235,7 @@ public class AdminUserViewerImpl extends Composite implements IsWidget, Editor<U
 		}
 
 		/* (non-Javadoc)
-		 * @see ca.jhosek.main.client.ui.priv.admin.AdminUserView#acceptEdits()
+		 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminUserView#acceptEdits()
 		 * 
 		 * 
 		 * resets the user interface to show labels only
@@ -252,7 +252,7 @@ public class AdminUserViewerImpl extends Composite implements IsWidget, Editor<U
 		}
 
 		/* (non-Javadoc)
-		 * @see ca.jhosek.main.client.ui.priv.admin.AdminUserView#resetView()
+		 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminUserView#resetView()
 		 * 
 		 * reset widgets from edit mode
 		 */
@@ -285,7 +285,7 @@ public class AdminUserViewerImpl extends Composite implements IsWidget, Editor<U
 		/**
 		 * show contact info for this user
 		 * 
-		 * @see ca.jhosek.main.client.ui.priv.MyProfileView#showContactInfo(java.util.List)
+		 * @see ca.jhosek.linguaelive.ui.priv.MyProfileView#showContactInfo(java.util.List)
 		 */
 		public void showContactInfo(List<ContactInfoProxy> contactInfos) {
 			int displaySize = 5;

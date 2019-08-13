@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.activity.menuregion;
+package ca.jhosek.linguaelive.activity.menuregion;
 
 
 
@@ -11,12 +11,12 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.place.InstructorHomePlace;
-import ca.jhosek.main.client.place.InstructorStartPlace;
-import ca.jhosek.main.client.place.InstructorTipsPlace;
-import ca.jhosek.main.client.place.MyCoursesPlace;
-import ca.jhosek.main.client.place.MyProfilePlace;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorMenuView;
+import ca.jhosek.linguaelive.place.InstructorHomePlace;
+import ca.jhosek.linguaelive.place.InstructorStartPlace;
+import ca.jhosek.linguaelive.place.InstructorTipsPlace;
+import ca.jhosek.linguaelive.place.MyCoursesPlace;
+import ca.jhosek.linguaelive.place.MyProfilePlace;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorMenuView;
 
 /**
  * menu activity of admin users
@@ -49,7 +49,7 @@ public class InstructorMenuActivity extends AbstractActivity implements Instruct
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.InstructorMenuView.Presenter#goToInstructorHome()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.InstructorMenuView.Presenter#goToInstructorHome()
 	 */
 	
 	public void goToInstructorHome() {
@@ -59,7 +59,7 @@ public class InstructorMenuActivity extends AbstractActivity implements Instruct
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.InstructorMenuView.Presenter#goToQueryUsers()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.InstructorMenuView.Presenter#goToQueryUsers()
 	 */
 	
 	public void goToMyProfile() {
@@ -70,7 +70,7 @@ public class InstructorMenuActivity extends AbstractActivity implements Instruct
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorMenuView.Presenter#goToMyClasses()
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorMenuView.Presenter#goToMyClasses()
 	 */
 	
 	public void goToMyClasses() {
@@ -79,7 +79,7 @@ public class InstructorMenuActivity extends AbstractActivity implements Instruct
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorMenuView.Presenter#goToInstructorStart()
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorMenuView.Presenter#goToInstructorStart()
 	 */
 	
 	public void goToInstructorStart() {
@@ -89,7 +89,7 @@ public class InstructorMenuActivity extends AbstractActivity implements Instruct
 
 	/**
 	 * instructor tips
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorMenuView.Presenter#goToInstructorTips()
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorMenuView.Presenter#goToInstructorTips()
 	 */
 	
 	public void goToInstructorTips() {

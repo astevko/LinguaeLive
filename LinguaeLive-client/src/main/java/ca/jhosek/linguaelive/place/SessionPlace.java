@@ -1,18 +1,18 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.place;
+package ca.jhosek.linguaelive.place;
 
 import java.util.logging.Logger;
 
 import com.google.gwt.place.shared.PlaceTokenizer;
 import com.google.gwt.place.shared.Prefix;
 
-import ca.jhosek.main.client.activity.mainregion.PartnerInviteActivity;
-import ca.jhosek.main.client.ui.priv.student.PartnerInviteView;
-import ca.jhosek.main.client.ui.priv.student.PartnerInviteViewImpl;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteRequestContext;
+import ca.jhosek.linguaelive.activity.mainregion.PartnerInviteActivity;
+import ca.jhosek.linguaelive.ui.priv.student.PartnerInviteView;
+import ca.jhosek.linguaelive.ui.priv.student.PartnerInviteViewImpl;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteRequestContext;
 
 /**
  * partner invite place

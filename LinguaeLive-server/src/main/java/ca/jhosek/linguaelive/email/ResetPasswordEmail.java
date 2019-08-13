@@ -1,6 +1,6 @@
-package ca.jhosek.main.server.email;
+package ca.jhosek.linguaelive.email;
 
-import ca.jhosek.main.server.domain.User;
+import ca.jhosek.linguaelive.domain.User;
 
 /**
  * user lost password reset

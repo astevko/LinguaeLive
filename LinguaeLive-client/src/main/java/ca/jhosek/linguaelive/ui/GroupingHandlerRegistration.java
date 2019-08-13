@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui;
+package ca.jhosek.linguaelive.ui;
 
 import java.util.HashSet;
 import java.util.Set;

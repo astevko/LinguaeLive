@@ -1,9 +1,9 @@
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.Set;
 import java.util.logging.Logger;
 
-import ca.jhosek.main.shared.DayOfWeekEnum;
+import ca.jhosek.linguaelive.DayOfWeekEnum;
 
 /**
  * a row in the availability schedule

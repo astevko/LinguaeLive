@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.io.Serializable;
 import java.text.DateFormat;
@@ -26,8 +26,8 @@ import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Ignore;
 import com.googlecode.objectify.annotation.Index;
 
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.UserType;
+// import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * Name and Address of a User

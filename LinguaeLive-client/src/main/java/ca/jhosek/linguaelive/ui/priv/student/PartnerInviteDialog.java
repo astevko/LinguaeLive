@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 
 import com.google.gwt.core.client.GWT;
@@ -12,11 +12,11 @@ import com.google.gwt.user.client.ui.InlineLabel;
 import com.google.gwt.user.client.ui.TextArea;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.ui.priv.student.StudentYourCourseView.Presenter;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.ui.priv.student.StudentYourCourseView.Presenter;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * display a dialog box with a briefing of the member to send a session invite to

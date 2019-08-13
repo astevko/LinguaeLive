@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Set;
 import java.util.logging.Logger;
@@ -20,18 +20,18 @@ import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.RequestContext;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.AddEditCoursePlace;
-import ca.jhosek.main.client.place.CourseBrowsePlace;
-import ca.jhosek.main.client.place.InstructorYourCoursePlace;
-import ca.jhosek.main.client.place.MyCoursesPlace;
-import ca.jhosek.main.client.ui.priv.instructor.AddEditCourseView;
-import ca.jhosek.main.client.ui.priv.instructor.AddEditCourseViewImpl;
-import ca.jhosek.main.client.ui.priv.instructor.AddEditCourseViewImpl.Driver;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.CourseRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.AddEditCoursePlace;
+import ca.jhosek.linguaelive.place.CourseBrowsePlace;
+import ca.jhosek.linguaelive.place.InstructorYourCoursePlace;
+import ca.jhosek.linguaelive.place.MyCoursesPlace;
+import ca.jhosek.linguaelive.ui.priv.instructor.AddEditCourseView;
+import ca.jhosek.linguaelive.ui.priv.instructor.AddEditCourseViewImpl;
+import ca.jhosek.linguaelive.ui.priv.instructor.AddEditCourseViewImpl.Driver;
+import ca.jhosek.linguaelive.UserType;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.CourseRequestContext;
 
 /**
  * add a new course
@@ -390,7 +390,7 @@ public class AddEditCourseActivity extends AbstractActivity implements AddEditCo
 
 	/***
 	 * goto home page on cancel
-	 * @see ca.jhosek.main.client.ui.priv.instructor.AddEditCourseView.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.AddEditCourseView.Presenter#cancel()
 	 */
 	public void cancel() {
 		// 

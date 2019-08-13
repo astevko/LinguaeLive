@@ -1,18 +1,18 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.place;
+package ca.jhosek.linguaelive.place;
 
 import java.util.logging.Logger;
 
 import com.google.gwt.place.shared.PlaceTokenizer;
 import com.google.gwt.place.shared.Prefix;
 
-import ca.jhosek.main.client.activity.mainregion.SessionControlActivity;
-import ca.jhosek.main.client.ui.priv.student.SessionControlView;
-import ca.jhosek.main.client.ui.priv.student.SessionControlViewImpl;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.SessionRequestContext;
+import ca.jhosek.linguaelive.activity.mainregion.SessionControlActivity;
+import ca.jhosek.linguaelive.ui.priv.student.SessionControlView;
+import ca.jhosek.linguaelive.ui.priv.student.SessionControlViewImpl;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
+import ca.jhosek.linguaelive.proxy.SessionRequestContext;
 
 /**
  * session control panel view (as opposed to the session edit view

@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -17,8 +17,8 @@ import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.client.activity.mainregion.LoginFormActivity;
-import ca.jhosek.main.client.place.LoginFormPlace;
+// import ca.jhosek.linguaelive.activity.mainregion.LoginFormActivity;
+// import ca.jhosek.linguaelive.place.LoginFormPlace;
 
 /**
  * Login Form View
@@ -60,7 +60,7 @@ public class LoginFormViewImpl extends Composite implements LoginFormView {
 		presenter.cancel();
 	}
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.LoginFormView#clear()
+	 * @see ca.jhosek.linguaelive.ui.anon.LoginFormView#clear()
 	 */
 	public void clear( String defaultEmailAddress ) {
 		// 
@@ -69,7 +69,7 @@ public class LoginFormViewImpl extends Composite implements LoginFormView {
 	}
 
 	/**
-	 * @see ca.jhosek.main.client.ui.anon.LoginFormView#setPresenter(ca.jhosek.main.client.ui.anon.LoginFormView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.anon.LoginFormView#setPresenter(ca.jhosek.linguaelive.ui.anon.LoginFormView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;

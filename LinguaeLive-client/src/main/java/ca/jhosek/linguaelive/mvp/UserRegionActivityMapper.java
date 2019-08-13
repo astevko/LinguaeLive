@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.mvp;
+package ca.jhosek.linguaelive.mvp;
 
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.activity.shared.ActivityMapper;
@@ -6,9 +6,9 @@ import com.google.gwt.place.shared.Place;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
-import ca.jhosek.main.client.activity.userregion.HeaderAnonUserActivity;
-import ca.jhosek.main.client.activity.userregion.HeaderUserActivity;
-import ca.jhosek.main.client.domain.CurrentState;
+import ca.jhosek.linguaelive.activity.userregion.HeaderAnonUserActivity;
+import ca.jhosek.linguaelive.activity.userregion.HeaderUserActivity;
+import ca.jhosek.linguaelive.domain.CurrentState;
 
 /**
  * this is the user region in the header of the main view

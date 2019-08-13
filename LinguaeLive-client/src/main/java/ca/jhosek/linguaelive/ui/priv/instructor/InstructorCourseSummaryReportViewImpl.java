@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -29,13 +29,13 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.ListDataProvider;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.InstructorCourseSummaryReportActivity;
-import ca.jhosek.main.client.place.InstructorCourseSummaryReportPlace;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorCourseSummaryReportActivity;
+import ca.jhosek.linguaelive.place.InstructorCourseSummaryReportPlace;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * view a single course from an instructor's point of view
@@ -267,14 +267,14 @@ public class InstructorCourseSummaryReportViewImpl extends Composite implements 
 	}
 
 	/**
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseView#setViewerMode(boolean, boolean)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseView#setViewerMode(boolean, boolean)
 	 */
 	public void setViewerMode( Long courseId, boolean instructorMode, boolean ownerMode) {
 		linkedMembersPanel.setVisible(instructorMode );
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorCourseSummaryReportView#showCourse(ca.jhosek.main.shared.proxy.CourseProxy)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseSummaryReportView#showCourse(ca.jhosek.linguaelive.proxy.CourseProxy)
 	 */
 	public void showCourse(CourseProxy course) {
 		// 

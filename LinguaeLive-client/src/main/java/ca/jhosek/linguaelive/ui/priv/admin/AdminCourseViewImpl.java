@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.admin;
+package ca.jhosek.linguaelive.ui.priv.admin;
 
 import java.util.logging.Logger;
 
@@ -21,8 +21,8 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.ui.LabelEditor;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.ui.LabelEditor;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  * admin display of user information
@@ -87,7 +87,7 @@ public class AdminCourseViewImpl extends Composite implements IsWidget, Editor<C
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.AdminCourseView#acceptEdits()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminCourseView#acceptEdits()
 	 * 
 	 * 
 	 * resets the course interface to show labels only
@@ -99,7 +99,7 @@ public class AdminCourseViewImpl extends Composite implements IsWidget, Editor<C
 	}
 	
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.AdminCourseView#resetView()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminCourseView#resetView()
 	 * 
 	 * reset widgets from edit mode
 	 */

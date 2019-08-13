@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.ui;
+package ca.jhosek.linguaelive.ui;
 
 import com.google.gwt.activity.shared.ActivityManager;
 import com.google.gwt.cell.client.AbstractEditableCell;
@@ -62,9 +62,9 @@ import com.google.gwt.user.datepicker.client.DatePicker;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
-import ca.jhosek.main.client.mvp.MainRegionActivityMapper;
-import ca.jhosek.main.client.mvp.MenuRegionActivityMapper;
-import ca.jhosek.main.client.mvp.UserRegionActivityMapper;
+import ca.jhosek.linguaelive.mvp.MainRegionActivityMapper;
+import ca.jhosek.linguaelive.mvp.MenuRegionActivityMapper;
+import ca.jhosek.linguaelive.mvp.UserRegionActivityMapper;
 
 /**
  * Main frame within which all the panels are arranged in a 

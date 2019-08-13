@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -40,15 +40,15 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.SessionControlActivity;
-import ca.jhosek.main.client.place.SessionControlPlace;
-import ca.jhosek.main.client.widgets.EnumLabel;
-import ca.jhosek.main.client.widgets.OnlineOfflineIndicator;
-import ca.jhosek.main.shared.ContactInfoType;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.SessionProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.SessionControlActivity;
+import ca.jhosek.linguaelive.place.SessionControlPlace;
+import ca.jhosek.linguaelive.widgets.EnumLabel;
+import ca.jhosek.linguaelive.widgets.OnlineOfflineIndicator;
+import ca.jhosek.linguaelive.ContactInfoType;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
 
 /**
  * Session Control Panel
@@ -404,7 +404,7 @@ public class SessionControlViewImpl extends Composite implements IsWidget,
 	/**
 	 * clear the display
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionControlView#clear()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionControlView#clear()
 	 */
 	@Override
 	public void clear() {
@@ -471,9 +471,9 @@ public class SessionControlViewImpl extends Composite implements IsWidget,
 	/**
 	 * display only the proper buttons and labels
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionControlView#setViewMode(java.lang.Boolean,
-	 *      java.lang.Boolean, ca.jhosek.main.shared.LanguageType,
-	 *      ca.jhosek.main.shared.LanguageType)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionControlView#setViewMode(java.lang.Boolean,
+	 *      java.lang.Boolean, ca.jhosek.linguaelive.LanguageType,
+	 *      ca.jhosek.linguaelive.LanguageType)
 	 */
 	@Override
 	public void setViewMode(final Boolean isCancelled, final Boolean isStarted,
@@ -530,7 +530,7 @@ public class SessionControlViewImpl extends Composite implements IsWidget,
 	 * display the contact info list for member1
 	 * @param contactInfos list of contact info objects
 	 * @param selected is any one pre-selected?
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionControlView#showMember1ContactInfoList(java.util.List, ca.jhosek.main.shared.proxy.ContactInfoProxy)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionControlView#showMember1ContactInfoList(java.util.List, ca.jhosek.linguaelive.proxy.ContactInfoProxy)
 	 */
 	@Override
 	public void showMember1ContactInfoList(
@@ -569,7 +569,7 @@ public class SessionControlViewImpl extends Composite implements IsWidget,
 	 * display the contact info list for member2
 	 * @param contactInfos list of contact info objects
 	 * @param selected is any one pre-selected?
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionControlView#showMember1ContactInfoList(java.util.List, ca.jhosek.main.shared.proxy.ContactInfoProxy)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionControlView#showMember1ContactInfoList(java.util.List, ca.jhosek.linguaelive.proxy.ContactInfoProxy)
 	 */
 	@Override
 	public void showMember2ContactInfoList(
@@ -607,7 +607,7 @@ public class SessionControlViewImpl extends Composite implements IsWidget,
 	/**
 	 * refresh the notes datadisplay
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionControlView#showNotes(java.util.List)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionControlView#showNotes(java.util.List)
 	 */
 	@Override
 	public void showNotes(final List<String> sessisonNotes) {

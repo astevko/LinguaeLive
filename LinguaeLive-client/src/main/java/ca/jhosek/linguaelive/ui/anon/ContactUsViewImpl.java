@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,10 +27,10 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.ContactUsActivity;
-import ca.jhosek.main.client.place.ContactUsPlace;
-import ca.jhosek.main.shared.proxy.ContactUsProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.ContactUsActivity;
+import ca.jhosek.linguaelive.place.ContactUsPlace;
+import ca.jhosek.linguaelive.proxy.ContactUsProxy;
 
 /**
  * contact us form
@@ -106,7 +106,7 @@ public class ContactUsViewImpl extends Composite implements IsWidget, Editor<Con
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.ContactUsView#clear()
+	 * @see ca.jhosek.linguaelive.ui.anon.ContactUsView#clear()
 	 */
 	public void clear() {
 		// 
@@ -116,7 +116,7 @@ public class ContactUsViewImpl extends Composite implements IsWidget, Editor<Con
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.ContactUsView#setPresenter(ca.jhosek.main.client.ui.anon.ContactUsView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.anon.ContactUsView#setPresenter(ca.jhosek.linguaelive.ui.anon.ContactUsView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;

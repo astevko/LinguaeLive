@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Set;
 import java.util.logging.Logger;
@@ -15,14 +15,14 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.AddCourseMemberPlace;
-import ca.jhosek.main.client.place.StudentYourCoursePlace;
-import ca.jhosek.main.client.ui.priv.student.AddCourseMemberView;
-import ca.jhosek.main.client.ui.priv.student.AddCourseMemberViewImpl;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.MemberRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.AddCourseMemberPlace;
+import ca.jhosek.linguaelive.place.StudentYourCoursePlace;
+import ca.jhosek.linguaelive.ui.priv.student.AddCourseMemberView;
+import ca.jhosek.linguaelive.ui.priv.student.AddCourseMemberViewImpl;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.MemberRequestContext;
 
 /**
  * add a new course member to the current user
@@ -69,7 +69,7 @@ public class AddCourseMemberActivity extends AbstractActivity implements AddCour
 
 	/***
 	 * goto home page on cancel
-	 * @see ca.jhosek.main.client.ui.priv.instructor.AddEditCourseView.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.AddEditCourseView.Presenter#cancel()
 	 */
 	public void cancel() {
 		// 

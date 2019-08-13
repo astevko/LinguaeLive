@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import static com.googlecode.objectify.ObjectifyService.ofy;
 
@@ -15,11 +15,12 @@ import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.googlecode.objectify.Key;
 import com.googlecode.objectify.cmd.Query;
 
-import ca.jhosek.main.server.email.LinkCourseInviteEmail;
-import ca.jhosek.main.server.email.NewCourseEmail;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.CourseRequestContext;
+import ca.jhosek.linguaelive.email.LinkCourseInviteEmail;
+import ca.jhosek.linguaelive.email.NewCourseEmail;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.UserType;
+
+// import ca.jhosek.linguaelive.proxy.CourseRequestContext;
 
 /**
  * Course represents a class
@@ -30,7 +31,7 @@ import ca.jhosek.main.shared.proxy.CourseRequestContext;
  * 
  * @see Course
  * @see CourseLocator
- * @see CourseRequestContext
+ *  CourseRequestContext
  * 
  * @see NewCourseEmail
  * 

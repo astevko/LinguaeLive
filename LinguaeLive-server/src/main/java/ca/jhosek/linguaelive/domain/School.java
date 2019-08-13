@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.io.Serializable;
 

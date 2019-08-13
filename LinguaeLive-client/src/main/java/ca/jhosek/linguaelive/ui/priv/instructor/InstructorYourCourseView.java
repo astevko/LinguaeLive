@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.List;
 
@@ -6,11 +6,11 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.InstructorYourCourseActivity;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseViewImpl.Driver;
-import ca.jhosek.main.shared.proxy.CourseLinkProxy;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.MemberProxy;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorYourCourseActivity;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseViewImpl.Driver;
+import ca.jhosek.linguaelive.proxy.CourseLinkProxy;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko

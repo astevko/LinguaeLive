@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
@@ -6,7 +6,7 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.ui.priv.student.StudentStartView;
+import ca.jhosek.linguaelive.ui.priv.student.StudentStartView;
 
 /**
  * Activities on the Student Start page

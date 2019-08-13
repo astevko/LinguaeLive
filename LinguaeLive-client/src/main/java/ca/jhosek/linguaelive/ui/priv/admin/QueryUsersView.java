@@ -1,16 +1,16 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.admin;
+package ca.jhosek.linguaelive.ui.priv.admin;
 
 import java.util.List;
 
 import com.google.gwt.user.client.ui.IsWidget;
 
-import ca.jhosek.main.client.activity.mainregion.QueryUsersActivity;
-import ca.jhosek.main.client.place.QueryUsersPlace;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.activity.mainregion.QueryUsersActivity;
+import ca.jhosek.linguaelive.place.QueryUsersPlace;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  *  Admin query users view

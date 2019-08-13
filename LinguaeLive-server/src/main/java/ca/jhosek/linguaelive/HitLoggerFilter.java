@@ -3,7 +3,7 @@
  *
  *  copyright (c) 2010 Andrew Stevko
  */
-package ca.jhosek.main.server;
+package ca.jhosek.linguaelive;
 
 import java.io.IOException;
 import java.util.logging.Logger;

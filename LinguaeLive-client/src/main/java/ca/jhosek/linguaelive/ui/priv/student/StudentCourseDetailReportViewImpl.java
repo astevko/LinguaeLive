@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -32,15 +32,15 @@ import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.AppResources;
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.InstructorCourseDetailReportActivity;
-import ca.jhosek.main.client.activity.mainregion.StudentCourseDetailReportActivity;
-import ca.jhosek.main.client.place.InstructorCourseDetailReportPlace;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorCourseDetailReportView;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.AppResources;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorCourseDetailReportActivity;
+import ca.jhosek.linguaelive.activity.mainregion.StudentCourseDetailReportActivity;
+import ca.jhosek.linguaelive.place.InstructorCourseDetailReportPlace;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseDetailReportView;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * view a single course from an instructor's point of view
@@ -321,14 +321,14 @@ public class StudentCourseDetailReportViewImpl extends Composite implements IsWi
 	}
 
 	/**
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseView#setViewerMode(boolean, boolean)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseView#setViewerMode(boolean, boolean)
 	 */
 	public void setViewerMode( Long courseId, boolean instructorMode, boolean ownerMode) {
 		linkedMembersPanel.setVisible(ownerMode || instructorMode);
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorCourseDetailReportView#showCourse(ca.jhosek.main.shared.proxy.CourseProxy)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseDetailReportView#showCourse(ca.jhosek.linguaelive.proxy.CourseProxy)
 	 */
 	public void showCourse(CourseProxy course) {
 		// 

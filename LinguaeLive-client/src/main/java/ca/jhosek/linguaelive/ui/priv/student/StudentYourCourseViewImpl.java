@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.Comparator;
 import java.util.List;
@@ -43,21 +43,21 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.StudentYourCourseActivity;
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.StudentYourCoursePlace;
-import ca.jhosek.main.client.ui.EnumRenderer;
-import ca.jhosek.main.client.widgets.EnumInlineLabel;
-import ca.jhosek.main.client.widgets.EnumLabel;
-import ca.jhosek.main.server.email.SendEmail;
-import ca.jhosek.main.shared.DayOfWeekEnum;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
-//import ca.jhosek.main.shared.proxy.SessionProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.StudentYourCourseActivity;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.StudentYourCoursePlace;
+import ca.jhosek.linguaelive.ui.EnumRenderer;
+import ca.jhosek.linguaelive.widgets.EnumInlineLabel;
+import ca.jhosek.linguaelive.widgets.EnumLabel;
+// import ca.jhosek.linguaelive.email.SendEmail;
+import ca.jhosek.linguaelive.DayOfWeekEnum;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+//import ca.jhosek.linguaelive.proxy.SessionProxy;
 
 /**
  * view a course from the Student's point of view

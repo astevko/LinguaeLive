@@ -1,8 +1,8 @@
-package ca.jhosek.main.server.email;
+package ca.jhosek.linguaelive.email;
 
 import com.google.appengine.api.datastore.EntityNotFoundException;
 
-import ca.jhosek.main.server.domain.CourseLink;
+import ca.jhosek.linguaelive.domain.CourseLink;
 
 /**
  * message from Instructor A to B inviting B to link to this course owned by A

@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -31,14 +31,14 @@ import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.AppResources;
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.StylesCssResource;
-import ca.jhosek.main.client.activity.mainregion.InstructorHomeActivity;
-import ca.jhosek.main.client.place.InstructorHomePlace;
-import ca.jhosek.main.client.ui.GroupingHandlerRegistration;
-import ca.jhosek.main.shared.proxy.CourseLinkProxy;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.AppResources;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.StylesCssResource;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorHomeActivity;
+import ca.jhosek.linguaelive.place.InstructorHomePlace;
+import ca.jhosek.linguaelive.ui.GroupingHandlerRegistration;
+import ca.jhosek.linguaelive.proxy.CourseLinkProxy;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  *  Instructor user home page 
@@ -129,7 +129,7 @@ public class InstructorHomeViewImpl extends Composite implements InstructorHomeV
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.InstructorHomeView#clear()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.InstructorHomeView#clear()
 	 */
 	public void clear() {
 		//
@@ -140,7 +140,7 @@ public class InstructorHomeViewImpl extends Composite implements InstructorHomeV
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.InstructorHomeView#setPresenter(ca.jhosek.main.client.ui.priv.student.InstructorHomeView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.InstructorHomeView#setPresenter(ca.jhosek.linguaelive.ui.priv.student.InstructorHomeView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
@@ -305,7 +305,7 @@ public class InstructorHomeViewImpl extends Composite implements InstructorHomeV
 
 	/**
 	 * clear course list and show new
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorHomeView#showCourseList(java.util.List)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorHomeView#showCourseList(java.util.List)
 	 */
 	@Override
 	public void showCourseList(List<CourseProxy> courses) {

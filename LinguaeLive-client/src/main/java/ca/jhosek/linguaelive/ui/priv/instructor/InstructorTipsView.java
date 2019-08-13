@@ -1,11 +1,11 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import com.google.gwt.user.client.ui.IsWidget;
 
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  *  Instructor user home page 

@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
@@ -11,8 +11,8 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.MenuItem;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.client.activity.mainregion.InstructorMemberActivity;
-import ca.jhosek.main.client.place.InstructorMemberPlace;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorMemberActivity;
+import ca.jhosek.linguaelive.place.InstructorMemberPlace;
 
 /**
  * 

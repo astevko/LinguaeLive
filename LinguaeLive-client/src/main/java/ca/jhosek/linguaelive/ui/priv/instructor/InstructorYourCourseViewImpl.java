@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -39,17 +39,17 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.InstructorYourCourseActivity;
-import ca.jhosek.main.client.place.InstructorYourCoursePlace;
-import ca.jhosek.main.client.ui.EnumRenderer;
-import ca.jhosek.main.client.widgets.EnumLabel;
-import ca.jhosek.main.server.email.SendEmail;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.CourseLinkProxy;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorYourCourseActivity;
+import ca.jhosek.linguaelive.place.InstructorYourCoursePlace;
+import ca.jhosek.linguaelive.ui.EnumRenderer;
+import ca.jhosek.linguaelive.widgets.EnumLabel;
+// import ca.jhosek.linguaelive.email.SendEmail;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.CourseLinkProxy;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * view a single course from an instructor's point of view
@@ -282,7 +282,7 @@ public class InstructorYourCourseViewImpl extends Composite implements IsWidget,
 	/**
 	 * display list of linked courses
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseView#showLinkedCourses(java.util.List)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseView#showLinkedCourses(java.util.List)
 	 */
 	public void showLinkedCourses(List<CourseLinkProxy> linkedCourses, boolean updateDisplay) {
 		linkedCoursesPanel.clear();
@@ -315,7 +315,7 @@ public class InstructorYourCourseViewImpl extends Composite implements IsWidget,
 	/**
 	 * display list of unlinked courses
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseView#showLinkedCourses(java.util.List)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseView#showLinkedCourses(java.util.List)
 	 */
 	public void showUnlinkedCourses(List<CourseProxy> unlinkedCourses, boolean updateDisplay) {
 		unlinkedCoursesPanel.clear();
@@ -613,7 +613,7 @@ public class InstructorYourCourseViewImpl extends Composite implements IsWidget,
 	}
 
 	/**
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseView#setViewerMode(boolean, boolean)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseView#setViewerMode(boolean, boolean)
 	 */
 	public void setViewerMode( Long courseId, boolean instructorMode, boolean ownerMode) {
 		this.courseId = courseId;

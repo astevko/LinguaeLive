@@ -1,11 +1,11 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import com.google.gwt.user.client.ui.IsWidget;
 
-import ca.jhosek.main.client.activity.userregion.HeaderAnonUserActivity;
+import ca.jhosek.linguaelive.activity.userregion.HeaderAnonUserActivity;
 
 /**
  * anonymous user view has two actions available: login and change locale

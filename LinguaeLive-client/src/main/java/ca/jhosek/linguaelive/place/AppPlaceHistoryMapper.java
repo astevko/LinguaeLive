@@ -1,10 +1,10 @@
-package ca.jhosek.main.client.place;
+package ca.jhosek.linguaelive.place;
 
 import com.google.gwt.place.shared.PlaceHistoryMapper;
 import com.google.gwt.place.shared.WithTokenizers;
 
-import ca.jhosek.main.client.mvp.MainRegionActivityMapper;
-import ca.jhosek.main.client.ui.ViewModule;
+import ca.jhosek.linguaelive.mvp.MainRegionActivityMapper;
+import ca.jhosek.linguaelive.ui.ViewModule;
 
 /**
  * Map URLs to Places One of three places to insert new panels

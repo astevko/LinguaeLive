@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.logging.Logger;
 
@@ -25,11 +25,11 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.AppResources;
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.InstructorCourseLinkActivity;
-import ca.jhosek.main.client.place.InstructorCourseLinkPlace;
-import ca.jhosek.main.shared.proxy.CourseLinkProxy;
+import ca.jhosek.linguaelive.AppResources;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorCourseLinkActivity;
+import ca.jhosek.linguaelive.place.InstructorCourseLinkPlace;
+import ca.jhosek.linguaelive.proxy.CourseLinkProxy;
 
 /**
  * Instructor Course Link viewer
@@ -155,7 +155,7 @@ public class InstructorCourseLinkViewImpl extends Composite
 	
 	/**
 	 * display only the proper buttons
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorCourseLinkView#setViewMode(java.lang.Boolean, java.lang.Boolean)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseLinkView#setViewMode(java.lang.Boolean, java.lang.Boolean)
 	 */
 	public void setViewMode( final Boolean isSender, final Boolean pending, final Boolean accepted ) {
 		this.isSender = isSender;

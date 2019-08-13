@@ -1,4 +1,4 @@
-package ca.jhosek.main.server.email;
+package ca.jhosek.linguaelive.email;
 
 import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
@@ -19,12 +19,12 @@ import javax.mail.internet.MimeMessage;
 
 import com.google.appengine.api.datastore.EntityNotFoundException;
 
-import ca.jhosek.main.server.domain.ContactUs;
-import ca.jhosek.main.server.domain.Course;
-import ca.jhosek.main.server.domain.CourseLink;
-import ca.jhosek.main.server.domain.Member;
-import ca.jhosek.main.server.domain.SessionInvite;
-import ca.jhosek.main.server.domain.User;
+import ca.jhosek.linguaelive.domain.ContactUs;
+import ca.jhosek.linguaelive.domain.Course;
+import ca.jhosek.linguaelive.domain.CourseLink;
+import ca.jhosek.linguaelive.domain.Member;
+import ca.jhosek.linguaelive.domain.SessionInvite;
+import ca.jhosek.linguaelive.domain.User;
 
 /**
  * 

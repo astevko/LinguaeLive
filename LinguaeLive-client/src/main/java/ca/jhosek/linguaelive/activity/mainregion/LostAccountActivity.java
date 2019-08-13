@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Set;
 import java.util.logging.Logger;
@@ -14,13 +14,13 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.activity.ActivityModule;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.client.place.LostAccountPlace;
-import ca.jhosek.main.client.ui.anon.LostAccountView;
-import ca.jhosek.main.client.ui.anon.LostAccountViewImpl;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.activity.ActivityModule;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.place.LostAccountPlace;
+import ca.jhosek.linguaelive.ui.anon.LostAccountView;
+import ca.jhosek.linguaelive.ui.anon.LostAccountViewImpl;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * used to recover passwords
@@ -65,7 +65,7 @@ public class LostAccountActivity extends AbstractActivity implements
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter#cancel()
 	 */
 
 	@Override
@@ -122,7 +122,7 @@ public class LostAccountActivity extends AbstractActivity implements
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * ca.jhosek.main.client.ui.anon.LostAccountView.Presenter#recoverPassword
+	 * ca.jhosek.linguaelive.ui.anon.LostAccountView.Presenter#recoverPassword
 	 * (java.lang.String, java.lang.String)
 	 */
 

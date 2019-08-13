@@ -1,12 +1,12 @@
-package ca.jhosek.main.client.ui.priv;
+package ca.jhosek.linguaelive.ui.priv;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.DialogBox;
 
-import ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseViewImpl;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseViewImpl;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  * display a Dialogbox telling the user that autologin is in progrss

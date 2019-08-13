@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.util.ArrayList;
 //import java.util.Date;
@@ -14,10 +14,10 @@ import java.util.logging.Logger;
 import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.googlecode.objectify.Key;
 
-import ca.jhosek.main.server.email.PartnerInviteEmail;
-import ca.jhosek.main.server.email.StudentPairingUserAcceptEmail;
-import ca.jhosek.main.server.email.StudentPairingUserDeclinedEmail;
-import ca.jhosek.main.shared.proxy.PartnerInviteRequestContext;
+import ca.jhosek.linguaelive.email.PartnerInviteEmail;
+import ca.jhosek.linguaelive.email.StudentPairingUserAcceptEmail;
+import ca.jhosek.linguaelive.email.StudentPairingUserDeclinedEmail;
+// import ca.jhosek.linguaelive.proxy.PartnerInviteRequestContext;
 import static com.googlecode.objectify.ObjectifyService.ofy;
 
 /**

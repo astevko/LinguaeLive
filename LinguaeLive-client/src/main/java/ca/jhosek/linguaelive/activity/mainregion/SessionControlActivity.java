@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.List;
 import java.util.Set;
@@ -19,25 +19,25 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.event.SessionChatEvent;
-import ca.jhosek.main.client.event.SessionUpdateEvent;
-import ca.jhosek.main.client.event.UserStatusChangeEvent;
-import ca.jhosek.main.client.place.SessionControlPlace;
-import ca.jhosek.main.client.ui.GroupingHandlerRegistration;
-import ca.jhosek.main.client.ui.priv.student.SessionControlView;
-import ca.jhosek.main.client.ui.priv.student.SessionControlViewImpl;
-import ca.jhosek.main.client.ui.priv.student.SessionControlViewImpl.Driver;
-import ca.jhosek.main.server.domain.ContactInfoDao;
-import ca.jhosek.main.server.domain.SessionDao;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.ContactInfoRequestContext;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.SessionRequestContext;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.event.SessionChatEvent;
+import ca.jhosek.linguaelive.event.SessionUpdateEvent;
+import ca.jhosek.linguaelive.event.UserStatusChangeEvent;
+import ca.jhosek.linguaelive.place.SessionControlPlace;
+import ca.jhosek.linguaelive.ui.GroupingHandlerRegistration;
+import ca.jhosek.linguaelive.ui.priv.student.SessionControlView;
+import ca.jhosek.linguaelive.ui.priv.student.SessionControlViewImpl;
+import ca.jhosek.linguaelive.ui.priv.student.SessionControlViewImpl.Driver;
+// import ca.jhosek.linguaelive.domain.ContactInfoDao;
+// import ca.jhosek.linguaelive.domain.SessionDao;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.UserType;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.ContactInfoRequestContext;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
+import ca.jhosek.linguaelive.proxy.SessionRequestContext;
 
 /**
  * session control view activity
@@ -193,7 +193,7 @@ public class SessionControlActivity extends AbstractActivity implements
 	/**
 	 * user hit enter on text box to add this note to the session...
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionControlView.Presenter#addNote(java.lang.String)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionControlView.Presenter#addNote(java.lang.String)
 	 */
 	@Override
 	public void addNote(final String note) {
@@ -460,7 +460,7 @@ public class SessionControlActivity extends AbstractActivity implements
 	/**
 	 * refresh the view with the latest from the server
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionControlView.Presenter#refresh()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionControlView.Presenter#refresh()
 	 */
 	@Override
 	public void refresh() {

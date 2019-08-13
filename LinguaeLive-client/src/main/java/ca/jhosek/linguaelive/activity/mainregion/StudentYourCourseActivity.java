@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -20,23 +20,23 @@ import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.RequestContext;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.PartnerInvitePlace;
-import ca.jhosek.main.client.place.SessionControlPlace;
-import ca.jhosek.main.client.place.StudentCourseDetailReportPlace;
-import ca.jhosek.main.client.place.StudentYourCoursePlace;
-import ca.jhosek.main.client.ui.priv.student.HourOfDay;
-import ca.jhosek.main.client.ui.priv.student.StudentYourCourseView;
-import ca.jhosek.main.client.ui.priv.student.StudentYourCourseViewImpl;
-import ca.jhosek.main.client.ui.priv.student.StudentYourCourseViewImpl.Driver;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.MemberRequestContext;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteRequestContext;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.PartnerInvitePlace;
+import ca.jhosek.linguaelive.place.SessionControlPlace;
+import ca.jhosek.linguaelive.place.StudentCourseDetailReportPlace;
+import ca.jhosek.linguaelive.place.StudentYourCoursePlace;
+import ca.jhosek.linguaelive.ui.priv.student.HourOfDay;
+import ca.jhosek.linguaelive.ui.priv.student.StudentYourCourseView;
+import ca.jhosek.linguaelive.ui.priv.student.StudentYourCourseViewImpl;
+import ca.jhosek.linguaelive.ui.priv.student.StudentYourCourseViewImpl.Driver;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.MemberRequestContext;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteRequestContext;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * student's view of a course member and associated objects 
@@ -338,7 +338,7 @@ public class StudentYourCourseActivity extends AbstractActivity implements Stude
 
 
 	/**
-	 * @see ca.jhosek.main.client.ui.priv.student.StudentYourCourseView.Presenter#getMember()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.StudentYourCourseView.Presenter#getMember()
 	 */
 	public MemberProxy getMember() {
 		// 
@@ -461,7 +461,7 @@ public class StudentYourCourseActivity extends AbstractActivity implements Stude
 
 	/**
 	 * refresh the available students query
-	 * @see ca.jhosek.main.client.ui.priv.student.StudentYourCourseView.Presenter#refreshAvailableStudents()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.StudentYourCourseView.Presenter#refreshAvailableStudents()
 	 */
 	public void refreshAvailableStudents() {
 		// 

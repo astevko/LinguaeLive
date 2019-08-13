@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Set;
 import java.util.logging.Logger;
@@ -15,15 +15,15 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.RequestContext;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.ContactUsPlace;
-import ca.jhosek.main.client.ui.anon.ContactUsView;
-import ca.jhosek.main.client.ui.anon.ContactUsViewImpl;
-import ca.jhosek.main.client.ui.anon.ContactUsViewImpl.Driver;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.ContactUsProxy;
-import ca.jhosek.main.shared.proxy.ContactUsRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.ContactUsPlace;
+import ca.jhosek.linguaelive.ui.anon.ContactUsView;
+import ca.jhosek.linguaelive.ui.anon.ContactUsViewImpl;
+import ca.jhosek.linguaelive.ui.anon.ContactUsViewImpl.Driver;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.ContactUsProxy;
+import ca.jhosek.linguaelive.proxy.ContactUsRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko
@@ -116,7 +116,7 @@ public class ContactUsActivity extends AbstractActivity implements ContactUsView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter#cancel()
 	 */
 
 	public void cancel() {
@@ -126,7 +126,7 @@ public class ContactUsActivity extends AbstractActivity implements ContactUsView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.ContactUsView.Presenter#submit()
+	 * @see ca.jhosek.linguaelive.ui.anon.ContactUsView.Presenter#submit()
 	 */
 	public void submit() {
 		// 

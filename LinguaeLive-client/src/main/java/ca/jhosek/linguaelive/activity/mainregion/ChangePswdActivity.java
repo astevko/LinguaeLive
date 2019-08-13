@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Set;
 import java.util.logging.Logger;
@@ -18,17 +18,17 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.RequestContext;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.activity.ActivityModule;
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.mvp.MainRegionActivityMapper;
-import ca.jhosek.main.client.place.ChangePswdPlace;
-import ca.jhosek.main.client.place.MyProfilePlace;
-import ca.jhosek.main.client.ui.priv.ChangePswdView;
-import ca.jhosek.main.client.ui.priv.ChangePswdViewImpl;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.activity.ActivityModule;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.mvp.MainRegionActivityMapper;
+import ca.jhosek.linguaelive.place.ChangePswdPlace;
+import ca.jhosek.linguaelive.place.MyProfilePlace;
+import ca.jhosek.linguaelive.ui.priv.ChangePswdView;
+import ca.jhosek.linguaelive.ui.priv.ChangePswdViewImpl;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * Activity related to My Profile View
@@ -163,7 +163,7 @@ public class ChangePswdActivity extends AbstractActivity implements ChangePswdVi
 	
 	
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.ChangePswdView.Presenter#saveUserEdits()
+	 * @see ca.jhosek.linguaelive.ui.priv.ChangePswdView.Presenter#saveUserEdits()
 	 */
 	@Override
 	public void saveUserEdits() {

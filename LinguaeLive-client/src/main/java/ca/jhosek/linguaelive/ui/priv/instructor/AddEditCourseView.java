@@ -1,15 +1,15 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.AddEditCourseActivity;
-import ca.jhosek.main.client.place.AddEditCoursePlace;
-import ca.jhosek.main.client.ui.priv.instructor.AddEditCourseViewImpl.Driver;
+import ca.jhosek.linguaelive.activity.mainregion.AddEditCourseActivity;
+import ca.jhosek.linguaelive.place.AddEditCoursePlace;
+import ca.jhosek.linguaelive.ui.priv.instructor.AddEditCourseViewImpl.Driver;
 
 /**
  * Add A Course View 

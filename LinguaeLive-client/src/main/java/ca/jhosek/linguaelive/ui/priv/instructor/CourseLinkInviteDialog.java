@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -12,9 +12,9 @@ import com.google.gwt.user.client.ui.InlineLabel;
 import com.google.gwt.user.client.ui.NumberLabel;
 import com.google.gwt.user.client.ui.TextArea;
 
-import ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseView.Presenter;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseView.Presenter;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * display a dialogbox with a briefing of the course to send a link invite to

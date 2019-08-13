@@ -3,7 +3,7 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
 	<ui:style src="../../../style.css" />
-	<ui:with field="constants" type="ca.jhosek.main.client.LLConstants" />
+	<ui:with field="constants" type="ca.jhosek.linguaelive.LLConstants" />
 		
 	<g:DialogBox ui:field="dialogBox" animationEnabled="true"
 		modal="false" glassEnabled="true">

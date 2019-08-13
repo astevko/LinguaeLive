@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -11,18 +11,18 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.AddCourseMemberPlace;
-import ca.jhosek.main.client.place.AddEditCoursePlace;
-import ca.jhosek.main.client.place.InstructorYourCoursePlace;
-import ca.jhosek.main.client.place.MyCoursesPlace;
-import ca.jhosek.main.client.place.StudentYourCoursePlace;
-import ca.jhosek.main.client.ui.priv.MyCoursesView;
-import ca.jhosek.main.client.ui.priv.MyCoursesViewImpl;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.CourseRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.AddCourseMemberPlace;
+import ca.jhosek.linguaelive.place.AddEditCoursePlace;
+import ca.jhosek.linguaelive.place.InstructorYourCoursePlace;
+import ca.jhosek.linguaelive.place.MyCoursesPlace;
+import ca.jhosek.linguaelive.place.StudentYourCoursePlace;
+import ca.jhosek.linguaelive.ui.priv.MyCoursesView;
+import ca.jhosek.linguaelive.ui.priv.MyCoursesViewImpl;
+import ca.jhosek.linguaelive.UserType;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.CourseRequestContext;
 
 /**
  * list of my courses
@@ -93,7 +93,7 @@ public class MyCoursesActivity extends AbstractActivity implements MyCoursesView
 	}
 
 	/** goto add a course
-	 * @see ca.jhosek.main.client.ui.priv.MyCoursesView.Presenter#addACourse()
+	 * @see ca.jhosek.linguaelive.ui.priv.MyCoursesView.Presenter#addACourse()
 	 */
 	
 	public void addACourse() {
@@ -108,7 +108,7 @@ public class MyCoursesActivity extends AbstractActivity implements MyCoursesView
 
 	/***
 	 * goto view my course
-	 * @see ca.jhosek.main.client.ui.priv.MyCoursesView.Presenter#viewCourse(ca.jhosek.main.shared.proxy.CourseProxy)
+	 * @see ca.jhosek.linguaelive.ui.priv.MyCoursesView.Presenter#viewCourse(ca.jhosek.linguaelive.proxy.CourseProxy)
 	 */
 	
 	public void viewCourse(CourseProxy course) {

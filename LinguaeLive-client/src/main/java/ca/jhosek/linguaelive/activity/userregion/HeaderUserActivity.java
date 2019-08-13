@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.userregion;
+package ca.jhosek.linguaelive.activity.userregion;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
@@ -6,10 +6,10 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.client.ui.priv.HeaderUserView;
-import ca.jhosek.main.client.ui.priv.HeaderUserViewImpl;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.ui.priv.HeaderUserView;
+import ca.jhosek.linguaelive.ui.priv.HeaderUserViewImpl;
 
 /**
  * Authenticated users see their name etc...
@@ -40,7 +40,7 @@ public class HeaderUserActivity extends AbstractActivity implements HeaderUserVi
 	/**
 	 * 
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.HeaderUserView.Presenter#logout()
+	 * @see ca.jhosek.linguaelive.ui.priv.HeaderUserView.Presenter#logout()
 	 */
 	public void logoutUser() {
 		// logout any logged in user 

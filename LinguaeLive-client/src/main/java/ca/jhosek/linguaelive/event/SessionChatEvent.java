@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.event;
+package ca.jhosek.linguaelive.event;
 
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;

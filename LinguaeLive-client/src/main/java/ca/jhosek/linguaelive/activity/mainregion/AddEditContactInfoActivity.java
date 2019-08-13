@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Set;
 import java.util.logging.Logger;
@@ -21,16 +21,16 @@ import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.RequestContext;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.AddEditContactInfoPlace;
-import ca.jhosek.main.client.place.MyProfilePlace;
-import ca.jhosek.main.client.ui.priv.AddEditContactInfoView;
-import ca.jhosek.main.client.ui.priv.AddEditContactInfoViewImpl;
-import ca.jhosek.main.client.ui.priv.AddEditContactInfoViewImpl.Driver;
-import ca.jhosek.main.server.domain.ContactInfoDao;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.ContactInfoRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.AddEditContactInfoPlace;
+import ca.jhosek.linguaelive.place.MyProfilePlace;
+import ca.jhosek.linguaelive.ui.priv.AddEditContactInfoView;
+import ca.jhosek.linguaelive.ui.priv.AddEditContactInfoViewImpl;
+import ca.jhosek.linguaelive.ui.priv.AddEditContactInfoViewImpl.Driver;
+// import ca.jhosek.linguaelive.domain.ContactInfoDao;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.ContactInfoRequestContext;
 
 /**
  * add/edit new contact info 
@@ -142,7 +142,7 @@ public class AddEditContactInfoActivity extends AbstractActivity implements AddE
 	/** 
 	 * save ContactInfo and goto MyProfile page
 	 *  
-	 * @see ca.jhosek.main.client.ui.priv.AddEditContactInfoView.Presenter#save()
+	 * @see ca.jhosek.linguaelive.ui.priv.AddEditContactInfoView.Presenter#save()
 	 */
 	public void save() {
 		// 
@@ -237,7 +237,7 @@ public class AddEditContactInfoActivity extends AbstractActivity implements AddE
 
 	/***
 	 * goto my profile on cancel
-	 * @see ca.jhosek.main.client.ui.priv.AddEditContactInfoView.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.priv.AddEditContactInfoView.Presenter#cancel()
 	 */
 	public void cancel() {
 		// 
@@ -247,7 +247,7 @@ public class AddEditContactInfoActivity extends AbstractActivity implements AddE
 
 //	/**
 //	 * save and add more contact info
-//	 * @see ca.jhosek.main.client.ui.priv.AddEditContactInfoView.Presenter#saveMore()
+//	 * @see ca.jhosek.linguaelive.ui.priv.AddEditContactInfoView.Presenter#saveMore()
 //	 */
 //	@Override
 //	public void saveMore() {

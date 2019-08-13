@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.logging.Logger;
 
@@ -23,12 +23,12 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.AppResources;
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.PartnerInviteActivity;
-import ca.jhosek.main.client.widgets.OnlineOfflineIndicator;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.AppResources;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.PartnerInviteActivity;
+import ca.jhosek.linguaelive.widgets.OnlineOfflineIndicator;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko
@@ -175,7 +175,7 @@ public class PartnerInviteViewImpl extends Composite
 
 	/**
 	 * clear the display
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionControlView#clear()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionControlView#clear()
 	 */
 	public void clear() {
 		//
@@ -205,7 +205,7 @@ public class PartnerInviteViewImpl extends Composite
 	
 	/**
 	 * display only the proper buttons
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorCourseLinkView#setViewMode(java.lang.Boolean, java.lang.Boolean)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseLinkView#setViewMode(java.lang.Boolean, java.lang.Boolean)
 	 */
 	public void setViewMode( Boolean isSender, Boolean pending, Boolean accepted ) {
 		// is member1 online or offline

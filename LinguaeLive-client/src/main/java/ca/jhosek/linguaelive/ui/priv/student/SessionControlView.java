@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.List;
 
@@ -6,11 +6,11 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.SessionControlActivity;
-import ca.jhosek.main.client.place.SessionControlPlace;
-import ca.jhosek.main.client.ui.priv.student.SessionControlViewImpl.Driver;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.activity.mainregion.SessionControlActivity;
+import ca.jhosek.linguaelive.place.SessionControlPlace;
+import ca.jhosek.linguaelive.ui.priv.student.SessionControlViewImpl.Driver;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko

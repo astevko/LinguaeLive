@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.admin;
+package ca.jhosek.linguaelive.ui.priv.admin;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
@@ -11,7 +11,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.MenuItem;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.client.activity.menuregion.AdminMenuActivity;
+import ca.jhosek.linguaelive.activity.menuregion.AdminMenuActivity;
 
 /**
  * Admin Menu View

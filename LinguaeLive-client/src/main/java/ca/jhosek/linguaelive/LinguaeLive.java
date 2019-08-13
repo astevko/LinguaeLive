@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 - 2014 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client;
+package ca.jhosek.linguaelive;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

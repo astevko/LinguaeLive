@@ -1,14 +1,14 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.admin;
+package ca.jhosek.linguaelive.ui.priv.admin;
 
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.QueryCoursesActivity;
-import ca.jhosek.main.client.ui.priv.admin.AdminCourseViewImpl.Driver;
+// import ca.jhosek.linguaelive.activity.mainregion.QueryCoursesActivity;
+import ca.jhosek.linguaelive.ui.priv.admin.AdminCourseViewImpl.Driver;
 
 /**
  * Admin Course View (embedded within QueryCourses...) 

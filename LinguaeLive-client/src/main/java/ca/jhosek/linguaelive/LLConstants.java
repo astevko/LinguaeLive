@@ -1,30 +1,30 @@
 /**
  * 
  */
-package ca.jhosek.main.client;
+package ca.jhosek.linguaelive;
 
 import com.google.gwt.i18n.client.Constants;
 
-import ca.jhosek.main.client.activity.mainregion.InstructorYourCourseActivity;
-import ca.jhosek.main.client.activity.mainregion.SessionControlActivity;
-import ca.jhosek.main.client.ui.anon.ContactUsViewImpl;
-import ca.jhosek.main.client.ui.anon.CourseBrowseViewImpl;
-import ca.jhosek.main.client.ui.anon.LostAccountViewImpl;
-import ca.jhosek.main.client.ui.priv.MyCoursesViewImpl;
-import ca.jhosek.main.client.ui.priv.MyProfileViewImpl;
-import ca.jhosek.main.client.ui.priv.admin.AdminUserViewerImpl;
-import ca.jhosek.main.client.ui.priv.admin.QueryCoursesViewImpl;
-import ca.jhosek.main.client.ui.priv.admin.QueryUsersViewImpl;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorCourseLinkViewImpl;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorHomeViewImpl;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorMemberViewImpl;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseViewImpl;
-import ca.jhosek.main.client.ui.priv.student.PartnerInviteDialog;
-import ca.jhosek.main.client.ui.priv.student.PartnerInviteViewImpl;
-import ca.jhosek.main.client.ui.priv.student.SessionControlViewImpl;
-import ca.jhosek.main.client.ui.priv.student.StudentCourseDetailReportViewImpl;
-import ca.jhosek.main.client.ui.priv.student.StudentHomeViewImpl;
-import ca.jhosek.main.client.ui.priv.student.StudentYourCourseViewImpl;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorYourCourseActivity;
+import ca.jhosek.linguaelive.activity.mainregion.SessionControlActivity;
+import ca.jhosek.linguaelive.ui.anon.ContactUsViewImpl;
+import ca.jhosek.linguaelive.ui.anon.CourseBrowseViewImpl;
+import ca.jhosek.linguaelive.ui.anon.LostAccountViewImpl;
+import ca.jhosek.linguaelive.ui.priv.MyCoursesViewImpl;
+import ca.jhosek.linguaelive.ui.priv.MyProfileViewImpl;
+import ca.jhosek.linguaelive.ui.priv.admin.AdminUserViewerImpl;
+import ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesViewImpl;
+import ca.jhosek.linguaelive.ui.priv.admin.QueryUsersViewImpl;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseLinkViewImpl;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorHomeViewImpl;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorMemberViewImpl;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseViewImpl;
+import ca.jhosek.linguaelive.ui.priv.student.PartnerInviteDialog;
+import ca.jhosek.linguaelive.ui.priv.student.PartnerInviteViewImpl;
+import ca.jhosek.linguaelive.ui.priv.student.SessionControlViewImpl;
+import ca.jhosek.linguaelive.ui.priv.student.StudentCourseDetailReportViewImpl;
+import ca.jhosek.linguaelive.ui.priv.student.StudentHomeViewImpl;
+import ca.jhosek.linguaelive.ui.priv.student.StudentYourCourseViewImpl;
 
 /**
  * @author andy

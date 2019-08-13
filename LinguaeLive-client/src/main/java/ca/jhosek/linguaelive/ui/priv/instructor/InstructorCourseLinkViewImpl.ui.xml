@@ -2,9 +2,9 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat' ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator" ui:generateLocales="default"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
 	xmlns:p1="urn:import:com.google.gwt.user.cellview.client" xmlns:e='urn:import:com.google.gwt.editor.ui.client'
-	xmlns:x='urn:import:ca.jhosek.main.client.ui' xmlns:x2='urn:import:ca.jhosek.main.client.widgets'>
+	xmlns:x='urn:import:ca.jhosek.linguaelive.ui' xmlns:x2='urn:import:ca.jhosek.linguaelive.widgets'>
 	<ui:style src="../../../style.css" />
-	<ui:with field="constants" type="ca.jhosek.main.client.LLConstants" />
+	<ui:with field="constants" type="ca.jhosek.linguaelive.LLConstants" />
 		
 	<!--
 	editor panel for CourseLinkProxy

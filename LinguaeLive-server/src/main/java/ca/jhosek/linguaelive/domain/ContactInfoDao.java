@@ -1,4 +1,4 @@
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.util.List;
 import java.util.logging.Logger;

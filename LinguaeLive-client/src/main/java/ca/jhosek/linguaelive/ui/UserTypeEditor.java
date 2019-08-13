@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui;
+package ca.jhosek.linguaelive.ui;
 
 import java.util.logging.Logger;
 
@@ -27,7 +27,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.shared.UserType;
+import ca.jhosek.linguaelive.UserType;
 
 /**
  * Editor widget for User Type

@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Set;
 import java.util.logging.Logger;
@@ -14,15 +14,15 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.activity.ActivityModule;
-import ca.jhosek.main.client.place.ChangePswdPlace;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.client.place.RecoverPasswordPlace;
-import ca.jhosek.main.client.ui.anon.RecoverPasswordView;
-import ca.jhosek.main.client.ui.anon.RecoverPasswordViewImpl;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.activity.ActivityModule;
+import ca.jhosek.linguaelive.place.ChangePswdPlace;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.place.RecoverPasswordPlace;
+import ca.jhosek.linguaelive.ui.anon.RecoverPasswordView;
+import ca.jhosek.linguaelive.ui.anon.RecoverPasswordViewImpl;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * used to reset passwords 
@@ -64,7 +64,7 @@ public class RecoverPasswordActivity extends AbstractActivity implements Recover
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter#cancel()
 	 */
 
 	public void cancel() {
@@ -74,7 +74,7 @@ public class RecoverPasswordActivity extends AbstractActivity implements Recover
 
 	}
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.RecoverPasswordView.Presenter#checkOkEmailHash(java.lang.String, java.lang.String)
+	 * @see ca.jhosek.linguaelive.ui.anon.RecoverPasswordView.Presenter#checkOkEmailHash(java.lang.String, java.lang.String)
 	 */
 	@Override
 	public void checkOkEmailHash(final String email, final String hash) {

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,9 +16,9 @@ import java.util.logging.Logger;
 import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.googlecode.objectify.Key;
 
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.SessionRequestContext;
+import ca.jhosek.linguaelive.LanguageType;
+// import ca.jhosek.linguaelive.proxy.SessionProxy;
+// import ca.jhosek.linguaelive.proxy.SessionRequestContext;
 import static com.googlecode.objectify.ObjectifyService.ofy;
 /**
  * Session object data access layer

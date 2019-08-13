@@ -1,12 +1,12 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.io.Serializable;
 import java.util.Date;
 
-import ca.jhosek.main.shared.proxy.CourseLinkProxy;
+// import ca.jhosek.linguaelive.proxy.CourseLinkProxy;
 
 import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.googlecode.objectify.Key;

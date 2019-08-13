@@ -1,13 +1,13 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.util.logging.Logger;
 
-import ca.jhosek.main.server.email.ContactUsEmail;
-import ca.jhosek.main.server.email.SendEmail;
-import ca.jhosek.main.shared.proxy.ContactUsRequestContext;
+import ca.jhosek.linguaelive.email.ContactUsEmail;
+import ca.jhosek.linguaelive.email.SendEmail;
+// import ca.jhosek.linguaelive.proxy.ContactUsRequestContext;
 
 /**
  * handler for sending contact us emails

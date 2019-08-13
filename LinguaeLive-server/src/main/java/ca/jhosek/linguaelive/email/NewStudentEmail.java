@@ -1,7 +1,7 @@
-package ca.jhosek.main.server.email;
+package ca.jhosek.linguaelive.email;
 
-import ca.jhosek.main.server.domain.Course;
-import ca.jhosek.main.server.domain.User;
+import ca.jhosek.linguaelive.domain.Course;
+import ca.jhosek.linguaelive.domain.User;
 
 /**
  * new student message 

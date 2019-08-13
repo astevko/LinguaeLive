@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,9 @@ import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.googlecode.objectify.Key;
 import com.googlecode.objectify.cmd.Query;
 
-import ca.jhosek.main.server.email.LinkCourseAcceptEmail;
-import ca.jhosek.main.server.email.LinkCourseInviteEmail;
-import ca.jhosek.main.shared.proxy.CourseLinkRequestContext;
+import ca.jhosek.linguaelive.email.LinkCourseAcceptEmail;
+import ca.jhosek.linguaelive.email.LinkCourseInviteEmail;
+// import ca.jhosek.linguaelive.proxy.CourseLinkRequestContext;
 import static com.googlecode.objectify.ObjectifyService.ofy;
 
 /**

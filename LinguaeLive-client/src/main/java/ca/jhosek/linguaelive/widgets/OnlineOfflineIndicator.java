@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.widgets;
+package ca.jhosek.linguaelive.widgets;
 
 import com.google.gwt.editor.client.IsEditor;
 import com.google.gwt.editor.client.LeafValueEditor;

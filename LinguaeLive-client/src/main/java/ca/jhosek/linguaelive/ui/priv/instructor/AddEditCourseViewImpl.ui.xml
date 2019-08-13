@@ -4,7 +4,7 @@
 	xmlns:g2="urn:import:com.google.gwt.user.datepicker.client"
 	xmlns:p1="urn:import:com.google.gwt.user.cellview.client"
 	xmlns:e='urn:import:com.google.gwt.editor.ui.client'
-	xmlns:x='urn:import:ca.jhosek.main.client.widgets' 
+	xmlns:x='urn:import:ca.jhosek.linguaelive.widgets' 
 	>
 
 	<ui:style src="../../../style.css" />

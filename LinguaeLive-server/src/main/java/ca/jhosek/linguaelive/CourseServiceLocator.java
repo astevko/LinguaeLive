@@ -1,11 +1,11 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.server;
+package ca.jhosek.linguaelive;
 
 import com.google.web.bindery.requestfactory.shared.ServiceLocator;
 
-import ca.jhosek.main.server.domain.CourseDao;
+import ca.jhosek.linguaelive.domain.CourseDao;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko

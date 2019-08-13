@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import java.util.logging.Logger;
 
@@ -21,8 +21,8 @@ import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.NewStudentFormActivity;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.NewStudentFormActivity;
 
 /**
  * New Student Sign up 
@@ -94,7 +94,7 @@ public class NewStudentPanelImpl extends Composite implements NewStudentPanel {
 
 	/** 
 	 * save the presenter so that we can trigger actions
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel#setPresenter(ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel#setPresenter(ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
@@ -136,7 +136,7 @@ public class NewStudentPanelImpl extends Composite implements NewStudentPanel {
 	/**
 	 * show/hide the user form
 	 * 
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel#setUserFormVisibility(boolean)
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel#setUserFormVisibility(boolean)
 	 */
 	public void setUserFormVisibility(boolean showUserForm) {
 		//
@@ -147,7 +147,7 @@ public class NewStudentPanelImpl extends Composite implements NewStudentPanel {
 	/**
 	 * show/hide invite code form
 	 * 
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel#setInviteCodeFormVisibility(boolean)
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel#setInviteCodeFormVisibility(boolean)
 	 */
 	public void setInviteCodeFormVisibility(boolean showInviteCodeForm) {
 		// 
@@ -156,7 +156,7 @@ public class NewStudentPanelImpl extends Composite implements NewStudentPanel {
 
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel#setInviteCode(java.lang.String)
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel#setInviteCode(java.lang.String)
 	 */
 	public void setInviteCode(String courseInviteCode) {
 		// 

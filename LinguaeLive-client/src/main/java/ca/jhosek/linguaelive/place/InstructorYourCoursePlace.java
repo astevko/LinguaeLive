@@ -1,15 +1,15 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.place;
+package ca.jhosek.linguaelive.place;
 
 import com.google.gwt.place.shared.PlaceTokenizer;
 import com.google.gwt.place.shared.Prefix;
 
-import ca.jhosek.main.client.activity.mainregion.InstructorYourCourseActivity;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseView;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorYourCourseViewImpl;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorYourCourseActivity;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseView;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorYourCourseViewImpl;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  * instructor's your course view

@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.activity.menuregion;
+package ca.jhosek.linguaelive.activity.menuregion;
 
 
 
@@ -11,10 +11,10 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.place.AdminHomePlace;
-import ca.jhosek.main.client.place.QueryCoursesPlace;
-import ca.jhosek.main.client.place.QueryUsersPlace;
-import ca.jhosek.main.client.ui.priv.admin.AdminMenuView;
+import ca.jhosek.linguaelive.place.AdminHomePlace;
+import ca.jhosek.linguaelive.place.QueryCoursesPlace;
+import ca.jhosek.linguaelive.place.QueryUsersPlace;
+import ca.jhosek.linguaelive.ui.priv.admin.AdminMenuView;
 
 /**
  * menu activity of admin users
@@ -46,7 +46,7 @@ public class AdminMenuActivity extends AbstractActivity implements AdminMenuView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.AdminMenuView.Presenter#goToAdminHome()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminMenuView.Presenter#goToAdminHome()
 	 */
 	
 	public void goToAdminHome() {
@@ -56,7 +56,7 @@ public class AdminMenuActivity extends AbstractActivity implements AdminMenuView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.AdminMenuView.Presenter#goToQueryUsers()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminMenuView.Presenter#goToQueryUsers()
 	 */
 	
 	public void goToQueryUsers() {
@@ -65,7 +65,7 @@ public class AdminMenuActivity extends AbstractActivity implements AdminMenuView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.AdminMenuView.Presenter#goToQueryCourses()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminMenuView.Presenter#goToQueryCourses()
 	 */
 	
 	public void goToQueryCourses() {

@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
@@ -6,9 +6,9 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.place.CourseBrowsePlace;
-import ca.jhosek.main.client.place.NewInstructorPlace;
-import ca.jhosek.main.client.ui.anon.InstructorInfoView;
+import ca.jhosek.linguaelive.place.CourseBrowsePlace;
+import ca.jhosek.linguaelive.place.NewInstructorPlace;
+import ca.jhosek.linguaelive.ui.anon.InstructorInfoView;
 
 /**
  * InstructorInfo Activity

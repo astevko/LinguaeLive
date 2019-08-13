@@ -1,13 +1,13 @@
-package ca.jhosek.main.server.email;
+package ca.jhosek.linguaelive.email;
 
 import java.util.logging.Logger;
 
 import com.google.appengine.api.datastore.EntityNotFoundException;
 
-import ca.jhosek.main.server.domain.Course;
-import ca.jhosek.main.server.domain.Member;
-import ca.jhosek.main.server.domain.SessionInvite;
-import ca.jhosek.main.server.domain.User;
+import ca.jhosek.linguaelive.domain.Course;
+import ca.jhosek.linguaelive.domain.Member;
+import ca.jhosek.linguaelive.domain.SessionInvite;
+import ca.jhosek.linguaelive.domain.User;
 
 /**
  * called twice to send a message to both students 

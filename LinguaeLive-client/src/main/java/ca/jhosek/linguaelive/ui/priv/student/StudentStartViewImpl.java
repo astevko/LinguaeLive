@@ -1,14 +1,14 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  *  Student user start page 
@@ -31,7 +31,7 @@ public class StudentStartViewImpl extends Composite implements StudentStartView 
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.StudentStartView#clear()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.StudentStartView#clear()
 	 */
 	public void clear() {
 		// TODO Auto-generated method stub
@@ -39,14 +39,14 @@ public class StudentStartViewImpl extends Composite implements StudentStartView 
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.StudentStartView#setPresenter(ca.jhosek.main.client.ui.priv.student.StudentStartView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.StudentStartView#setPresenter(ca.jhosek.linguaelive.ui.priv.student.StudentStartView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.StudentStartView#setUser(ca.jhosek.main.shared.User)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.StudentStartView#setUser(ca.jhosek.linguaelive.User)
 	 */
 	public void setUser(UserProxy user) {
 		// TODO Auto-generated method stub

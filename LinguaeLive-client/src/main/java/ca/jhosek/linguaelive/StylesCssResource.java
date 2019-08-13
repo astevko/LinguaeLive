@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client;
+package ca.jhosek.linguaelive;
 
 import com.google.gwt.resources.client.CssResource;
 

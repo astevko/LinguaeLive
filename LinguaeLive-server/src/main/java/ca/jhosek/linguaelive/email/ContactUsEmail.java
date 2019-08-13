@@ -1,6 +1,6 @@
-package ca.jhosek.main.server.email;
+package ca.jhosek.linguaelive.email;
 
-import ca.jhosek.main.server.domain.ContactUs;
+import ca.jhosek.linguaelive.domain.ContactUs;
 
 /**
  * Contact Us Email

@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -17,24 +17,24 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.event.SessionInviteUpdateEvent;
-import ca.jhosek.main.client.event.UserStatusChangeEvent;
-import ca.jhosek.main.client.place.PartnerInvitePlace;
-import ca.jhosek.main.client.place.SessionControlPlace;
-import ca.jhosek.main.client.place.StudentYourCoursePlace;
-import ca.jhosek.main.client.ui.GroupingHandlerRegistration;
-import ca.jhosek.main.client.ui.priv.student.PartnerInviteView;
-import ca.jhosek.main.client.ui.priv.student.PartnerInviteViewImpl;
-import ca.jhosek.main.client.ui.priv.student.PartnerInviteViewImpl.Driver;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteRequestContext;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.SessionRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.event.SessionInviteUpdateEvent;
+import ca.jhosek.linguaelive.event.UserStatusChangeEvent;
+import ca.jhosek.linguaelive.place.PartnerInvitePlace;
+import ca.jhosek.linguaelive.place.SessionControlPlace;
+import ca.jhosek.linguaelive.place.StudentYourCoursePlace;
+import ca.jhosek.linguaelive.ui.GroupingHandlerRegistration;
+import ca.jhosek.linguaelive.ui.priv.student.PartnerInviteView;
+import ca.jhosek.linguaelive.ui.priv.student.PartnerInviteViewImpl;
+import ca.jhosek.linguaelive.ui.priv.student.PartnerInviteViewImpl.Driver;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.UserType;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteRequestContext;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
+import ca.jhosek.linguaelive.proxy.SessionRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * student's view of a session invitation
@@ -226,7 +226,7 @@ public class PartnerInviteActivity extends AbstractActivity implements PartnerIn
 	/**
 	 * called by onConfirm, onDecline, and onUnlinkCourses user click events.
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.student.PartnerInviteView.Presenter#respondToSessionInvite(java.lang.Boolean)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.PartnerInviteView.Presenter#respondToSessionInvite(java.lang.Boolean)
 	 */
 	public void respondToSessionInvite( Boolean accept) {
 		logger.info("respondToSessionInvite( " + accept + " )");
@@ -258,7 +258,7 @@ public class PartnerInviteActivity extends AbstractActivity implements PartnerIn
 	 *  
 	 * @param sessionLang 
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.student.PartnerInviteView.Presenter#startNewSessionWithCurrentInvite()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.PartnerInviteView.Presenter#startNewSessionWithCurrentInvite()
 	 */
 	protected void startNewSessionWithCurrentInvite(LanguageType sessionLang) {
 		logger.info( "createFromInvite() " );
@@ -283,7 +283,7 @@ public class PartnerInviteActivity extends AbstractActivity implements PartnerIn
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionInviteView.Presenter#gotoMember1Course()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionInviteView.Presenter#gotoMember1Course()
 	 */
 	public void gotoMember1Course() {
 		// 
@@ -292,7 +292,7 @@ public class PartnerInviteActivity extends AbstractActivity implements PartnerIn
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionInviteView.Presenter#gotoMember2Course()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionInviteView.Presenter#gotoMember2Course()
 	 */
 
 	public void gotoMember2Course() {
@@ -302,7 +302,7 @@ public class PartnerInviteActivity extends AbstractActivity implements PartnerIn
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionInviteView.Presenter#startSessionWithCurrentInvite()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionInviteView.Presenter#startSessionWithCurrentInvite()
 	 */
 
 	public void startSessionWithCurrentInvite() {
@@ -311,7 +311,7 @@ public class PartnerInviteActivity extends AbstractActivity implements PartnerIn
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.SessionInviteView.Presenter#startOtherSessionWithCurrentInvite()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.SessionInviteView.Presenter#startOtherSessionWithCurrentInvite()
 	 */
 
 	public void startOtherSessionWithCurrentInvite() {

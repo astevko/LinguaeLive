@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -11,12 +11,12 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.ui.anon.CourseBrowseView;
-import ca.jhosek.main.client.ui.anon.CourseBrowseViewImpl;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.CourseRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.ui.anon.CourseBrowseView;
+import ca.jhosek.linguaelive.ui.anon.CourseBrowseViewImpl;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.CourseRequestContext;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko
@@ -72,7 +72,7 @@ public class CourseBrowseActivity extends AbstractActivity implements CourseBrow
 	}
 
 //	/* (non-Javadoc)
-//	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter#cancel()
+//	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter#cancel()
 //	 */
 //	@Override
 //	public void cancel() {
@@ -82,7 +82,7 @@ public class CourseBrowseActivity extends AbstractActivity implements CourseBrow
 //	}
 //
 //	/* (non-Javadoc)
-//	 * @see ca.jhosek.main.client.ui.anon.ContactUsView.Presenter#submit()
+//	 * @see ca.jhosek.linguaelive.ui.anon.ContactUsView.Presenter#submit()
 //	 */
 //	@Override
 //	public void submit() {

@@ -1,12 +1,12 @@
-package ca.jhosek.main.client;
+package ca.jhosek.linguaelive;
 
 import com.google.gwt.inject.client.GinModules;
 import com.google.gwt.inject.client.Ginjector;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.ui.MainView;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.ui.MainView;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
 
 
 @GinModules({AppGinModule.class})

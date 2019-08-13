@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.widgets;
+package ca.jhosek.linguaelive.widgets;
 
 import com.google.gwt.i18n.client.ConstantsWithLookup;
 

@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.List;
 
@@ -6,14 +6,14 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.InstructorMemberActivity;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorMemberViewImpl.Driver;
-import ca.jhosek.main.client.ui.priv.student.HourOfDay;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.SessionProxy;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorMemberActivity;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorMemberViewImpl.Driver;
+import ca.jhosek.linguaelive.ui.priv.student.HourOfDay;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
 
 /**
  * displays a Member as viewed by a Instructor

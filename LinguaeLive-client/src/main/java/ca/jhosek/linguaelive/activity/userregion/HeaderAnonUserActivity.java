@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.userregion;
+package ca.jhosek.linguaelive.activity.userregion;
 
 import java.util.Date;
 import java.util.List;
@@ -13,10 +13,10 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.LoginFormPlace;
-import ca.jhosek.main.client.ui.anon.HeaderAnonUserView;
-import ca.jhosek.main.client.ui.anon.HeaderAnonUserViewImpl;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.LoginFormPlace;
+import ca.jhosek.linguaelive.ui.anon.HeaderAnonUserView;
+import ca.jhosek.linguaelive.ui.anon.HeaderAnonUserViewImpl;
 
 /**
  * anon users see Login & Sign up options
@@ -50,7 +50,7 @@ public class HeaderAnonUserActivity extends AbstractActivity implements HeaderAn
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.HeaderAnonUserView.Presenter#loginUser()
+	 * @see ca.jhosek.linguaelive.ui.anon.HeaderAnonUserView.Presenter#loginUser()
 	 */
 	public void loginUser() {
 		placeController.goTo( new LoginFormPlace( ));    
@@ -63,7 +63,7 @@ public class HeaderAnonUserActivity extends AbstractActivity implements HeaderAn
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.HeaderAnonUserView.Presenter#changeLocale()
+	 * @see ca.jhosek.linguaelive.ui.anon.HeaderAnonUserView.Presenter#changeLocale()
 	 */
 	@SuppressWarnings("deprecation")
 	@Override

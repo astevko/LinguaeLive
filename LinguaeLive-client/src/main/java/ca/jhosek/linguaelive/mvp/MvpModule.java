@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.mvp;
+package ca.jhosek.linguaelive.mvp;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
@@ -10,10 +10,10 @@ import com.google.gwt.place.shared.PlaceHistoryMapper;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 
-import ca.jhosek.main.client.AppGinModule;
-import ca.jhosek.main.client.place.AppPlaceHistoryMapper;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.AppGinModule;
+import ca.jhosek.linguaelive.place.AppPlaceHistoryMapper;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko

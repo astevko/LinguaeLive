@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
@@ -6,7 +6,7 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.ui.priv.admin.AdminHomeView;
+import ca.jhosek.linguaelive.ui.priv.admin.AdminHomeView;
 
 public class AdminHomeActivity extends AbstractActivity implements AdminHomeView.Presenter {
 

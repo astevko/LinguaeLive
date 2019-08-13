@@ -1,12 +1,12 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.client.activity.mainregion.LoginFormActivity;
+// import ca.jhosek.linguaelive.activity.mainregion.LoginFormActivity;
 
 /**
  * login form view

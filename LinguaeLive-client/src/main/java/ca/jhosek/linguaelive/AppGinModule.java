@@ -1,12 +1,12 @@
-package ca.jhosek.main.client;
+package ca.jhosek.linguaelive;
 
 import com.google.gwt.inject.client.AbstractGinModule;
 import com.google.inject.Singleton;
 
-import ca.jhosek.main.client.activity.ActivityModule;
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.mvp.MvpModule;
-import ca.jhosek.main.client.ui.ViewModule;
+import ca.jhosek.linguaelive.activity.ActivityModule;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.mvp.MvpModule;
+import ca.jhosek.linguaelive.ui.ViewModule;
 
 
 /**

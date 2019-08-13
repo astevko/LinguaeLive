@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Set;
 import java.util.logging.Logger;
@@ -16,15 +16,15 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.client.place.LoginFormPlace;
-import ca.jhosek.main.client.place.LostAccountPlace;
-import ca.jhosek.main.client.ui.anon.LoginFormView;
-import ca.jhosek.main.client.ui.anon.LoginFormViewImpl;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.place.LoginFormPlace;
+import ca.jhosek.linguaelive.place.LostAccountPlace;
+import ca.jhosek.linguaelive.ui.anon.LoginFormView;
+import ca.jhosek.linguaelive.ui.anon.LoginFormViewImpl;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * Login form 
@@ -71,7 +71,7 @@ public class LoginFormActivity extends AbstractActivity implements LoginFormView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter#cancel()
 	 */
 	
 	public void cancel() {
@@ -82,7 +82,7 @@ public class LoginFormActivity extends AbstractActivity implements LoginFormView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.LoginFormView.Presenter#loginUser(java.lang.String, java.lang.String)
+	 * @see ca.jhosek.linguaelive.ui.anon.LoginFormView.Presenter#loginUser(java.lang.String, java.lang.String)
 	 */
 	
 	public void loginUser(final String emailAddress, final String password, final boolean rememberMe ) {
@@ -153,7 +153,7 @@ public class LoginFormActivity extends AbstractActivity implements LoginFormView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.LoginFormView.Presenter#loginViaFacebook()
+	 * @see ca.jhosek.linguaelive.ui.anon.LoginFormView.Presenter#loginViaFacebook()
 	 */
 	
 	public void loginViaFacebook() {
@@ -165,7 +165,7 @@ public class LoginFormActivity extends AbstractActivity implements LoginFormView
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.LoginFormView.Presenter#forgotPassword()
+	 * @see ca.jhosek.linguaelive.ui.anon.LoginFormView.Presenter#forgotPassword()
 	 */
 	
 	public void forgotPassword() {

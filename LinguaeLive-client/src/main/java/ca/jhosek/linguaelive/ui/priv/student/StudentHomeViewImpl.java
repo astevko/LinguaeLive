@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -31,16 +31,16 @@ import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.AppResources;
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.StylesCssResource;
-import ca.jhosek.main.client.activity.mainregion.StudentHomeActivity;
-import ca.jhosek.main.client.place.StudentHomePlace;
-import ca.jhosek.main.client.ui.GroupingHandlerRegistration;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.AppResources;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.StylesCssResource;
+import ca.jhosek.linguaelive.activity.mainregion.StudentHomeActivity;
+import ca.jhosek.linguaelive.place.StudentHomePlace;
+import ca.jhosek.linguaelive.ui.GroupingHandlerRegistration;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  *  Student user home page 
@@ -128,7 +128,7 @@ public class StudentHomeViewImpl extends Composite implements StudentHomeView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.StudentHomeView#clear()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.StudentHomeView#clear()
 	 */
 	public void clear() {
 		coursesPanel.clear();
@@ -137,7 +137,7 @@ public class StudentHomeViewImpl extends Composite implements StudentHomeView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.StudentHomeView#setPresenter(ca.jhosek.main.client.ui.priv.student.StudentHomeView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.StudentHomeView#setPresenter(ca.jhosek.linguaelive.ui.priv.student.StudentHomeView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
@@ -344,7 +344,7 @@ public class StudentHomeViewImpl extends Composite implements StudentHomeView {
 
 	/**
 	 * clear course list and show new
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorHomeView#showCourseList(java.util.List)
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorHomeView#showCourseList(java.util.List)
 	 */
 	@Override
 	public void showCourseList(List<CourseProxy> courses) {

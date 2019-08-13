@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.admin;
+package ca.jhosek.linguaelive.ui.priv.admin;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -27,10 +27,10 @@ import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
 
-import ca.jhosek.main.client.activity.mainregion.QueryUsersActivity;
-import ca.jhosek.main.client.place.QueryUsersPlace;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.activity.mainregion.QueryUsersActivity;
+import ca.jhosek.linguaelive.place.QueryUsersPlace;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  *  Admin query users view
@@ -115,7 +115,7 @@ public class QueryUsersViewImpl extends Composite implements QueryUsersView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.AdminHomeView#clear()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.AdminHomeView#clear()
 	 */
 	public void clear() {
 		// 
@@ -125,14 +125,14 @@ public class QueryUsersViewImpl extends Composite implements QueryUsersView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.AdminHomeView#setPresenter(ca.jhosek.main.client.ui.priv.student.AdminHomeView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.AdminHomeView#setPresenter(ca.jhosek.linguaelive.ui.priv.student.AdminHomeView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryUsersView#emptyQueryResults()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryUsersView#emptyQueryResults()
 	 */
 	public void emptyQueryResults() {
 		//
@@ -142,7 +142,7 @@ public class QueryUsersViewImpl extends Composite implements QueryUsersView {
 	}
 
 //	/* (non-Javadoc)
-//	 * @see ca.jhosek.main.client.ui.priv.admin.QueryUsersView#addQueryResult(java.lang.String, java.lang.Long)
+//	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryUsersView#addQueryResult(java.lang.String, java.lang.Long)
 //	 */
 //	@Override
 //	public void addQueryResult(final String name, final Long id) {
@@ -183,7 +183,7 @@ public class QueryUsersViewImpl extends Composite implements QueryUsersView {
 	}
 	
 //	/* (non-Javadoc)
-//	 * @see ca.jhosek.main.client.ui.priv.admin.QueryUsersView#getAdminUserViewer()
+//	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryUsersView#getAdminUserViewer()
 //	 */
 //	@Override
 //	public Editor<UserProxy> getAdminUserViewer() {
@@ -196,7 +196,7 @@ public class QueryUsersViewImpl extends Composite implements QueryUsersView {
 //	 * show user information
 //	 * 
 //	 * (non-Javadoc)
-//	 * @see ca.jhosek.main.client.ui.priv.admin.QueryUsersView#showUser(ca.jhosek.main.shared.UserProxy)
+//	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryUsersView#showUser(ca.jhosek.linguaelive.UserProxy)
 //	 */
 //	@Override
 //	public void showUser(UserProxy user) {

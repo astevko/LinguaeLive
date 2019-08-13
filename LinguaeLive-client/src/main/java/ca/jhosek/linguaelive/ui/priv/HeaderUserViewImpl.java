@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv;
+package ca.jhosek.linguaelive.ui.priv;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -13,7 +13,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * How we display the current logged in user
@@ -51,7 +51,7 @@ public class HeaderUserViewImpl extends Composite implements HeaderUserView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.HeaderLoggedInView#setPresenter(ca.jhosek.main.client.ui.HeaderLoggedInView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.HeaderLoggedInView#setPresenter(ca.jhosek.linguaelive.ui.HeaderLoggedInView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
@@ -59,7 +59,7 @@ public class HeaderUserViewImpl extends Composite implements HeaderUserView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.HeaderLoggedInView#setUser(ca.jhosek.main.shared.User)
+	 * @see ca.jhosek.linguaelive.ui.HeaderLoggedInView#setUser(ca.jhosek.linguaelive.User)
 	 */
 	public void setUser(UserProxy user) {
 		// 

@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Date;
 import java.util.Set;
@@ -18,21 +18,21 @@ import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriv
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.client.place.LoginFormPlace;
-import ca.jhosek.main.client.place.NewStudentPlace;
-import ca.jhosek.main.client.place.StudentStartPlace;
-import ca.jhosek.main.client.ui.anon.NewStudentPanel;
-import ca.jhosek.main.client.ui.anon.NewStudentPanelImpl;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.CourseRequestContext;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.MemberRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.place.LoginFormPlace;
+import ca.jhosek.linguaelive.place.NewStudentPlace;
+import ca.jhosek.linguaelive.place.StudentStartPlace;
+import ca.jhosek.linguaelive.ui.anon.NewStudentPanel;
+import ca.jhosek.linguaelive.ui.anon.NewStudentPanelImpl;
+import ca.jhosek.linguaelive.UserType;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.CourseRequestContext;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.MemberRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko
@@ -87,7 +87,7 @@ public class NewStudentFormActivity extends AbstractActivity implements NewStude
 	}
 
 	/**
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter#cancel()
 	 */
 	
 	public void cancel() {
@@ -98,7 +98,7 @@ public class NewStudentFormActivity extends AbstractActivity implements NewStude
 	}
 
 	/**
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter#createNewStudent(ca.jhosek.main.shared.User)
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter#createNewStudent(ca.jhosek.linguaelive.User)
 	 */
 	@SuppressWarnings("deprecation")
 	
@@ -227,7 +227,7 @@ public class NewStudentFormActivity extends AbstractActivity implements NewStude
 	/** 
 	 * look up invite code before allowing student to sign up
 	 * 
-	 * @see ca.jhosek.main.client.ui.anon.NewStudentPanel.Presenter#acceptInviteCode(java.lang.String)
+	 * @see ca.jhosek.linguaelive.ui.anon.NewStudentPanel.Presenter#acceptInviteCode(java.lang.String)
 	 */
 	
 	public void acceptInviteCode(final String inviteCode) {

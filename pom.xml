@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -22,6 +22,9 @@
 
     <gwt.version>2.8.2</gwt.version>
 
+    <assistedinject.version>0.3.2</assistedinject.version>
+    <!-- <dagger.version>2.21</dagger.version> -->
+    <guice.version>4.2.2</guice.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
@@ -138,8 +141,44 @@
         <artifactId>gwt-jackson-remotelogging</artifactId>
         <version>${gwt-jackson.version}</version>
       </dependency> -->
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-jndi</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+            <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
 
       <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-servlet</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+      <!-- <dependency>
+        <groupId>com.google.dagger</groupId>
+        <artifactId>dagger-gwt</artifactId>
+        <version>${dagger.version}</version>
+      </dependency> -->
+      <!-- <dependency>
+        <groupId>com.squareup.inject</groupId>
+        <artifactId>assisted-inject-annotations-dagger2</artifactId>
+        <version>${assistedinject.version}</version>
+      </dependency> -->
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.1.0</version>
+      </dependency>
+
+     <dependency>
         <groupId>com.googlecode.objectify</groupId>
         <artifactId>objectify</artifactId>
         <version>5.1.21</version>
@@ -180,9 +219,7 @@
       <plugins>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <!-- Do not upgrade past 3.1 to avoid triggering https://issues.apache.org/jira/browse/MSOURCES-95 -->
-          <!-- Unless you use annotation processors, then upgrade to 3.5.1 at a minimum -->
-          <version>3.1</version>
+          <version>3.8.0</version>
           <configuration>
             <source>1.8</source>
             <target>1.8</target>
@@ -191,7 +228,7 @@
         <plugin>
           <groupId>org.eclipse.jetty</groupId>
           <artifactId>jetty-maven-plugin</artifactId>
-          <version>9.4.8.v20171121</version>
+          <version>9.4.15.v20190215</version>
         </plugin>
         <plugin>
           <groupId>net.ltgt.gwt.maven</groupId>
@@ -206,7 +243,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.0.1</version>
           <executions>
             <execution>
               <id>attach-sources</id>
@@ -216,18 +253,49 @@
               </goals>
             </execution>
           </executions>
+          <configuration>
+            <!-- Workaround for https://issues.apache.org/jira/browse/MSOURCES-95 -->
+            <includes>
+              <include>**/**</include>
+            </includes>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.tomcat.maven</groupId>
           <artifactId>tomcat7-maven-plugin</artifactId>
           <version>2.2</version>
         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.6.0</version>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
-  <modules>
+  <profiles>
+    <profile>
+      <id>jdk9plus</id>
+      <activation>
+        <jdk>[9,)</jdk>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                <release>8</release>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
+<modules>
     <module>LinguaeLive-client</module>
-    <module>LinguaeLive-shared</module>
-    <module>LinguaeLive-server</module>
+  <module>LinguaeLive-shared</module>
+  <module>LinguaeLive-server</module>
   </modules>
 </project>

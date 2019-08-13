@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -10,7 +10,7 @@ import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.googlecode.objectify.Key;
 import com.googlecode.objectify.annotation.*;
 
-import ca.jhosek.main.shared.LanguageType;
+import ca.jhosek.linguaelive.LanguageType;
 
 /**
  * a Course

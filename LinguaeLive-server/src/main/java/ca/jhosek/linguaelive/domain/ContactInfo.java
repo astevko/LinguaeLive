@@ -1,4 +1,4 @@
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.io.Serializable;
 import com.googlecode.objectify.annotation.*;
@@ -6,7 +6,7 @@ import com.googlecode.objectify.annotation.*;
 import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.googlecode.objectify.Key;
 
-import ca.jhosek.main.shared.ContactInfoType;
+import ca.jhosek.linguaelive.ContactInfoType;
 
 /**
  * a single instance of user contact info

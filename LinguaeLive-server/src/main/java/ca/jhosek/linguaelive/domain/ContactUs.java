@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 
 import com.googlecode.objectify.annotation.Entity;
 
-import ca.jhosek.main.shared.proxy.ContactUsProxy;
+// import ca.jhosek.linguaelive.proxy.ContactUsProxy;
 
 /**
  * Bean to hold info to act on Lost Account Dialog

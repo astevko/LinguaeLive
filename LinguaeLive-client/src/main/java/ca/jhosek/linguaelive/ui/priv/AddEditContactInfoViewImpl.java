@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv;
+package ca.jhosek.linguaelive.ui.priv;
 
 import java.util.Arrays;
 import java.util.logging.Logger;
@@ -22,11 +22,11 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.AddEditContactInfoActivity;
-import ca.jhosek.main.client.place.AddEditContactInfoPlace;
-import ca.jhosek.main.client.ui.EnumRenderer;
-import ca.jhosek.main.shared.ContactInfoType;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.activity.mainregion.AddEditContactInfoActivity;
+import ca.jhosek.linguaelive.place.AddEditContactInfoPlace;
+import ca.jhosek.linguaelive.ui.EnumRenderer;
+import ca.jhosek.linguaelive.ContactInfoType;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
 
 /**
  * add edit contact info page

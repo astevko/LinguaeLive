@@ -1,6 +1,6 @@
-package ca.jhosek.main.server;
+package ca.jhosek.linguaelive;
 
-import ca.jhosek.main.server.domain.DaoServiceLocator;
+import ca.jhosek.linguaelive.domain.DaoServiceLocator;
 
 @Deprecated
 public class UserServiceLocator extends DaoServiceLocator {

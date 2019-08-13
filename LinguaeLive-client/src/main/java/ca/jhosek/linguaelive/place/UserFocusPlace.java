@@ -1,6 +1,6 @@
-package ca.jhosek.main.client.place;
+package ca.jhosek.linguaelive.place;
 
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 public abstract class UserFocusPlace extends AuthenticatedPlace {
 

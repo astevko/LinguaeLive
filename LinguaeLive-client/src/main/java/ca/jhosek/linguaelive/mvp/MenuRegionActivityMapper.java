@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.mvp;
+package ca.jhosek.linguaelive.mvp;
 
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.activity.shared.ActivityMapper;
@@ -6,11 +6,11 @@ import com.google.gwt.place.shared.Place;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
-import ca.jhosek.main.client.activity.menuregion.AdminMenuActivity;
-import ca.jhosek.main.client.activity.menuregion.AnonMenuActivity;
-import ca.jhosek.main.client.activity.menuregion.InstructorMenuActivity;
-import ca.jhosek.main.client.activity.menuregion.StudentMenuActivity;
-import ca.jhosek.main.client.domain.CurrentState;
+import ca.jhosek.linguaelive.activity.menuregion.AdminMenuActivity;
+import ca.jhosek.linguaelive.activity.menuregion.AnonMenuActivity;
+import ca.jhosek.linguaelive.activity.menuregion.InstructorMenuActivity;
+import ca.jhosek.linguaelive.activity.menuregion.StudentMenuActivity;
+import ca.jhosek.linguaelive.domain.CurrentState;
 
 /**
  * this is the menu region of the main view

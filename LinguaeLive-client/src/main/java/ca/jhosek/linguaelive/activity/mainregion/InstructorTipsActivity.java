@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
@@ -6,10 +6,10 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.activity.ActivityModule;
-import ca.jhosek.main.client.place.InstructorTipsPlace;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorTipsView;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorTipsViewImpl;
+import ca.jhosek.linguaelive.activity.ActivityModule;
+import ca.jhosek.linguaelive.place.InstructorTipsPlace;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorTipsView;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorTipsViewImpl;
 
 /**
  * Activities on the Instructor Tips page

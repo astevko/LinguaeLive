@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -18,9 +18,9 @@ import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.LostAccountActivity;
-import ca.jhosek.main.client.place.LostAccountPlace;
+import ca.jhosek.linguaelive.LLConstants;
+// import ca.jhosek.linguaelive.activity.mainregion.LostAccountActivity;
+// import ca.jhosek.linguaelive.place.LostAccountPlace;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko
@@ -65,7 +65,7 @@ public class LostAccountViewImpl extends Composite implements LostAccountView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.LostAccountView#clear()
+	 * @see ca.jhosek.linguaelive.ui.anon.LostAccountView#clear()
 	 */
 	public void clear() {
 		// 
@@ -73,7 +73,7 @@ public class LostAccountViewImpl extends Composite implements LostAccountView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.LostAccountView#setPresenter(ca.jhosek.main.client.ui.anon.LostAccountView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.anon.LostAccountView#setPresenter(ca.jhosek.linguaelive.ui.anon.LostAccountView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;

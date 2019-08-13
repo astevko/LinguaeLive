@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.logging.Logger;
 
@@ -18,9 +18,9 @@ import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.client.activity.mainregion.AddEditCourseActivity;
-import ca.jhosek.main.client.place.AddEditCoursePlace;
-import ca.jhosek.main.client.ui.priv.instructor.AddEditCourseView;
+import ca.jhosek.linguaelive.activity.mainregion.AddEditCourseActivity;
+import ca.jhosek.linguaelive.place.AddEditCoursePlace;
+import ca.jhosek.linguaelive.ui.priv.instructor.AddEditCourseView;
 
 /**
  * admin display of user information

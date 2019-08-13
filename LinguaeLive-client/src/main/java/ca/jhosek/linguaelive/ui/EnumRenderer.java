@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.ui;
+package ca.jhosek.linguaelive.ui;
 
 import com.google.gwt.text.shared.AbstractRenderer;
 

@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui;
+package ca.jhosek.linguaelive.ui;
 
 import java.util.logging.Logger;
 

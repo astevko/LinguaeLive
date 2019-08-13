@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
@@ -6,10 +6,10 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.place.LoginFormPlace;
-import ca.jhosek.main.client.place.NewInstructorPlace;
-import ca.jhosek.main.client.place.NewStudentPlace;
-import ca.jhosek.main.client.ui.anon.IndexView;
+import ca.jhosek.linguaelive.place.LoginFormPlace;
+import ca.jhosek.linguaelive.place.NewInstructorPlace;
+import ca.jhosek.linguaelive.place.NewStudentPlace;
+import ca.jhosek.linguaelive.ui.anon.IndexView;
 
 /**
  * Main index page activity
@@ -31,7 +31,7 @@ public class IndexActivity extends AbstractActivity implements IndexView.Present
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.IndexView.Presenter#goToLoginForm()
+	 * @see ca.jhosek.linguaelive.ui.anon.IndexView.Presenter#goToLoginForm()
 	 */
 	
 	public void goToLoginForm() {
@@ -41,7 +41,7 @@ public class IndexActivity extends AbstractActivity implements IndexView.Present
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.IndexView.Presenter#goToNewInstructorForm()
+	 * @see ca.jhosek.linguaelive.ui.anon.IndexView.Presenter#goToNewInstructorForm()
 	 */
 	
 	public void goToNewInstructorForm() {
@@ -51,7 +51,7 @@ public class IndexActivity extends AbstractActivity implements IndexView.Present
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.IndexView.Presenter#goToNewStudentForm()
+	 * @see ca.jhosek.linguaelive.ui.anon.IndexView.Presenter#goToNewStudentForm()
 	 */
 	
 	public void goToNewStudentForm() {

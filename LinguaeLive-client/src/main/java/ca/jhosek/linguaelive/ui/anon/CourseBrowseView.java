@@ -1,15 +1,15 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import java.util.List;
 
 import com.google.gwt.user.client.ui.IsWidget;
 
-import ca.jhosek.main.client.activity.mainregion.ContactUsActivity;
-import ca.jhosek.main.shared.proxy.ContactUsProxy;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.activity.mainregion.ContactUsActivity;
+import ca.jhosek.linguaelive.proxy.ContactUsProxy;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  * Contact Us form view

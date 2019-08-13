@@ -1,7 +1,7 @@
 /**
 2 * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -35,7 +35,7 @@ public class IndexViewImpl extends Composite implements IndexView {
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.IndexView#setPresenter(ca.jhosek.main.client.ui.anon.IndexView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.anon.IndexView#setPresenter(ca.jhosek.linguaelive.ui.anon.IndexView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;

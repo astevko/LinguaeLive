@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
@@ -6,8 +6,8 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.place.NewStudentPlace;
-import ca.jhosek.main.client.ui.anon.StudentInfoView;
+import ca.jhosek.linguaelive.place.NewStudentPlace;
+import ca.jhosek.linguaelive.ui.anon.StudentInfoView;
 
 /**
  * StudentInfo Activity
@@ -36,7 +36,7 @@ public class StudentInfoActivity extends AbstractActivity implements StudentInfo
 
 	/**
 	 * goto new student signup
-	 * @see ca.jhosek.main.client.ui.anon.StudentInfoView.Presenter#goToNewStudentForm()
+	 * @see ca.jhosek.linguaelive.ui.anon.StudentInfoView.Presenter#goToNewStudentForm()
 	 */
 	public void goToNewStudentForm() {
 		// 

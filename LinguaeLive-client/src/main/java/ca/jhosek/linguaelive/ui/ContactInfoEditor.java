@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui;
+package ca.jhosek.linguaelive.ui;
 
 import java.util.logging.Logger;
 
@@ -24,7 +24,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
 
 /**
  * Shows the contact info and allows for direct editing

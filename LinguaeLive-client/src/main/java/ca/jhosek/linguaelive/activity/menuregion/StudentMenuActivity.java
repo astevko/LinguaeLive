@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.activity.menuregion;
+package ca.jhosek.linguaelive.activity.menuregion;
 
 
 
@@ -11,11 +11,11 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.place.MyCoursesPlace;
-import ca.jhosek.main.client.place.MyProfilePlace;
-import ca.jhosek.main.client.place.StudentHomePlace;
-import ca.jhosek.main.client.place.StudentStartPlace;
-import ca.jhosek.main.client.ui.priv.student.StudentMenuView;
+import ca.jhosek.linguaelive.place.MyCoursesPlace;
+import ca.jhosek.linguaelive.place.MyProfilePlace;
+import ca.jhosek.linguaelive.place.StudentHomePlace;
+import ca.jhosek.linguaelive.place.StudentStartPlace;
+import ca.jhosek.linguaelive.ui.priv.student.StudentMenuView;
 
 /**
  * menu activity of student users
@@ -48,7 +48,7 @@ public class StudentMenuActivity extends AbstractActivity implements StudentMenu
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.StudentMenuView.Presenter#goToStudentHome()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.StudentMenuView.Presenter#goToStudentHome()
 	 */
 	
 	public void goToStudentHome() {
@@ -58,7 +58,7 @@ public class StudentMenuActivity extends AbstractActivity implements StudentMenu
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.StudentMenuView.Presenter#goToQueryUsers()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.StudentMenuView.Presenter#goToQueryUsers()
 	 */
 	
 	public void goToMyProfile() {
@@ -69,7 +69,7 @@ public class StudentMenuActivity extends AbstractActivity implements StudentMenu
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorMenuView.Presenter#goToMyClasses()
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorMenuView.Presenter#goToMyClasses()
 	 */
 	
 	public void goToMyClasses() {
@@ -78,7 +78,7 @@ public class StudentMenuActivity extends AbstractActivity implements StudentMenu
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorMenuView.Presenter#goToInstructorStart()
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorMenuView.Presenter#goToInstructorStart()
 	 */
 	
 	public void goToStudentStart() {

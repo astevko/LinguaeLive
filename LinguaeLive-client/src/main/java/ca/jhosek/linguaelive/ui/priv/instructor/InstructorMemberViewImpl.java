@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,18 +44,18 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.InstructorMemberActivity;
-import ca.jhosek.main.client.place.InstructorMemberPlace;
-import ca.jhosek.main.client.ui.EnumRenderer;
-import ca.jhosek.main.client.ui.priv.student.HourOfDay;
-import ca.jhosek.main.shared.ContactInfoType;
-import ca.jhosek.main.shared.DayOfWeekEnum;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.SessionProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorMemberActivity;
+import ca.jhosek.linguaelive.place.InstructorMemberPlace;
+import ca.jhosek.linguaelive.ui.EnumRenderer;
+import ca.jhosek.linguaelive.ui.priv.student.HourOfDay;
+import ca.jhosek.linguaelive.ContactInfoType;
+import ca.jhosek.linguaelive.DayOfWeekEnum;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
 
 /**
  * view a course from the Student's point of view
@@ -592,7 +592,7 @@ public class InstructorMemberViewImpl extends Composite implements IsWidget, Ins
 	/**
 	 * show contact info for this user
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.MyProfileView#showContactInfo(java.util.List)
+	 * @see ca.jhosek.linguaelive.ui.priv.MyProfileView#showContactInfo(java.util.List)
 	 */
 
 	public void showContactInfo(List<ContactInfoProxy> contactInfos) {

@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,14 +11,14 @@ import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.InstructorYourCoursePlace;
-import ca.jhosek.main.client.place.QueryCoursesPlace;
-import ca.jhosek.main.client.ui.priv.admin.QueryCoursesView;
-import ca.jhosek.main.client.ui.priv.admin.QueryCoursesViewImpl;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.CourseRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.InstructorYourCoursePlace;
+import ca.jhosek.linguaelive.place.QueryCoursesPlace;
+import ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView;
+import ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesViewImpl;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.CourseRequestContext;
 
 /**
  * query for courses, display cell table, allow for updates
@@ -70,7 +70,7 @@ public class QueryCoursesActivity extends AbstractActivity implements QueryCours
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView.Presenter#queryCourses()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView.Presenter#queryCourses()
 	 */
 	public void queryCourses() {
 		logger.info( "executing queryCourses()");

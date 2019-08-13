@@ -1,14 +1,14 @@
 /**
  */
-package ca.jhosek.main.client.place;
+package ca.jhosek.linguaelive.place;
 
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceTokenizer;
 import com.google.gwt.place.shared.Prefix;
 
-import ca.jhosek.main.client.activity.mainregion.NewInstructorFormActivity;
-import ca.jhosek.main.client.ui.anon.NewInstructorPanel;
-import ca.jhosek.main.client.ui.anon.NewInstructorPanelImpl;
+import ca.jhosek.linguaelive.activity.mainregion.NewInstructorFormActivity;
+import ca.jhosek.linguaelive.ui.anon.NewInstructorPanel;
+import ca.jhosek.linguaelive.ui.anon.NewInstructorPanelImpl;
 
 /**
  * sign up new instructor form

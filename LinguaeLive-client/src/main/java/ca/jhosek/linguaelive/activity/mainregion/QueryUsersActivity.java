@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,19 +17,19 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.place.ChangePswdPlace;
-import ca.jhosek.main.client.place.QueryUsersPlace;
-import ca.jhosek.main.client.ui.priv.admin.AdminUserView;
-import ca.jhosek.main.client.ui.priv.admin.AdminUserViewerImpl;
-import ca.jhosek.main.client.ui.priv.admin.AdminUserViewerImpl.Driver;
-import ca.jhosek.main.client.ui.priv.admin.QueryUsersView;
-import ca.jhosek.main.client.ui.priv.admin.QueryUsersViewImpl;
-import ca.jhosek.main.server.domain.ContactInfoDao;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.ContactInfoRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.place.ChangePswdPlace;
+import ca.jhosek.linguaelive.place.QueryUsersPlace;
+import ca.jhosek.linguaelive.ui.priv.admin.AdminUserView;
+import ca.jhosek.linguaelive.ui.priv.admin.AdminUserViewerImpl;
+import ca.jhosek.linguaelive.ui.priv.admin.AdminUserViewerImpl.Driver;
+import ca.jhosek.linguaelive.ui.priv.admin.QueryUsersView;
+import ca.jhosek.linguaelive.ui.priv.admin.QueryUsersViewImpl;
+// import ca.jhosek.linguaelive.domain.ContactInfoDao;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.ContactInfoRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * Query Users and put them into a list along with editable region
@@ -91,7 +91,7 @@ public class QueryUsersActivity extends AbstractActivity implements QueryUsersVi
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryUsersView.Presenter#queryUsers()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryUsersView.Presenter#queryUsers()
 	 */
 	public void queryUsers() {
 		logger.info( "executing queryUsers()");
@@ -148,7 +148,7 @@ public class QueryUsersActivity extends AbstractActivity implements QueryUsersVi
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryUsersView.Presenter#showUser(java.lang.Long)
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryUsersView.Presenter#showUser(java.lang.Long)
 	 */
 	public void showUser(UserProxy user ) {
 		// 
@@ -194,7 +194,7 @@ public class QueryUsersActivity extends AbstractActivity implements QueryUsersVi
 //	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.AdminUserView.Presenter#saveUserEdits()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminUserView.Presenter#saveUserEdits()
 	 */
 	public void saveUserEdits() {
 		logger.info( "SaveUserEdits() pre-flush, user type=" + currentUser.getUserType().name() +
@@ -275,7 +275,7 @@ public class QueryUsersActivity extends AbstractActivity implements QueryUsersVi
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.AdminUserView.Presenter#resetUser()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.AdminUserView.Presenter#resetUser()
 	 */
 	public void resetUser() {
 		// 

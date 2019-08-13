@@ -1,10 +1,10 @@
-/**
+																			/**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
 package ca.jhosek.linguaelive.guice;
 
 import ca.jhosek.linguaelive.HitLoggerFilter;
-import ca.jhosek.linguaelive.channel.UserChannelConnectMonitor;
+// import ca.jhosek.linguaelive.channel.UserChannelConnectMonitor;
 
 import com.google.gwt.logging.server.RemoteLoggingServiceImpl;
 import com.google.inject.Singleton;
@@ -51,9 +51,9 @@ public class AppServletModule extends ServletModule {
 		// TODO - remove logging servlet path
 
 		// handle channel connections & disconnections 
-		bind(UserChannelConnectMonitor.class).in(Singleton.class);
-		serve("/_ah/channel/connected/").with( UserChannelConnectMonitor.class);
-		serve("/_ah/channel/disconnected/").with( UserChannelConnectMonitor.class);
+		// bind(UserChannelConnectMonitor.class).in(Singleton.class);
+		// serve("/_ah/channel/connected/").with( UserChannelConnectMonitor.class);
+		// serve("/_ah/channel/disconnected/").with( UserChannelConnectMonitor.class);
 		
 		//--------------
 		// constants

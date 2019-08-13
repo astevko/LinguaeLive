@@ -1,15 +1,15 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv;
+package ca.jhosek.linguaelive.ui.priv;
 
 import java.util.List;
 
 import com.google.gwt.user.client.ui.IsWidget;
 
-import ca.jhosek.main.client.activity.mainregion.MyCoursesActivity;
-import ca.jhosek.main.client.place.MyCoursesPlace;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.activity.mainregion.MyCoursesActivity;
+import ca.jhosek.linguaelive.place.MyCoursesPlace;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  *  My Courses user page 

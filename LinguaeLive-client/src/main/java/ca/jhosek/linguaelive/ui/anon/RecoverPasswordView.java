@@ -1,13 +1,13 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import com.google.gwt.user.client.ui.IsWidget;
 
-import ca.jhosek.main.client.activity.mainregion.RecoverPasswordActivity;
-import ca.jhosek.main.client.place.RecoverPasswordPlace;
-import ca.jhosek.main.client.ui.ViewModule;
+import ca.jhosek.linguaelive.activity.mainregion.RecoverPasswordActivity;
+import ca.jhosek.linguaelive.place.RecoverPasswordPlace;
+import ca.jhosek.linguaelive.ui.ViewModule;
 
 /**
  * Recover Passwords by sending a hash + url to the user's email. Accept the

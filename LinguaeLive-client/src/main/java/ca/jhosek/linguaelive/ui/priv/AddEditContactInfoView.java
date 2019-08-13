@@ -1,14 +1,14 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv;
+package ca.jhosek.linguaelive.ui.priv;
 
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.AddEditContactInfoActivity;
-import ca.jhosek.main.client.ui.priv.AddEditContactInfoViewImpl.Driver;
+import ca.jhosek.linguaelive.activity.mainregion.AddEditContactInfoActivity;
+import ca.jhosek.linguaelive.ui.priv.AddEditContactInfoViewImpl.Driver;
 
 /**
  * Add Edit ContactInfo View 

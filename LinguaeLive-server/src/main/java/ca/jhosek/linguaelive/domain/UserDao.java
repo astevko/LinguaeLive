@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import static com.googlecode.objectify.ObjectifyService.ofy;
 
@@ -18,11 +18,11 @@ import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.googlecode.objectify.Key;
 import com.googlecode.objectify.cmd.Query;
 
-import ca.jhosek.main.server.email.LostPasswordEmail;
-import ca.jhosek.main.server.email.NewInstructorEmail;
-import ca.jhosek.main.shared.ContactInfoType;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.email.LostPasswordEmail;
+import ca.jhosek.linguaelive.email.NewInstructorEmail;
+import ca.jhosek.linguaelive.ContactInfoType;
+import ca.jhosek.linguaelive.UserType;
+// import ca.jhosek.linguaelive.proxy.UserRequestContext;
 /**
  * DAO for User types
  * 

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.io.Serializable;
 import java.util.HashSet;
@@ -12,7 +12,7 @@ import com.googlecode.objectify.Key;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.*;
 
-import ca.jhosek.main.shared.proxy.MemberProxy;
+// import ca.jhosek.linguaelive.proxy.MemberProxy;
 
 /**
  * a User that is a Member of a Course

@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import java.util.Date;
 import java.util.List;
@@ -26,10 +26,10 @@ import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.CourseBrowseActivity;
-import ca.jhosek.main.client.place.CourseBrowsePlace;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.LLConstants;
+// import ca.jhosek.linguaelive.activity.mainregion.CourseBrowseActivity;
+// import ca.jhosek.linguaelive.place.CourseBrowsePlace;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  * course browser
@@ -185,7 +185,7 @@ public class CourseBrowseViewImpl extends Composite implements IsWidget, CourseB
 	}
 	
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.ContactUsView#clear()
+	 * @see ca.jhosek.linguaelive.ui.anon.ContactUsView#clear()
 	 */
 	public void clear() {
 		//
@@ -193,7 +193,7 @@ public class CourseBrowseViewImpl extends Composite implements IsWidget, CourseB
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.ContactUsView#setPresenter(ca.jhosek.main.client.ui.anon.ContactUsView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.anon.ContactUsView#setPresenter(ca.jhosek.linguaelive.ui.anon.ContactUsView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;

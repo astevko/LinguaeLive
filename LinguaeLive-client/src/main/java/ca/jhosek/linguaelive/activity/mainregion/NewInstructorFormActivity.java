@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.Date;
 import java.util.Set;
@@ -16,18 +16,18 @@ import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriv
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.AddEditCoursePlace;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.client.place.LoginFormPlace;
-import ca.jhosek.main.client.place.NewInstructorPlace;
-import ca.jhosek.main.client.ui.anon.NewInstructorPanel;
-import ca.jhosek.main.client.ui.anon.NewInstructorPanelImpl;
-import ca.jhosek.main.server.email.NewInstructorEmail;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.AddEditCoursePlace;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.place.LoginFormPlace;
+import ca.jhosek.linguaelive.place.NewInstructorPlace;
+import ca.jhosek.linguaelive.ui.anon.NewInstructorPanel;
+import ca.jhosek.linguaelive.ui.anon.NewInstructorPanelImpl;
+// import ca.jhosek.linguaelive.email.NewInstructorEmail;
+import ca.jhosek.linguaelive.UserType;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko
@@ -73,7 +73,7 @@ public class NewInstructorFormActivity extends AbstractActivity implements NewIn
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.NewInstructorPanel.Presenter#cancel()
+	 * @see ca.jhosek.linguaelive.ui.anon.NewInstructorPanel.Presenter#cancel()
 	 */
 	
 	public void cancel() {
@@ -84,7 +84,7 @@ public class NewInstructorFormActivity extends AbstractActivity implements NewIn
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.NewInstructorPanel.Presenter#createNewInstructor(ca.jhosek.main.shared.User)
+	 * @see ca.jhosek.linguaelive.ui.anon.NewInstructorPanel.Presenter#createNewInstructor(ca.jhosek.linguaelive.User)
 	 */
 	@SuppressWarnings("deprecation")
 	

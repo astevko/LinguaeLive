@@ -1,12 +1,12 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import com.google.gwt.user.client.ui.IsWidget;
 
-import ca.jhosek.main.client.activity.mainregion.AddCourseMemberActivity;
-import ca.jhosek.main.client.place.AddCourseMemberPlace;
+import ca.jhosek.linguaelive.activity.mainregion.AddCourseMemberActivity;
+import ca.jhosek.linguaelive.place.AddCourseMemberPlace;
 
 /**
  * Add A Course Member View 

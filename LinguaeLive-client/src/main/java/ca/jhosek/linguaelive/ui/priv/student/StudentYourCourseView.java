@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.ui.priv.student;
+package ca.jhosek.linguaelive.ui.priv.student;
 
 import java.util.List;
 
@@ -6,11 +6,11 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.StudentYourCourseActivity;
-import ca.jhosek.main.client.ui.priv.student.StudentYourCourseViewImpl.Driver;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.SessionProxy;
+import ca.jhosek.linguaelive.activity.mainregion.StudentYourCourseActivity;
+import ca.jhosek.linguaelive.ui.priv.student.StudentYourCourseViewImpl.Driver;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
 
 /**
  * displays a course as viewed by a Student

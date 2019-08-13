@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.anon;
+package ca.jhosek.linguaelive.ui.anon;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.editor.ui.client.ValueBoxEditorDecorator;
@@ -20,9 +20,9 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.NewInstructorFormActivity;
-import ca.jhosek.main.client.activity.mainregion.NewInstructorFormActivity.Driver;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.NewInstructorFormActivity;
+import ca.jhosek.linguaelive.activity.mainregion.NewInstructorFormActivity.Driver;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko
@@ -73,7 +73,7 @@ public class NewInstructorPanelImpl extends Composite implements NewInstructorPa
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.NewInstructorPanel#getEmailAddress()
+	 * @see ca.jhosek.linguaelive.ui.anon.NewInstructorPanel#getEmailAddress()
 	 */
 	public String getEmailAddress() {
 		// 
@@ -107,7 +107,7 @@ public class NewInstructorPanelImpl extends Composite implements NewInstructorPa
 
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.NewInstructorPanel#setPresenter(ca.jhosek.main.client.ui.anon.NewInstructorPanel.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.anon.NewInstructorPanel#setPresenter(ca.jhosek.linguaelive.ui.anon.NewInstructorPanel.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;

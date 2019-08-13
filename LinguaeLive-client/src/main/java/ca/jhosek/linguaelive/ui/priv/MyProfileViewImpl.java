@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv;
+package ca.jhosek.linguaelive.ui.priv;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,15 +36,15 @@ import com.google.inject.Inject;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.activity.mainregion.MyProfileActivity;
-import ca.jhosek.main.client.place.MyProfilePlace;
-import ca.jhosek.main.client.ui.LabelEditor;
-import ca.jhosek.main.client.ui.ViewModule;
-import ca.jhosek.main.shared.ContactInfoType;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.ContactInfoRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.activity.mainregion.MyProfileActivity;
+import ca.jhosek.linguaelive.place.MyProfilePlace;
+import ca.jhosek.linguaelive.ui.LabelEditor;
+import ca.jhosek.linguaelive.ui.ViewModule;
+import ca.jhosek.linguaelive.ContactInfoType;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.ContactInfoRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  *  My Profile page 
@@ -214,7 +214,7 @@ public class MyProfileViewImpl extends Composite implements IsWidget, Editor<Use
 
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.InstructorHomeView#setPresenter(ca.jhosek.main.client.ui.priv.student.InstructorHomeView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.InstructorHomeView#setPresenter(ca.jhosek.linguaelive.ui.priv.student.InstructorHomeView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
@@ -282,7 +282,7 @@ public class MyProfileViewImpl extends Composite implements IsWidget, Editor<Use
 	/**
 	 * show contact info for this user
 	 * 
-	 * @see ca.jhosek.main.client.ui.priv.MyProfileView#showContactInfo(java.util.List)
+	 * @see ca.jhosek.linguaelive.ui.priv.MyProfileView#showContactInfo(java.util.List)
 	 */
 	public void showContactInfo(List<ContactInfoProxy> contactInfos) {
 		// clear panel

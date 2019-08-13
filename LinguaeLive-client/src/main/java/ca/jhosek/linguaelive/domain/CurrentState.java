@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 - 2014 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.util.Date;
 import java.util.List;
@@ -19,19 +19,19 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.place.AdminHomePlace;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.client.place.InstructorHomePlace;
-import ca.jhosek.main.client.place.MyProfilePlace;
-import ca.jhosek.main.client.place.SessionControlPlace;
-import ca.jhosek.main.client.place.StudentHomePlace;
-import ca.jhosek.main.client.ui.priv.AutoLoginPauseDialog;
-import ca.jhosek.main.shared.UserType;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.SessionRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.place.AdminHomePlace;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.place.InstructorHomePlace;
+import ca.jhosek.linguaelive.place.MyProfilePlace;
+import ca.jhosek.linguaelive.place.SessionControlPlace;
+import ca.jhosek.linguaelive.place.StudentHomePlace;
+import ca.jhosek.linguaelive.ui.priv.AutoLoginPauseDialog;
+import ca.jhosek.linguaelive.UserType;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
+import ca.jhosek.linguaelive.proxy.SessionRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * Singleton holds the reference to the current logged in user instance

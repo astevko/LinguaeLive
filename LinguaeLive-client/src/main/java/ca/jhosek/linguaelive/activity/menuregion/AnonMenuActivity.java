@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.activity.menuregion;
+package ca.jhosek.linguaelive.activity.menuregion;
 
 
 
@@ -11,14 +11,14 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.place.FaqPlace;
-import ca.jhosek.main.client.place.IndexPlace;
-import ca.jhosek.main.client.place.InstructorInfoPlace;
-import ca.jhosek.main.client.place.StudentInfoPlace;
-import ca.jhosek.main.client.place.WhatIsPlace;
-import ca.jhosek.main.client.place.WhoIsPlace;
-import ca.jhosek.main.client.ui.anon.AnonMenuView;
-import ca.jhosek.main.client.ui.anon.AnonMenuViewImpl;
+import ca.jhosek.linguaelive.place.FaqPlace;
+import ca.jhosek.linguaelive.place.IndexPlace;
+import ca.jhosek.linguaelive.place.InstructorInfoPlace;
+import ca.jhosek.linguaelive.place.StudentInfoPlace;
+import ca.jhosek.linguaelive.place.WhatIsPlace;
+import ca.jhosek.linguaelive.place.WhoIsPlace;
+import ca.jhosek.linguaelive.ui.anon.AnonMenuView;
+import ca.jhosek.linguaelive.ui.anon.AnonMenuViewImpl;
 
 /**
  * menu activity for anon users
@@ -53,7 +53,7 @@ public class AnonMenuActivity extends AbstractActivity implements AnonMenuView.P
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.AnonMenuView.Presenter#goToWhatIs()
+	 * @see ca.jhosek.linguaelive.ui.anon.AnonMenuView.Presenter#goToWhatIs()
 	 */
 	
 	public void goToWhatIs() {
@@ -62,7 +62,7 @@ public class AnonMenuActivity extends AbstractActivity implements AnonMenuView.P
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.AnonMenuView.Presenter#goToFaq()
+	 * @see ca.jhosek.linguaelive.ui.anon.AnonMenuView.Presenter#goToFaq()
 	 */
 	
 	public void goToFaq() {
@@ -71,7 +71,7 @@ public class AnonMenuActivity extends AbstractActivity implements AnonMenuView.P
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.AnonMenuView.Presenter#goToInstructorInfo()
+	 * @see ca.jhosek.linguaelive.ui.anon.AnonMenuView.Presenter#goToInstructorInfo()
 	 */
 	
 	public void goToInstructorInfo() {
@@ -80,7 +80,7 @@ public class AnonMenuActivity extends AbstractActivity implements AnonMenuView.P
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.AnonMenuView.Presenter#goToStudentInfo()
+	 * @see ca.jhosek.linguaelive.ui.anon.AnonMenuView.Presenter#goToStudentInfo()
 	 */
 	
 	public void goToStudentInfo() {
@@ -89,7 +89,7 @@ public class AnonMenuActivity extends AbstractActivity implements AnonMenuView.P
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.AnonMenuView.Presenter#goToWhoIs()
+	 * @see ca.jhosek.linguaelive.ui.anon.AnonMenuView.Presenter#goToWhoIs()
 	 */
 	
 	public void goToWhoIs() {
@@ -98,7 +98,7 @@ public class AnonMenuActivity extends AbstractActivity implements AnonMenuView.P
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.anon.AnonMenuView.Presenter#goToIndex()
+	 * @see ca.jhosek.linguaelive.ui.anon.AnonMenuView.Presenter#goToIndex()
 	 */
 	
 	public void goToIndex() {

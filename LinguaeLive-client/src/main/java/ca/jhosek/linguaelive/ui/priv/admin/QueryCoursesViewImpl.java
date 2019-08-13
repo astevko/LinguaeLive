@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.admin;
+package ca.jhosek.linguaelive.ui.priv.admin;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -33,11 +33,11 @@ import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
 import com.google.inject.Inject;
 
-import ca.jhosek.main.client.LLConstants;
-import ca.jhosek.main.client.place.QueryCoursesPlace;
-import ca.jhosek.main.server.domain.Course;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.LLConstants;
+import ca.jhosek.linguaelive.place.QueryCoursesPlace;
+// import ca.jhosek.linguaelive.domain.Course;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  *  Admin query Courses view
@@ -45,7 +45,7 @@ import ca.jhosek.main.shared.proxy.CourseProxy;
  * @author copyright (C) 2011 Andrew Stevko
  * @see QueryCoursesView
  * @see QueryCoursesPlace
- * @see Course
+ * Course
  *
  */
 
@@ -147,7 +147,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.AdminHomeView#clear()
+	 * @see ca.jhosek.linguaelive.ui.priv.student.AdminHomeView#clear()
 	 */
 	public void clear() {
 		// 
@@ -156,7 +156,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView#emptyQueryResults()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView#emptyQueryResults()
 	 */
 	public void emptyQueryResults() {
 		//
@@ -165,7 +165,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView#getCurrentCourses()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView#getCurrentCourses()
 	 */
 	@Override
 	public Boolean getCurrentCourses() {
@@ -180,7 +180,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView#getExpertLanguage()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView#getExpertLanguage()
 	 */
 	@Override
 	public LanguageType getExpertLanguage() {
@@ -197,7 +197,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView#getTargetLanguage()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView#getTargetLanguage()
 	 */
 	@Override
 	public LanguageType getTargetLanguage() {
@@ -214,7 +214,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 
 /* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView#getWithCourseLinks()
+	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView#getWithCourseLinks()
 	 */
 	@Override
 	public Boolean getWithCourseLinks() {
@@ -229,7 +229,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 	
 //	/* (non-Javadoc)
-//	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView#getAdminCourseViewer()
+//	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView#getAdminCourseViewer()
 //	 */
 //	@Override
 //	public Editor<CourseProxy> getAdminCourseViewer() {
@@ -242,7 +242,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 //	 * show course information
 //	 * 
 //	 * (non-Javadoc)
-//	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView#showCourse(ca.jhosek.main.shared.CourseProxy)
+//	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView#showCourse(ca.jhosek.linguaelive.CourseProxy)
 //	 */
 //	@Override
 //	public void showCourse(CourseProxy course) {
@@ -326,7 +326,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.AdminHomeView#setPresenter(ca.jhosek.main.client.ui.priv.student.AdminHomeView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.AdminHomeView#setPresenter(ca.jhosek.linguaelive.ui.priv.student.AdminHomeView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
@@ -494,7 +494,7 @@ public class QueryCoursesViewImpl extends Composite implements QueryCoursesView 
 	}
 
 	//	/* (non-Javadoc)
-//	 * @see ca.jhosek.main.client.ui.priv.admin.QueryCoursesView#addQueryResult(java.lang.String, java.lang.Long)
+//	 * @see ca.jhosek.linguaelive.ui.priv.admin.QueryCoursesView#addQueryResult(java.lang.String, java.lang.Long)
 //	 */
 //	@Override
 //	public void addQueryResult(final String name, final Long id) {

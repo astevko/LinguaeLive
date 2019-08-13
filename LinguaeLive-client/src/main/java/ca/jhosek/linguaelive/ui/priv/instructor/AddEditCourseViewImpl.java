@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -27,11 +27,11 @@ import com.google.gwt.user.datepicker.client.DateBox;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.AddEditCourseActivity;
-import ca.jhosek.main.client.place.AddEditCoursePlace;
-import ca.jhosek.main.client.ui.EnumRenderer;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.CourseProxy;
+import ca.jhosek.linguaelive.activity.mainregion.AddEditCourseActivity;
+import ca.jhosek.linguaelive.place.AddEditCoursePlace;
+import ca.jhosek.linguaelive.ui.EnumRenderer;
+import ca.jhosek.linguaelive.LanguageType;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
 
 /**
  * admin display of user information

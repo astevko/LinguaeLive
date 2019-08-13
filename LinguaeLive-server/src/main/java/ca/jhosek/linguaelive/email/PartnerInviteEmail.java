@@ -1,8 +1,8 @@
-package ca.jhosek.main.server.email;
+package ca.jhosek.linguaelive.email;
 
 import com.google.appengine.api.datastore.EntityNotFoundException;
 
-import ca.jhosek.main.server.domain.SessionInvite;
+import ca.jhosek.linguaelive.domain.SessionInvite;
 
 /**
  * message from Student A to B 

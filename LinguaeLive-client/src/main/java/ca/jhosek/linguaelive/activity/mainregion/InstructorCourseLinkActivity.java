@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.logging.Logger;
 
@@ -15,20 +15,20 @@ import com.google.inject.assistedinject.FactoryModuleBuilder;
 import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.InstructorCourseLinkPlace;
-import ca.jhosek.main.client.place.InstructorYourCoursePlace;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorCourseLinkView;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorCourseLinkViewImpl;
-import ca.jhosek.main.client.ui.priv.instructor.InstructorCourseLinkViewImpl.Driver;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.CourseLinkProxy;
-import ca.jhosek.main.shared.proxy.CourseLinkRequestContext;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.MemberProxy;
-import ca.jhosek.main.shared.proxy.MemberRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.InstructorCourseLinkPlace;
+import ca.jhosek.linguaelive.place.InstructorYourCoursePlace;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseLinkView;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseLinkViewImpl;
+import ca.jhosek.linguaelive.ui.priv.instructor.InstructorCourseLinkViewImpl.Driver;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.CourseLinkProxy;
+import ca.jhosek.linguaelive.proxy.CourseLinkRequestContext;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
+import ca.jhosek.linguaelive.proxy.MemberRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * instructor's view of a course and related information

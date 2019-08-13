@@ -1,13 +1,13 @@
-package ca.jhosek.main.client.ui.priv.instructor;
+package ca.jhosek.linguaelive.ui.priv.instructor;
 
 import java.util.List;
 
 import com.google.gwt.user.client.ui.IsWidget;
 
-import ca.jhosek.main.client.activity.mainregion.InstructorCourseSummaryReportActivity;
-import ca.jhosek.main.client.place.InstructorCourseSummaryReportPlace;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.MemberProxy;
+import ca.jhosek.linguaelive.activity.mainregion.InstructorCourseSummaryReportActivity;
+import ca.jhosek.linguaelive.place.InstructorCourseSummaryReportPlace;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.MemberProxy;
 
 /**
  * @author copyright (C) 2011 Andrew Stevko

@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.List;
 import java.util.Set;
@@ -19,20 +19,20 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.RequestContext;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.activity.ActivityModule;
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.AddEditContactInfoPlace;
-import ca.jhosek.main.client.place.ChangePswdPlace;
-import ca.jhosek.main.client.place.MyProfilePlace;
-import ca.jhosek.main.client.place.StudentStartPlace;
-import ca.jhosek.main.client.ui.priv.MyProfileView;
-import ca.jhosek.main.client.ui.priv.MyProfileViewImpl;
-import ca.jhosek.main.server.domain.ContactInfoDao;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.ContactInfoProxy;
-import ca.jhosek.main.shared.proxy.ContactInfoRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
-import ca.jhosek.main.shared.proxy.UserRequestContext;
+import ca.jhosek.linguaelive.activity.ActivityModule;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.AddEditContactInfoPlace;
+import ca.jhosek.linguaelive.place.ChangePswdPlace;
+import ca.jhosek.linguaelive.place.MyProfilePlace;
+import ca.jhosek.linguaelive.place.StudentStartPlace;
+import ca.jhosek.linguaelive.ui.priv.MyProfileView;
+import ca.jhosek.linguaelive.ui.priv.MyProfileViewImpl;
+// import ca.jhosek.linguaelive.domain.ContactInfoDao;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.ContactInfoProxy;
+import ca.jhosek.linguaelive.proxy.ContactInfoRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
+import ca.jhosek.linguaelive.proxy.UserRequestContext;
 
 /**
  * Activity related to My Profile View

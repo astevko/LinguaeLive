@@ -1,7 +1,7 @@
 /**
  * copyright (c) 2011 Andrew Stevko, all rights reserved
  */
-package ca.jhosek.main.client.ui.priv;
+package ca.jhosek.linguaelive.ui.priv;
 
 import java.util.logging.Logger;
 
@@ -21,10 +21,10 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.requestfactory.gwt.client.RequestFactoryEditorDriver;
 import com.google.web.bindery.requestfactory.shared.RequestFactory;
 
-import ca.jhosek.main.client.activity.mainregion.ChangePswdActivity;
-import ca.jhosek.main.client.place.ChangePswdPlace;
-import ca.jhosek.main.client.ui.ViewModule;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.activity.mainregion.ChangePswdActivity;
+import ca.jhosek.linguaelive.place.ChangePswdPlace;
+import ca.jhosek.linguaelive.ui.ViewModule;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  *  Change password page inherited from MyProfileView 
@@ -77,7 +77,7 @@ public class ChangePswdViewImpl extends Composite implements IsWidget, Editor<Us
 
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.student.InstructorHomeView#setPresenter(ca.jhosek.main.client.ui.priv.student.InstructorHomeView.Presenter)
+	 * @see ca.jhosek.linguaelive.ui.priv.student.InstructorHomeView#setPresenter(ca.jhosek.linguaelive.ui.priv.student.InstructorHomeView.Presenter)
 	 */
 	public void setPresenter(Presenter presenter) {
 		this.presenter = presenter;
@@ -112,7 +112,7 @@ public class ChangePswdViewImpl extends Composite implements IsWidget, Editor<Us
 
 
 	/* (non-Javadoc)
-	 * @see ca.jhosek.main.client.ui.priv.ChangePswdView#getNewPassword()
+	 * @see ca.jhosek.linguaelive.ui.priv.ChangePswdView#getNewPassword()
 	 */
 	@Override
 	public String getNewPassword() {

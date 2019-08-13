@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ca.jhosek.main.server.domain;
+package ca.jhosek.linguaelive.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -15,9 +15,9 @@ import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Ignore;
 import com.googlecode.objectify.annotation.Index;
 
-import ca.jhosek.main.shared.ContactInfoType;
-import ca.jhosek.main.shared.LanguageType;
-import ca.jhosek.main.shared.proxy.SessionProxy;
+import ca.jhosek.linguaelive.ContactInfoType;
+import ca.jhosek.linguaelive.LanguageType;
+// import ca.jhosek.linguaelive.proxy.SessionProxy;
 
 /**
  * a session

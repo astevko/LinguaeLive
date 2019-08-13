@@ -1,4 +1,4 @@
-package ca.jhosek.main.client.activity.mainregion;
+package ca.jhosek.linguaelive.activity.mainregion;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -13,20 +13,20 @@ import com.google.web.bindery.requestfactory.shared.Receiver;
 import com.google.web.bindery.requestfactory.shared.Request;
 import com.google.web.bindery.requestfactory.shared.ServerFailure;
 
-import ca.jhosek.main.client.domain.CurrentState;
-import ca.jhosek.main.client.place.AddEditCoursePlace;
-import ca.jhosek.main.client.place.PartnerInvitePlace;
-import ca.jhosek.main.client.place.SessionControlPlace;
-import ca.jhosek.main.client.place.StudentYourCoursePlace;
-import ca.jhosek.main.client.ui.priv.student.StudentHomeView;
-import ca.jhosek.main.shared.proxy.AppRequestFactory;
-import ca.jhosek.main.shared.proxy.CourseProxy;
-import ca.jhosek.main.shared.proxy.CourseRequestContext;
-import ca.jhosek.main.shared.proxy.PartnerInviteProxy;
-import ca.jhosek.main.shared.proxy.PartnerInviteRequestContext;
-import ca.jhosek.main.shared.proxy.SessionProxy;
-import ca.jhosek.main.shared.proxy.SessionRequestContext;
-import ca.jhosek.main.shared.proxy.UserProxy;
+import ca.jhosek.linguaelive.domain.CurrentState;
+import ca.jhosek.linguaelive.place.AddEditCoursePlace;
+import ca.jhosek.linguaelive.place.PartnerInvitePlace;
+import ca.jhosek.linguaelive.place.SessionControlPlace;
+import ca.jhosek.linguaelive.place.StudentYourCoursePlace;
+import ca.jhosek.linguaelive.ui.priv.student.StudentHomeView;
+import ca.jhosek.linguaelive.proxy.AppRequestFactory;
+import ca.jhosek.linguaelive.proxy.CourseProxy;
+import ca.jhosek.linguaelive.proxy.CourseRequestContext;
+import ca.jhosek.linguaelive.proxy.PartnerInviteProxy;
+import ca.jhosek.linguaelive.proxy.PartnerInviteRequestContext;
+import ca.jhosek.linguaelive.proxy.SessionProxy;
+import ca.jhosek.linguaelive.proxy.SessionRequestContext;
+import ca.jhosek.linguaelive.proxy.UserProxy;
 
 /**
  * Activities on the Student home page
@@ -177,7 +177,7 @@ public class StudentHomeActivity extends AbstractActivity implements StudentHome
 
 	/***
 	 * goto view my course
-	 * @see ca.jhosek.main.client.ui.priv.MyCoursesView.Presenter#viewCourse(ca.jhosek.main.shared.proxy.CourseProxy)
+	 * @see ca.jhosek.linguaelive.ui.priv.MyCoursesView.Presenter#viewCourse(ca.jhosek.linguaelive.proxy.CourseProxy)
 	 */	
 	@Override
 	public void viewCourse(CourseProxy course) {
@@ -188,7 +188,7 @@ public class StudentHomeActivity extends AbstractActivity implements StudentHome
 
 	/**
 	 * goto add course 
-	 * @see ca.jhosek.main.client.ui.priv.instructor.InstructorHomeView.Presenter#goToAddCourse()
+	 * @see ca.jhosek.linguaelive.ui.priv.instructor.InstructorHomeView.Presenter#goToAddCourse()
 	 */
 	@Override
 	public void goToAddCourse() {
