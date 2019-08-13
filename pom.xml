@@ -24,7 +24,7 @@
 
     <assistedinject.version>0.3.2</assistedinject.version>
     <!-- <dagger.version>2.21</dagger.version> -->
-    <guice.version>4.2.2</guice.version>
+    <guice.version>3.0</guice.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 

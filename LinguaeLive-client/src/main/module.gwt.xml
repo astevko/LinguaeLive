@@ -2,11 +2,41 @@
 <module>
   <inherits name="com.google.gwt.user.User" />
   <inherits name="com.google.gwt.user.theme.clean.Clean" />
+  <inherits name="com.google.gwt.inject.Inject"/>
+    <!-- Other module inherits                                      -->
+  <inherits name="com.google.gwt.activity.Activity"/>
+  <inherits name="com.google.gwt.place.Place"/>
+
+  <inherits name='com.google.web.bindery.requestfactory.RequestFactory'/>
+
+	<set-configuration-property name="UiBinder.useSafeHtmlTemplates"  value="true" /> 
+
+  <inherits name='com.google.gwt.logging.Logging' />
+  <set-property name="gwt.logging.enabled" value="TRUE"/> 
+  <set-property name="gwt.logging.logLevel" value="SEVERE"/>
+  
+  <set-property name="gwt.logging.consoleHandler" value="ENABLED" />			<!-- **** -->
+  <set-property name="gwt.logging.developmentModeHandler" value="ENABLED" />	<!-- **** -->
+  <set-property name="gwt.logging.hasWidgetsHandler" value="DISABLED" />
+  <set-property name="gwt.logging.systemHandler" value="ENABLED" />
+  <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />		<!-- **** -->
+
+  <!-- <inherits name="com.googlecode.objectify.Objectify" /> -->
+  <inherits name='com.google.gwt.i18n.I18N' />	
 
   <source path="" />
+  <!-- 
+  <inherits name='com.google.gwt.user.cellview.CellView'/>
+  <inherits name='com.google.gwt.editor.Editor' />
+  <inherits name='com.google.gwt.mobile.Mobile'/>
+	-->   
+	<!-- activate locale cookies with this cookie name -->
+	 <set-configuration-property name="locale.cookie" value="locale_cookie"/>
 
-  <entry-point class="ca.jhosek.linguaelive.LinguaeLive" />
+    <!-- <entry-point class="ca.jhosek.linguaelive.ca.jhosek.linguaelive.LinguaeLive" /> -->
+    <entry-point class="ca.jhosek.linguaelive.LinguaeLive" />
 
   <!-- Only support recent browsers -->
   <set-property name="user.agent" value="ie10,gecko1_8,safari" />
+	<set-property name="compiler.useSourceMaps" value="true" />
 </module>

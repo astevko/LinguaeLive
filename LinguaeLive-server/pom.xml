@@ -148,7 +148,7 @@
                 <classpath />
                 <argument>com.google.web.bindery.requestfactory.apt.ValidationTool</argument>
                 <argument>${project.build.outputDirectory}</argument>
-                <argument>ca.jhosek.linguaelive.ca.jhosek.linguaelive.LinguaeLiveFactory</argument>
+                <argument>ca.jhosek.linguaelive.proxy.AppRequestFactory </argument>
               </arguments>
             </configuration>
           </execution>

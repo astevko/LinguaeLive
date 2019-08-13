@@ -81,13 +81,6 @@
       <groupId>com.github.nmorel.gwtjackson</groupId>
       <artifactId>gwt-jackson-remotelogging</artifactId>
     </dependency> -->
-
-    <!-- https://mvnrepository.com/artifact/com.google.gwt.inject/gin -->
-    <dependency>
-        <groupId>com.google.gwt.inject</groupId>
-        <artifactId>gin</artifactId>
-        <version>2.1.2</version>
-    </dependency>
   </dependencies>
 
   <build>
@@ -96,7 +89,7 @@
         <groupId>net.ltgt.gwt.maven</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
         <configuration>
-          <moduleName>ca.jhosek.linguaelive.ca.jhosek.linguaelive.LinguaeLive</moduleName>
+          <moduleName>ca.jhosek.linguaelive.LinguaeLive</moduleName>
           <moduleShortName>LinguaeLive</moduleShortName>
           <!-- <moduleTemplate>src/main/resources/App.gwt.xml</moduleTemplate>
           <extra>${project.basedir}/target/${project.artifactId}-${project.version}/WEB-INF/deploy</extra> -->
