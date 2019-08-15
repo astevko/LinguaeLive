@@ -14,6 +14,7 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
       <layout>default</layout>
     </repository>
+  
   </repositories>
 
   <properties>
@@ -35,7 +36,7 @@
     <jackson.version>2.9.9</jackson.version>
     <restygwt.version>2.2.5</restygwt.version>
     <validation-api.version>1.0.0.GA</validation-api.version>
-    <hibernate-validator.version>6.0.16.Final</hibernate-validator.version>
+    <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
     <gwt-bean-validators.version>1.0.5</gwt-bean-validators.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

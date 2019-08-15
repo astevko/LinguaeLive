@@ -2,17 +2,22 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
   version="2.5">
+ <display-name>LinguaeLive.ca</display-name>
+  
+  <!-- Servlets -->
+  <filter>
+		<filter-name>guiceFilter</filter-name>
+		<filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+	</filter>
 
-	<!-- Servlets -->
-  <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>ca.jhosek.linguaelive.GreetingServiceImpl</servlet-class>
-  </servlet>
+	<filter-mapping>
+		<filter-name>guiceFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
-  <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/LingaueLive/greet</url-pattern>
-  </servlet-mapping>
+	<listener>
+		<listener-class>ca.jhosek.linguaelive.guice.AppGuiceServletContextListener</listener-class>
+	</listener>
 
 	<!-- Default page to serve -->
   <welcome-file-list>

@@ -58,6 +58,19 @@
       <artifactId>javax.servlet-api</artifactId>
       <scope>provided</scope>
     </dependency>
+      <!-- Validatin api -->
+      <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>${validation-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>${validation-api.version}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
     <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-api-1.0-sdk</artifactId>
@@ -95,11 +108,11 @@
       <artifactId>hibernate-validator</artifactId>
     </dependency>
 
-    <dependency>
+    <!-- <dependency>
       <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator</artifactId>
       <classifier>sources</classifier>
-    </dependency>
+    </dependency> -->
     <!-- https://mvnrepository.com/artifact/org.jasypt/jasypt -->
     <dependency>
         <groupId>org.jasypt</groupId>
