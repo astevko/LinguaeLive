@@ -30,14 +30,14 @@
     </dependency>
     <!-- hibernate validation -->
     <dependency>
-      <groupId>org.hibernate.validator</groupId>
+      <groupId>org.hibernate</groupId>
       <artifactId>hibernate-validator</artifactId>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator</artifactId>
       <classifier>sources</classifier>
-    </dependency>
+    </dependency> -->
 
     <dependency>
       <groupId>de.knightsoft-net</groupId>
@@ -48,6 +48,7 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>LinguaeLive-shared</artifactId>
       <version>${project.version}</version>
+      <type>gwt-lib</type>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>

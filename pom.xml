@@ -7,15 +7,19 @@
   <version>70</version>
   <packaging>pom</packaging>
 
-  <repositories>
+  <!-- <repositories>
     <repository>
       <id>sonatype.snapshots</id>
       <name>Sonatype snapshot repository</name>
       <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
       <layout>default</layout>
     </repository>
-  
-  </repositories>
+    <repository>
+      <id>apache.repo</id>
+      <name>Apache Maven</name>
+      <url>http://repo.maven.apache.org/maven2/</url>
+    </repository>
+  </repositories>  -->
 
   <properties>
     <!-- App Engine Instances Version -->
@@ -36,12 +40,14 @@
     <jackson.version>2.9.9</jackson.version>
     <restygwt.version>2.2.5</restygwt.version>
     <validation-api.version>1.0.0.GA</validation-api.version>
-    <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
+    <hibernate-validator.version>4.1.0.CR1</hibernate-validator.version>
+    <!-- http://repo1.maven.org/maven2/org/hibernate/hibernate-core/4.1.0.Final/ -->
     <gwt-bean-validators.version>1.0.5</gwt-bean-validators.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <slf4j.version>1.7.28</slf4j.version>
 
   </properties>
 
@@ -63,16 +69,16 @@
 
       <!-- hibernate validation -->
       <dependency>
-        <groupId>org.hibernate.validator</groupId>
+        <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>${hibernate-validator.version}</version>
       </dependency>
-      <dependency>
+      <!-- <dependency>
         <groupId>org.hibernate.validator</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>${hibernate-validator.version}</version>
         <classifier>sources</classifier>
-      </dependency>
+      </dependency> -->
       <dependency>
         <groupId>de.knightsoft-net</groupId>
         <artifactId>gwt-bean-validators</artifactId>
