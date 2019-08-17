@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Accessing versions of the system</h1>
+<a href="http://44.linguaelive.appspot.com/index.html">version 44 is at http://44.linguaelive.appspot.com/index.html</a> <br />
+
+<h1> Development </h1>
+<h3> Source code repository </h3>
+login details of your SVN repository are as follows:<br/>
+
+Repository URL: https://svn2.sliksvn.com/queensuniv_linguaelive <br/>
+<!-- User: linguaelive <br/>
+Password: L1nguaeL1ve <br/>
+ -->
+ 
+<h3> IDE Setup </h3>
+
+Run menu | External Tools | External Tools Configuration
+Location: C:\disks\google.com\appengine\appengine-java-sdk-1.7.0\bin\appcfg.cmd
+Location: /opt/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.7.5/appengine-java-sdk-1.7.5/bin/appcfg.sh
+Working Directory: ${workspace_loc:/LinguaeLiveTRUNK}
+
+<i> deploy via appcfg.cmd </i>
+<pre>
+Name: Update
+Arguments: -e andy@linguaelive.ca update ./war
+</pre>
+<i> rollback </i>
+<pre>
+Name: rollback version XX
+-V 48 rollback ./war 
+</pre>
+
+<i>java.lang.RuntimeException: The RequestFactory ValidationTool must be run for the ca.jhosek.main.shared.proxy.AppRequestFactory RequestFactory type</i>
+<a href="code.google.com/p/google-web-toolkit/wiki/RequestFactoryInterfaceValidation#IDE_configuration">Fixing compiler .apt_generated directory is missing </a> <br />
+
+<i>[ERROR] [linguaelive] Out of memory; to increase the amount of memory, use the -Xmx flag at startup (java -Xmx128M ...)</i>
+Run menu > Run Configurations | Arguments tab | VM Arguments text box; replace -Xmx512M with -Xmx1025m 
+
+<h3> Chrome dev mode </h3>
+Not starting? Open Content Settings dialog - Go to chrome://settings/content ,  Click Plug-ins Run Automatically (recommended)
+<p>
+<B>Trouble logging in </B> <br/>
+ Error registering new user - Server Error: Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+
+</body>

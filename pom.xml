@@ -73,12 +73,12 @@
         <artifactId>hibernate-validator</artifactId>
         <version>${hibernate-validator.version}</version>
       </dependency>
-      <!-- <dependency>
-        <groupId>org.hibernate.validator</groupId>
+      <dependency>
+        <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>${hibernate-validator.version}</version>
         <classifier>sources</classifier>
-      </dependency> -->
+      </dependency>
       <dependency>
         <groupId>de.knightsoft-net</groupId>
         <artifactId>gwt-bean-validators</artifactId>
@@ -179,11 +179,6 @@
         <artifactId>assisted-inject-annotations-dagger2</artifactId>
         <version>${assistedinject.version}</version>
       </dependency> -->
-      <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>3.1.0</version>
-      </dependency>
 
      <dependency>
         <groupId>com.googlecode.objectify</groupId>
@@ -300,9 +295,10 @@
       </build>
     </profile>
   </profiles>
-<modules>
+
+  <modules>
     <module>LinguaeLive-client</module>
-  <module>LinguaeLive-shared</module>
-  <module>LinguaeLive-server</module>
+    <module>LinguaeLive-shared</module>
+    <module>LinguaeLive-server</module>
   </modules>
 </project>
