@@ -213,6 +213,12 @@
         <inherited>false</inherited>
         <configuration>
           <launcherDir>${project.build.directory}/gwt/launcherDir</launcherDir>
+          <devmodeArgs>
+						<arg>-noserver</arg>
+						<!-- <arg>-codeServerPort</arg>
+						<arg>4524</arg> -->
+					</devmodeArgs>
+
         </configuration>
       </plugin>
     </plugins>

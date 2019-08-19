@@ -92,8 +92,16 @@
         <configuration>
           <moduleName>ca.jhosek.linguaelive.LinguaeLive</moduleName>
           <moduleShortName>LinguaeLive</moduleShortName>
-          <!-- <moduleTemplate>src/main/resources/App.gwt.xml</moduleTemplate>
-          <extra>${project.basedir}/target/${project.artifactId}-${project.version}/WEB-INF/deploy</extra> -->
+          <!-- <moduleTemplate>src/main/resources/App.gwt.xml</moduleTemplate> -->
+          <warDir>${basedir}/../server/target/server-${project.version}</warDir>
+					<devmodeWorkDir>${basedir}/../LinguaeLive-server/target/LinguaeLive-server-${project.version}</devmodeWorkDir>
+					<webappDirectory>${basedir}/../LinguaeLive-server/target/LinguaeLive-server-${project.version}</webappDirectory> 
+          <!-- <extra>${project.basedir}/target/${project.artifactId}-${project.version}/WEB-INF/deploy</extra> -->
+          <devmodeArgs>
+						<arg>-noserver</arg>
+						<arg>-codeServerPort</arg>
+						<arg>4524</arg>
+          </devmodeArgs>
         </configuration>
       </plugin>
       <!-- <plugin>
