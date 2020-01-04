@@ -8,10 +8,36 @@ You must have Google Cloud SDK installed.   https://cloud.google.com/sdk/
 Cloud SDK app-engine-java component is also required. Install it by running:
 
 *gcloud components install app-engine-java*
+*gcloud components install bq*
+*gcloud components install cloud-datastore-emulator*
 
+Components
+
+│     Status    │                         Name                         │            ID            │   Size   │
+| ------------- | ---------------------------------------------------- | ------------------------ | -------- |
+│ Installed     │ BigQuery Command Line Tool                           │ bq                       │  < 1 MiB │
+│ Installed     │ Cloud Datastore Emulator                             │ cloud-datastore-emulator │ 18.4 MiB │
+│ Installed     │ Cloud SDK Core Libraries                             │ core                     │ 12.7 MiB │
+│ Installed     │ Cloud Storage Command Line Tool                      │ gsutil                   │  3.6 MiB │
+│ Installed     │ gcloud app Java Extensions                           │ app-engine-java          │ 62.0 MiB │
+│ Installed     │ gcloud app Python Extensions                         │ app-engine-python        │  6.0 MiB │
+
+To install or remove components at your current SDK version, run:
+  $ gcloud components install COMPONENT_ID
+  $ gcloud components remove COMPONENT_ID
+
+To update your SDK installation to the latest version, run:
+  $ gcloud components update
+
+
+Modify profile to update your $PATH and enable shell command
+  $ ./google-cloud-sdk/install.sh
+
+---
 Login and configure Cloud SDK:
 
 *gcloud init*
+
 
 To use it in prod mode:
 
@@ -159,4 +185,7 @@ gwt:test
   changed, so versions (mainly) and other bits of documentation might be wrong
   or irrelevant.
 
+---
+Dev Server Admin Console
+http://localhost:8888/_ah/admin/
 

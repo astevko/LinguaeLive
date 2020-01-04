@@ -22,11 +22,11 @@
       <artifactId>validation-api</artifactId>
       <classifier>sources</classifier>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/com.google.gwt.inject/gin -->
+    <!-- https://github.com/gwtplus/google-gin/releases -->
     <dependency>
-        <groupId>com.google.gwt.inject</groupId>
+        <groupId>io.github.gwtplus.gin</groupId>
         <artifactId>gin</artifactId>
-        <version>2.1.2</version>
+        <version>3.0.0</version>
     </dependency>
     <!-- hibernate validation -->
     <dependency>
@@ -93,14 +93,14 @@
           <moduleName>ca.jhosek.linguaelive.LinguaeLive</moduleName>
           <moduleShortName>LinguaeLive</moduleShortName>
           <!-- <moduleTemplate>src/main/resources/App.gwt.xml</moduleTemplate> -->
-          <warDir>${basedir}/../server/target/server-${project.version}</warDir>
-					<devmodeWorkDir>${basedir}/../LinguaeLive-server/target/LinguaeLive-server-${project.version}</devmodeWorkDir>
-					<webappDirectory>${basedir}/../LinguaeLive-server/target/LinguaeLive-server-${project.version}</webappDirectory> 
+          <warDir>${basedir}/../LinguaeLive-server/target/LinguaeLive-server-${project.version}</warDir>
+          <devmodeWorkDir>${basedir}/../LinguaeLive-server/target/LinguaeLive-server-${project.version}</devmodeWorkDir>
+          <webappDirectory>${basedir}/../LinguaeLive-server/target/LinguaeLive-server-${project.version}</webappDirectory>
           <!-- <extra>${project.basedir}/target/${project.artifactId}-${project.version}/WEB-INF/deploy</extra> -->
           <devmodeArgs>
-						<arg>-noserver</arg>
-						<arg>-codeServerPort</arg>
-						<arg>4524</arg>
+              <arg>-noserver</arg>
+              <arg>-codeServerPort</arg>
+              <arg>4524</arg>
           </devmodeArgs>
         </configuration>
       </plugin>
