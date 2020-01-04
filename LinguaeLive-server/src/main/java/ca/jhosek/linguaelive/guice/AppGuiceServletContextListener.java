@@ -6,6 +6,7 @@ package ca.jhosek.linguaelive.guice;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 
+import ca.jhosek.linguaelive.domain.ObjectifyMain;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.servlet.GuiceServletContextListener;
@@ -45,6 +46,7 @@ public class AppGuiceServletContextListener extends GuiceServletContextListener 
 		// No call to super as it also calls getInjector()
 		ServletContext sc = servletContextEvent.getServletContext();
 		sc.setAttribute(Injector.class.getName(), getInjector());
+		ObjectifyMain.init();
 	}
 
 	
