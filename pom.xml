@@ -215,7 +215,7 @@
         <artifactId>gwt-maven-plugin</artifactId>
         <inherited>false</inherited>
         <configuration>
-          <launcherDir>${project.build.directory}/gwt/launcherDir</launcherDir>
+          <launcherDir>${basedir}/LinguaeLive-server/target/LinguaeLive-server-${project.version}/</launcherDir> -->
           <devmodeArgs>
 						<arg>-noserver</arg>
 						<!-- <arg>-codeServerPort</arg>
@@ -249,7 +249,6 @@
           <configuration>
             <sourceLevel>1.8</sourceLevel>
             <failOnError>true</failOnError>
-            <!-- <launcherDir>${project.parent.basedir}/gwt-storage-objectify-server/target/gwt-storage-objectify-server-${project.version}/</launcherDir> -->
           </configuration>
         </plugin>
         <plugin>
