@@ -70,6 +70,7 @@ Note: Two instructors and two students have been created on this server instance
         andy+student1@linguaelive.ca       WU speaker
         andy+instructor2@linguaelive.ca    WU class
         andy+student2@linguaelive.ca       ENG speaker
+        all have the same password (PM andy)
 
 You may have to initialize your gcloud configuration with this setup.
     
@@ -77,6 +78,10 @@ You may have to initialize your gcloud configuration with this setup.
     gcloud config list
     gcloud config set project linguaelive-test
     
+To browse the database with created entities:
+
+    https://console.cloud.google.com/datastore/entities;kind=ContactInfo;ns=__$DEFAULT$__/query/kind?src=ac&project=linguaelive-test
+
         
 ---
 Reference Documentation
