@@ -8,24 +8,81 @@ You must have Google Cloud SDK installed.   https://cloud.google.com/sdk/
 Cloud SDK app-engine-java component is also required. Install it by running:
 
 *gcloud components install app-engine-java*
+*gcloud components install bq*
+*gcloud components install cloud-datastore-emulator*
 
+Components
+
+│     Status    │                         Name                         │            ID            │   Size   │
+| ------------- | ---------------------------------------------------- | ------------------------ | -------- |
+│ Installed     │ BigQuery Command Line Tool                           │ bq                       │  < 1 MiB │
+│ Installed     │ Cloud Datastore Emulator                             │ cloud-datastore-emulator │ 18.4 MiB │
+│ Installed     │ Cloud SDK Core Libraries                             │ core                     │ 12.7 MiB │
+│ Installed     │ Cloud Storage Command Line Tool                      │ gsutil                   │  3.6 MiB │
+│ Installed     │ gcloud app Java Extensions                           │ app-engine-java          │ 62.0 MiB │
+│ Installed     │ gcloud app Python Extensions                         │ app-engine-python        │  6.0 MiB │
+
+To install or remove components at your current SDK version, run:
+  $ gcloud components install COMPONENT_ID
+  $ gcloud components remove COMPONENT_ID
+
+To update your SDK installation to the latest version, run:
+  $ gcloud components update
+
+
+Modify profile to update your $PATH and enable shell command
+  $ ./google-cloud-sdk/install.sh
+
+---
 Login and configure Cloud SDK:
 
 *gcloud init*
 
-To use it in prod mode:
 
-    in /LinguaeLive/ ➜ mvn clean install (only one time)
-    in /LinguaeLive/LinguaeLive-server/ ➜ mvn appengine:devserver
-    then open your browser at http://localhost:8888/
+To build and launch the project:
 
+    in .../LinguaeLive/ ➜ mvn clean
+    in .../LinguaeLive/ ➜ mvn package
+    in .../LinguaeLive/LinguaeLive-server/ ➜ mvn appengine:run -Denv=dev -am
+    then open your browser at http://localhost:8888/index.html
+    navigate throughout the applicaiton to guarantee the full build is operational.
+    http://localhost:8888/index.html?locale=es#whatis:   will open the WhatIsView with es language binding
+    
+    
 To use it in dev mode:
 
-    in /LinguaeLive/ ➜ mvn install -pl LinguaeLive-shared -am (only one time)
-    in /LinguaeLive/LinguaeLive-server/ ➜ mvn appengine:devserver -Denv=dev -am
-    in /LinguaeLive/LinguaeLive-client/ ➜ mvn gwt:codeserver -am
+    in /LinguaeLive/LinguaeLive-client/ ➜ mvn gwt:codeserver -pl *-client -am
     then open your browser at http://localhost:8888/
+    
+    refreshing your browser will cause the web application to be incrementally recompiled.
+    
+To deploy to lingaelive-test server instance:
 
+    In /LinguaeLive/LinguaeLive-server/
+    Validate your google cloud credentials ➜ mvn appengine:cloudSdkLogin
+    Validate the deployment package ➜ mvn appengine:cloudSdkLogin
+    Push deployment package to cloud ➜ mvn appengine:deploy 
+    Navigate to live test instance https://linguaelive-test.appspot.com/
+    
+Note: Two instructors and two students have been created on this server instance:
+
+        andy+instructor1@linguaelive.ca    ENG class
+        andy+student1@linguaelive.ca       WU speaker
+        andy+instructor2@linguaelive.ca    WU class
+        andy+student2@linguaelive.ca       ENG speaker
+        all have the same password (PM andy)
+
+You may have to initialize your gcloud configuration with this setup.
+    
+    gcloud info
+    gcloud config list
+    gcloud config set project linguaelive-test
+    
+To browse the database with created entities:
+
+    https://console.cloud.google.com/datastore/entities;kind=ContactInfo;ns=__$DEFAULT$__/query/kind?src=ac&project=linguaelive-test
+
+        
 ---
 Reference Documentation
 
@@ -159,4 +216,7 @@ gwt:test
   changed, so versions (mainly) and other bits of documentation might be wrong
   or irrelevant.
 
+---
+Dev Server Admin Console
+http://localhost:8888/_ah/admin/
 

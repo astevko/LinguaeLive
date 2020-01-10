@@ -10,11 +10,12 @@ import com.google.gwt.logging.server.RemoteLoggingServiceImpl;
 import com.google.inject.Singleton;
 import com.google.inject.servlet.ServletModule;
 import com.google.web.bindery.requestfactory.server.RequestFactoryServlet;
+import com.googlecode.objectify.ObjectifyFilter;
 
 //import com.google.gwt.logging.shared.RemoteLoggingService;
 
 /**
- * My Guice Servlet Module
+ * The  Guice Servlet Module
  * does initialization here
  * 
  * @author copyright (C) 2011 Andrew Stevko
@@ -35,13 +36,15 @@ public class AppServletModule extends ServletModule {
 		bind( RemoteLoggingServiceImpl.class).in(Singleton.class);
 //		bind( UserDao.class ).in(Singleton.class);
 //		requestStaticInjection(UserDao.class );
-		
+
 		
 		// SEE http://code.google.com/p/google-web-toolkit/issues/detail?id=5807
 		bind( RequestFactoryServlet.class).in(Singleton.class);
+		bind( ObjectifyFilter.class).in(Singleton.class);
 		
 		//--------------
 		// filters
+		filter("/*").through(ObjectifyFilter.class);
 		filter("/gwtRequest").through(HitLoggerFilter.class);
 	
 		//--------------

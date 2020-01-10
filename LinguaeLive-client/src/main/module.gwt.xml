@@ -33,7 +33,22 @@
 	<!-- activate locale cookies with this cookie name -->
 	 <set-configuration-property name="locale.cookie" value="locale_cookie"/>
 
-    <!-- <entry-point class="ca.jhosek.linguaelive.ca.jhosek.linguaelive.LinguaeLive" /> -->
+
+  <!-- see https://developers.google.com/adsense/host/v3/developer/adsense_api_locales -->
+  <!-- hebrew he-IL -->
+  <!-- chinese zh_CN zh_TW -->
+  <extend-property name="locale" values="en"/>
+  <set-property-fallback name="locale" value="en"/>
+  <!-- extend-property name="locale" values="de"/ -->
+  <!-- extend-property name="locale" values="ar"/ -->
+  <extend-property name="locale" values="en"/>
+  <extend-property name="locale" values="es"/>
+  <!-- extend-property name="locale" values="fr"/ -->
+  <!-- extend-property name="locale" values="he"/ -->
+  <!-- extend-property name="locale" values="ja"/ -->
+  <extend-property name="locale" values="zh"/>
+
+  <!-- <entry-point class="ca.jhosek.linguaelive.ca.jhosek.linguaelive.LinguaeLive" /> -->
     <entry-point class="ca.jhosek.linguaelive.LinguaeLive" />
 
   <!-- Only support recent browsers -->
