@@ -92,6 +92,9 @@
         <configuration>
           <moduleName>ca.jhosek.linguaelive.LinguaeLive</moduleName>
           <moduleShortName>linguaelive</moduleShortName>
+          <compilerArgs>
+            <arg>-localWorkers</arg><arg>4</arg>
+          </compilerArgs>
           <!-- <moduleTemplate>src/main/resources/App.gwt.xml</moduleTemplate> -->
 <!--
           <warDir>${basedir}/../LinguaeLive-server/target/LinguaeLive-server-${project.version}</warDir>

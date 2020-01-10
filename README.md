@@ -39,18 +39,24 @@ Login and configure Cloud SDK:
 *gcloud init*
 
 
-To use it in prod mode:
+To build and launch the project:
 
-    in /LinguaeLive/ ➜ mvn clean install (only one time)
-    in /LinguaeLive/LinguaeLive-server/ ➜ mvn appengine:devserver
-    then open your browser at http://localhost:8888/
-
+    in .../LinguaeLive/ ➜ mvn clean
+    in .../LinguaeLive/ ➜ mvn package
+    in .../LinguaeLive/LinguaeLive-server/ ➜ mvn appengine:run -Denv=dev -am
+    then open your browser at http://localhost:8888/index.html
+    navigate throughout the applicaiton to guarantee the full build is operational.
+    http://localhost:8888/index.html?locale=es#whatis:   will open the WhatIsView with es language binding
+    
+    
 To use it in dev mode:
 
-    in /LinguaeLive/ ➜ mvn install -pl LinguaeLive-shared -am (only one time)
-    in /LinguaeLive/LinguaeLive-server/ ➜ mvn appengine:devserver -Denv=dev -am
-    in /LinguaeLive/LinguaeLive-client/ ➜ mvn gwt:codeserver -am
+    in /LinguaeLive/LinguaeLive-client/ ➜ mvn gwt:codeserver -pl *-client -am
     then open your browser at http://localhost:8888/
+    
+    refreshing your browser will cause the web application to be incrementally recompiled.
+    
+    
 
 ---
 Reference Documentation
