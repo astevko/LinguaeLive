@@ -56,8 +56,28 @@ To use it in dev mode:
     
     refreshing your browser will cause the web application to be incrementally recompiled.
     
-    
+To deploy to lingaelive-test server instance:
 
+    In /LinguaeLive/LinguaeLive-server/
+    Validate your google cloud credentials ➜ mvn appengine:cloudSdkLogin
+    Validate the deployment package ➜ mvn appengine:cloudSdkLogin
+    Push deployment package to cloud ➜ mvn appengine:deploy 
+    Navigate to live test instance https://linguaelive-test.appspot.com/
+    
+Note: Two instructors and two students have been created on this server instance:
+
+        andy+instructor1@linguaelive.ca    ENG class
+        andy+student1@linguaelive.ca       WU speaker
+        andy+instructor2@linguaelive.ca    WU class
+        andy+student2@linguaelive.ca       ENG speaker
+
+You may have to initialize your gcloud configuration with this setup.
+    
+    gcloud info
+    gcloud config list
+    gcloud config set project linguaelive-test
+    
+        
 ---
 Reference Documentation
 
