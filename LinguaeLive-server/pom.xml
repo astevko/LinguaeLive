@@ -191,7 +191,7 @@
           <version>${gae.app.instance.version}</version>
           <!-- dev server port -->
           <port>8888</port>
-          <project>LinguaeLive</project>
+          <project>linguaelive-test</project>
           <enableJarClasses>false</enableJarClasses>
         </configuration>
       </plugin>
