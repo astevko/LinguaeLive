@@ -43,7 +43,7 @@
     <jackson.version>2.9.9</jackson.version>
     <restygwt.version>2.2.5</restygwt.version>
     <validation-api.version>1.0.0.GA</validation-api.version>
-    <hibernate-validator.version>4.1.0.CR1</hibernate-validator.version>
+    <hibernate-validator.version>5.0.0.Alpha1</hibernate-validator.version>
     <!-- http://repo1.maven.org/maven2/org/hibernate/hibernate-core/4.1.0.Final/ -->
     <gwt-bean-validators.version>1.0.5</gwt-bean-validators.version>
 
